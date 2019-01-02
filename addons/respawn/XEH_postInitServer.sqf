@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+LOG(MSG_INIT);
 
 if (GVAR(CustomRespawnMode) == 1) then {
 	if (isNull call (compile GVAR(medVicString))) then {
@@ -8,5 +9,4 @@ if (GVAR(CustomRespawnMode) == 1) then {
 		GVAR(medVic) = call (compile GVAR(medVicString));
 	};
 	GVAR(medVic) setVariable ["deployed",false,true];
-	call FUNC(medDeploy);
 };

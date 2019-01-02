@@ -31,6 +31,12 @@
 		<Key ID="STR_CAV_Respawn_CustomRespawnMode_Description">
 			<English>Custom Respawn Modes</English>
 		</Key>
+		<Key ID="STR_CAV_Respawn_Disabled_errorMessage">
+			<English>Custom Respawn Disabled. Choose a different Respawn Template or set a custom respawn mode in Addon Options.</English>
+		</Key>
+		<Key ID="STR_CAV_Respawn_medVic_errorMessage">
+			<English>Medical Vehicle not found.</English>
+		</Key>
 		<Key ID="STR_CAV_Respawn_CustomRespawnMode_0_DisplayName">
 			<English>Tickets</English>
 		</Key>
