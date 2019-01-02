@@ -14,6 +14,6 @@ if (GVAR(CustomRespawnMode) == 1) then {
 	} else {
 		GVAR(medVic) = call (compile GVAR(medVicString));
 	};
-	GVAR(medVic) setVariable ["deployed",false]
+	GVAR(medVic) setVariable ["deployed",false];
 	call FUNC(medDeploy);
 };
