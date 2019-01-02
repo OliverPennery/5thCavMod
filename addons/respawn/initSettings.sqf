@@ -27,7 +27,7 @@
     "LIST",
     [localize LSTRING(CustomRespawnMode_DisplayName), localize LSTRING(CustomRespawnMode_Description)],
     [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Core_Module_DisplayName)],
-    [[0,1,2],[LSTRING(CustomRespawnMode_0_DisplayName),LSTRING(CustomRespawnMode_1_DisplayName),LSTRING(CustomRespawnMode_2_DisplayName)],0],
+    [[3,0,1,2],[LSTRING(CustomRespawnMode_3_DisplayName),LSTRING(CustomRespawnMode_0_DisplayName),LSTRING(CustomRespawnMode_1_DisplayName),LSTRING(CustomRespawnMode_2_DisplayName)],0],
     true,
     {
         params ["_value"];

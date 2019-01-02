@@ -40,6 +40,9 @@
 		<Key ID="STR_CAV_Respawn_CustomRespawnMode_2_DisplayName">
 			<English>RHS M1085A1P2B Respawn w/ Tickets</English>
 		</Key>
+		<Key ID="STR_CAV_Respawn_CustomRespawnMode_3_DisplayName">
+			<English>Disabled</English>
+		</Key>
 		<Key ID="STR_CAV_Respawn_medVic_DisplayName">
 			<English>Medical Vehicle</English>
 		</Key>
