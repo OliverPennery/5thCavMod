@@ -3,7 +3,7 @@
     QGVAR(BFT_Enable),
     "CHECKBOX",
     [localize LSTRING(BFT_Enable_DisplayName), localize LSTRING(BFT_Enable_Description)],
-    [format ["5th Cav %1", localize LSTRING(BFT_Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Module_DisplayName)],
     false,
     true,
     {
@@ -16,7 +16,7 @@
     QGVAR(BFT_HideAi),
     "CHECKBOX",
     [localize LSTRING(BFT_HideAi_DisplayName), localize LSTRING(BFT_HideAi_Description)],
-    [format ["5th Cav %1", localize LSTRING(BFT_Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Module_DisplayName)],
     true,
     true,
     {
@@ -29,7 +29,7 @@
     QGVAR(BFT_Delay),
     "SLIDER",
     [localize LSTRING(BFT_Delay_DisplayName), localize LSTRING(BFT_Delay_Description)],
-    [format ["5th Cav %1", localize LSTRING(BFT_Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Module_DisplayName)],
     [0, 300, 15, 1],
     true,
     {
