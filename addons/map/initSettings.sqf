@@ -1,0 +1,39 @@
+
+[
+    QGVAR(BFT_Enable),
+    "CHECKBOX",
+    [localize LSTRING(BFT_Enable_DisplayName), localize LSTRING(BFT_Enable_Description)],
+    [format ["5th Cav %1", localize LSTRING(BFT_Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
+    false,
+    true,
+    {
+        params ["_value"];
+        GVAR(BFT_Enable) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(BFT_HideAi),
+    "CHECKBOX",
+    [localize LSTRING(BFT_HideAi_DisplayName), localize LSTRING(BFT_HideAi_Description)],
+    [format ["5th Cav %1", localize LSTRING(BFT_Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
+    true,
+    true,
+    {
+        params ["_value"];
+        GVAR(BFT_HideAi) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(BFT_Delay),
+    "SLIDER",
+    [localize LSTRING(BFT_Delay_DisplayName), localize LSTRING(BFT_Delay_Description)],
+    [format ["5th Cav %1", localize LSTRING(BFT_Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
+    [0, 300, 15, 1],
+    true,
+    {
+        params ["_value"];
+		GVAR(BFT_Delay) = _value;
+    }
+] call CBA_Settings_fnc_init;
