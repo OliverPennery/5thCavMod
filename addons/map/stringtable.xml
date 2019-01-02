@@ -1,37 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CAV">
     <Package name="Map">
-        <Key ID="STR_CAV_Map_BFT_Module_DisplayName">
-           <English>Blue Force Tracking</English>
-           <Polish>Blue Force Tracking</Polish>
-           <Spanish>Seguimiento de fuerzas amigas</Spanish>
-           <German>Blue Force Tracking</German>
-           <Czech>Blue Force Tracking</Czech>
-           <Portuguese>Rastreio de forças azuis</Portuguese>
-           <French>Blue Force Tracking (SFA)</French>
-           <Hungarian>Blue Force követés</Hungarian>
-           <Russian>Система слежения Blue Force Tracking</Russian>
-           <Italian>Blue Force Tracking</Italian>
-           <Japanese>ブルー フォース トラッキング</Japanese>
-           <Korean>GPS피아식별기</Korean>
-           <Chinesesimp>显示蓝方踪迹</Chinesesimp>
-           <Chinese>顯示藍方蹤跡</Chinese>
+        <Key ID="STR_CAV_Map_Module_DisplayName">
+           <English>Map</English>
        </Key>
-       <Key ID="STR_CAV_Map_BFT_Module_Description">
-           <English>This module allows the tracking of allied units with BFT map markers.</English>
-           <Polish>Pozwala śledzić na mapie pozycje sojuszniczych jednostek za pomocą markerów BFT.</Polish>
-           <German>Dieses Modul ermöglicht es verbündete Einheiten mit dem BFT auf der Karte zu verfolgen.</German>
-           <Czech>Umožňuje sledovat přátelské jednokty na mapě v rámci BFT.</Czech>
-           <Portuguese>Permite que você acompanhe as posições no mapa das unidades aliadas com marcadores RFA.</Portuguese>
-           <French>Ce module permet de suivre les unités alliées avec des marqueurs sur la carte.</French>
-           <Hungarian>Ez a modul lehetővé teszi a szövetséges egységek követését BFT térképjelzőjkkel.</Hungarian>
-           <Russian>Этот модуль позволяет отслеживать перемещение союзных войск по карте при помощи маркеров BFT.</Russian>
-           <Spanish>Este módulo permite el seguimiento de las unidades aliadas con marcadores de mapa BFT.</Spanish>
-           <Italian>Questo modulo permette il tracciamento di unità alleate con i marker BFT in mappa</Italian>
-           <Japanese>モジュールは BFT マップ マーカとともに、同勢力ユニットの追跡を許可します。</Japanese>
-           <Korean>이 모듈은 아군을 지도상에서 추적할 수 있게 해줍니다.</Korean>
-           <Chinesesimp>此模块将使你能在地图上看见友方单位的踪迹</Chinesesimp>
-           <Chinese>此模塊將使你能在地圖上看見友方單位的蹤跡</Chinese>
+       <Key ID="STR_CAV_Map_Module_Description">
+           <English>This module contains map functions.</English>
        </Key>
        <Key ID="STR_CAV_Map_BFT_Enable_DisplayName">
            <English>BFT Enable</English>
