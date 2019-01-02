@@ -103,5 +103,24 @@
            <Chinesesimp>隐藏'AI小队'的踪迹?</Chinesesimp>
            <Chinese>隱藏'AI小隊'的蹤跡?</Chinese>
        </Key>
+		<Key ID="STR_CAV_Map_fTMarkers_Enabled_DisplayName">
+			<English>Enable Fireteam Markers</English>
+		</Key>
+		<Key ID="STR_CAV_Map_fTMarkers_Enabled_Description">
+			<English>Should markers on map for group memebers be shown.</English>
+		</Key>
+		<Key ID="STR_CAV_Map_fTMarkers_Delay_DisplayName">
+			<English>Marker Update Delay</English>
+		</Key>
+		<Key ID="STR_CAV_Map_fTMarkers_Delay_Description">
+			<English>How often the markers are refreshed (in sec).</English>
+		</Key>
+		<Key ID="STR_CAV_Map_fTMarkers_ColorTeams_DisplayName">
+			<English>Marker Color Teams</English>
+		</Key>
+		<Key ID="STR_CAV_Map_fTMarkers_Delay_Description">
+			<English>Should fireteam markers respect color teams?</English>
+		</Key>
+
    </Package>
 </Project>

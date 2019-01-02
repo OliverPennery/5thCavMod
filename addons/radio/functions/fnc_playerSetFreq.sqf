@@ -21,7 +21,7 @@ Example:
  _____________________________________________________________________________*/
 
 //private _grp = call(compile(str((group player)) select [2]));
-private _grp = [(group player)] call EFUNC(common, getGroup);
+private _grp = [(group player)] call EFUNC(common,getGroup);
 if (isNil {_grp}) then {
 	_grp = Platoon;
 };
