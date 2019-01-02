@@ -1,1 +1,3 @@
-//PREP(empty);
+PREP(OnKilled);
+PREP(OnRespawn);
+PREP(medDeploy);
