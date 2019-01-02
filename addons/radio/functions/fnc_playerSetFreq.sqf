@@ -21,9 +21,9 @@ Example:
  _____________________________________________________________________________*/
 
 //private _grp = call(compile(str((group player)) select [2]));
-private _grp = [(group player)] call EFUNC(common, getGroup);
+private _grp = [(group player)] call EFUNC(common,getGroup);
 if (isNil {_grp}) then {
-	_grp = Platoon;
+	_grp = CAV_Platoon;
 };
 if (isClass (configFile >> "CfgPatches" >> "task_force_radio_items")) then{
 	if (call TFAR_fnc_haveSWRadio) then{
