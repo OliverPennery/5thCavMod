@@ -3,7 +3,7 @@
     QGVAR(AC_Enable),
     "CHECKBOX",
     [localize LSTRING(AC_Enable_DisplayName), localize LSTRING(AC_Enable_Description)],
-    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Module_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Module_DisplayName)],
     true,
     true,
     {

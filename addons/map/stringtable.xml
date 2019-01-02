@@ -3,11 +3,11 @@
     <Package name="Map">
         <Key ID="STR_CAV_Map_Module_DisplayName">
            <English>Map</English>
-       </Key>
-       <Key ID="STR_CAV_Map_Module_Description">
-           <English>This module contains map functions.</English>
-       </Key>
-       <Key ID="STR_CAV_Map_BFT_Enable_DisplayName">
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_Module_DisplayName">
+           <English>Blue Force Tracker.</English>
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_Enable_DisplayName">
            <English>BFT Enable</English>
            <German>BFT aktivieren</German>
            <Portuguese>RFA ativo</Portuguese>
@@ -22,8 +22,8 @@
            <Korean>GPS피아식별기 켜기</Korean>
            <Chinesesimp>蓝方踪迹启用</Chinesesimp>
            <Chinese>藍方蹤跡啟用</Chinese>
-       </Key>
-       <Key ID="STR_CAV_Map_BFT_Enable_Description">
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_Enable_Description">
            <English>Enable Blue Force Tracking. Default: No</English>
            <German>Aktiviert Blue Force Tracking. Standard: Nein</German>
            <Portuguese>Ativa Rastreio de Forças Azuis. Padrão: Não</Portuguese>
@@ -38,8 +38,8 @@
            <Korean>GPS피아식별기 켭니다. 기본설정: 아니요</Korean>
            <Chinesesimp>启用显示蓝方踪迹. 预设: 否</Chinesesimp>
            <Chinese>啟用顯示藍方蹤跡. 預設: 否</Chinese>
-       </Key>
-       <Key ID="STR_CAV_Map_BFT_Delay_DisplayName">
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_Delay_DisplayName">
            <English>Interval</English>
            <Polish>Interwał</Polish>
            <Spanish>Intervalo</Spanish>
@@ -54,8 +54,8 @@
            <Korean>간격</Korean>
            <Chinesesimp>间隔</Chinesesimp>
            <Chinese>間隔</Chinese>
-       </Key>
-       <Key ID="STR_CAV_Map_BFT_Delay_Description">
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_Delay_Description">
            <English>How often the markers should be refreshed (in seconds)</English>
            <Polish>Jak często markery powinny być odświeżane (w sekundach)</Polish>
            <Spanish>Frecuencia de actualización de los marcadores (en segundos)</Spanish>
@@ -70,8 +70,8 @@
            <Korean>몇 초마다 마커를 새로 갱신합니까?</Korean>
            <Chinesesimp>设定每多少时间重新标示出单位位置 (秒)</Chinesesimp>
            <Chinese>設定每多少時間重新標示出單位位置 (秒)</Chinese>
-       </Key>
-       <Key ID="STR_CAV_Map_BFT_HideAi_DisplayName">
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_HideAi_DisplayName">
            <English>Hide AI groups</English>
            <Polish>Ukryj grupy AI</Polish>
            <Spanish>¿Ocultar grupos de IA</Spanish>
@@ -86,8 +86,8 @@
            <Korean>인공지능 그룹을 숨깁니까</Korean>
            <Chinesesimp>隐藏AI小队</Chinesesimp>
            <Chinese>隱藏AI小隊</Chinese>
-       </Key>
-       <Key ID="STR_CAV_Map_BFT_HideAi_Description">
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_HideAi_Description">
            <English>Hide markers for 'AI only' groups?</English>
            <Polish>Ukrywa markery dla grup złożonych tylko z AI</Polish>
            <Spanish>Oculta las marcas de grupos 'solo IA'</Spanish>
@@ -102,7 +102,10 @@
            <Korean>인공지능만 있는 그룹의 마커를 숨깁니까?</Korean>
            <Chinesesimp>隐藏'AI小队'的踪迹?</Chinesesimp>
            <Chinese>隱藏'AI小隊'的蹤跡?</Chinese>
-       </Key>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_Module_DisplayName">
+           <English>Fireteam Markers</English>
+        </Key>
 		<Key ID="STR_CAV_Map_fTMarkers_Enabled_DisplayName">
 			<English>Enable Fireteam Markers</English>
 		</Key>
