@@ -14,4 +14,40 @@ Example:
     } // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_Settings_fnc_init;
 */
+[
+    "CAV_bft_enable_setting",
+    "CHECKBOX",
+    "Enable BFT",
+    ["5th Cav Settings","Blue Force Tracking"],
+    [true],
+    nil,
+    {  
+        params ["_value"];
+        CAV_bft_enable = _value;
+    }
+] call CBA_Settings_fnc_init;
+[
+    "CAV_bft_hideAI_setting",
+    "CHECKBOX",
+    "Hide AI Groups",
+    ["5th Cav Settings","Blue Force Tracking"],
+    [true],
+    nil,
+    {  
+        params ["_value"];
+        CAV_bft_hideAI = _value;
+    }
+] call CBA_Settings_fnc_init;
+[
+    "CAV_bft_delay_setting",
+    "SLIDER",
+    "Marker Update Delay",
+    ["5th Cav Settings","Blue Force Tracking"],
+    [0.1, 30, 15, 1],
+    nil,
+    {  
+        params ["_value"];
+		CAV_bft_delay = _value1;
+    }
+] call CBA_Settings_fnc_init;
 

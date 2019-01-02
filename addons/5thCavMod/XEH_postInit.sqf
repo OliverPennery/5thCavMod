@@ -2,5 +2,5 @@ if (isServer) then {
 	//initServer.sqf type stuff
 };
 if (hasInterface) then {
-	//initPlayerLocal.sqf type stuff
+	[CAV_bft_delay] call CAV_fnc_blueForceTrackingUpdate;
 };

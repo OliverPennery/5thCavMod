@@ -16,7 +16,7 @@ class CfgFunctions
 		class functions
 		{
 			file = "5thCavMod\functions";
-			
+			class blueForceTrackingUpdate {};
 		};
 	};
 };
