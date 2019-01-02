@@ -28,7 +28,9 @@ _baArs = [
 	] call CBA_fnc_addPerFrameHandler;
 
 //--- Check for ACE Arsenal
-_aceArs = ["ace_arsenal_displayOpened", {format ['%1 is using arsenal', name player] remoteExecCall ['hintSilent']}] call CBA_fnc_addEventHandler;
+_aceArs = ["ace_arsenal_displayOpened", {
+    format ['%1 is using arsenal', name player] remoteExecCall ['hintSilent']
+    }] call CBA_fnc_addEventHandler;
 
 player setVariable ["baArs", _baArs, true];
 player setVariable ["aceArs", _aceArs, true];
