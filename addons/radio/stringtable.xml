@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CAV">
+    <Package name="Map">
+        <Key ID="STR_CAV_Radio_Module_DisplayName">
+           <English>Radio Presets</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_Module_Description">
+           <English>This module contains functions to preset frequencies.</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_Player_Preset_Enable_DisplayName">
+           <English>Player Radio Presets Enable</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_Player_Preset_Enable_Description">
+           <English>Enable Player Radio Presets. Default: Yes</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_Vehicler_Preset_Enable_DisplayName">
+           <English>Vehicle Radio Presets Enable</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_Vehicler_Preset_Enable_Description">
+           <English>Enable Vehicle Radio Presets[DO NOT USE IN PVP]. Default: No</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_Preset_Side_DisplayName">
+           <English>Vehicle Radio Side</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_Preset_Side_Description">
+           <English>Set Vehicle Radio Side. Default: WEST</English>
+       </Key>
+   </Package>
+</Project>

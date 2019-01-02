@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cav_main", "cav_common"};
         author = "";
-        authors[] = {"Brecon, Field"};
+        authors[] = {""};
         VERSION_CONFIG;
     };
 };

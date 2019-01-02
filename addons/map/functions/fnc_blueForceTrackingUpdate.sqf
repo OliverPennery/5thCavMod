@@ -52,7 +52,7 @@ Example:
  		{
  			//systemChat str(_x);
  			//_grp = call(compile((str(_x) splitString " " joinString "") select [1]));
- 			private _grp = [_x] call b_fnc_getGroup;
+ 			private _grp = [_x] call EFUNC(common,getGroup);
 
  			if (!isNil {_grp}) then
  			{

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CAV">
+    <Package name="Map">
+        <Key ID="STR_CAV_Anti_Cheat_Module_DisplayName">
+           <English>Anti Cheat</English>
+       </Key>
+       <Key ID="STR_CAV_Anti_Cheat_Module_Description">
+           <English>This module contains functions to stop cheating within missions.</English>
+       </Key>
+       <Key ID="STR_CAV_Anti_Cheat_AC_Enable_DisplayName">
+           <English>Arsenal Cheacker Enable</English>
+       </Key>
+       <Key ID="STR_CAV_Anti_Cheat_AC_Enable_Description">
+           <English>Enable Arsenal Cheacker. Default: Yes</English>
+       </Key>
+   </Package>
+</Project>
