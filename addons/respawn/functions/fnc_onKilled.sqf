@@ -82,5 +82,10 @@ switch (GVAR(CustomRespawnMode)) do
 		};
 	};
 	
+	case 3:
+	{
+		systemchat localize LSTRING(Disabled_errorMessage);
+	};
+
 	default {"Custom Respawn Error" remoteExec ["hint", 0];};
 };

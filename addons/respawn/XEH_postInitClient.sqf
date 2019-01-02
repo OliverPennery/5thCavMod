@@ -10,10 +10,9 @@ setPlayerRespawnTime GVAR(RespawnTime);
 
 if (GVAR(CustomRespawnMode) == 1) then {
 	if (isNull call (compile GVAR(medVicString))) then {
-		systemChat "medVic not found";
+		systemchat localize LSTRING(medVic_errorMessage);
 	} else {
 		GVAR(medVic) = call (compile GVAR(medVicString));
 	};
-	GVAR(medVic) setVariable ["deployed",false]
 	call FUNC(medDeploy);
 };
