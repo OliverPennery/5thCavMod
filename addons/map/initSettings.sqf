@@ -4,7 +4,7 @@
     "CHECKBOX",
     [localize LSTRING(BFT_Enable_DisplayName), localize LSTRING(BFT_Enable_Description)],
     [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
-    false,
+    true,
     true,
     {
         params ["_value"];
@@ -37,6 +37,7 @@
 		GVAR(BFT_Delay) = _value;
     }
 ] call CBA_Settings_fnc_init;
+
 [
     QGVAR(fTMarkers_Enabled),
     "CHECKBOX",
@@ -49,6 +50,7 @@
         GVAR(fTMarkers_Enabled) = _value;
     }
 ] call CBA_Settings_fnc_init;
+
 [
     QGVAR(fTMarkers_Delay),
     "SLIDER",
@@ -61,6 +63,7 @@
         GVAR(fTMarkers_Delay) = _value;
     }
 ] call CBA_Settings_fnc_init;
+
 [
     QGVAR(fTMarkers_ColorTeams),
     "CHECKBOX",

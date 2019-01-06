@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CAV">
     <Package name="Map">
+        <Key ID="STR_CAV_Anti_Cheat_Ending_AC_Title">
+           <English>Personal Arsenal Dectected</English>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_Ending_AC_Subtitle">
+           <English>You were dectected using personal arsenal!</English>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_Ending_AC_Description">
+          <English>Using anyform of personal arsenal is not allowed on the server, using one will result in a yeeting</English>
+        </Key>
         <Key ID="STR_CAV_Anti_Cheat_Module_DisplayName">
            <English>Anti Cheat</English>
-       </Key>
-       <Key ID="STR_CAV_Anti_Cheat_Module_Description">
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_Module_DisplayName">
+          <English>Anti Arsenal</English>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_Module_Description">
            <English>This module contains functions to stop cheating within missions.</English>
-       </Key>
-       <Key ID="STR_CAV_Anti_Cheat_AC_Enable_DisplayName">
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_Enable_DisplayName">
            <English>Arsenal Cheacker Enable</English>
-       </Key>
-       <Key ID="STR_CAV_Anti_Cheat_AC_Enable_Description">
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_Enable_Description">
            <English>Enable Arsenal Cheacker. Default: Yes</English>
-       </Key>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_AK_Enable_DisplayName">
+           <English>Auto Kick Enable</English>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_AK_Enable_Description">
+           <English>Enable Auto Kick for using Arsenal. Default: No</English>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_AK_Amt_DisplayName">
+           <English>Infringements to get kicked Enable</English>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_AK_Amt_Description">
+           <English>Amount of Infringements to get kicked[Auto Kick must be enabled]. Default: 3</English>
+        </Key>
    </Package>
 </Project>

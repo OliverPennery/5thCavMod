@@ -18,26 +18,18 @@
            <Hungarian>BFT engedélyezése</Hungarian>
            <Russian>Включить BFT</Russian>
            <Italian>Abilita BFT</Italian>
-           <Japanese>BFT を有効化</Japanese>
-           <Korean>GPS피아식별기 켜기</Korean>
-           <Chinesesimp>蓝方踪迹启用</Chinesesimp>
-           <Chinese>藍方蹤跡啟用</Chinese>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Enable_Description">
-           <English>Enable Blue Force Tracking. Default: No</English>
-           <German>Aktiviert Blue Force Tracking. Standard: Nein</German>
-           <Portuguese>Ativa Rastreio de Forças Azuis. Padrão: Não</Portuguese>
-           <Polish>Aktywuj Blue Force Tracking. Domyślnie: Nie</Polish>
-           <Czech>Povolit Blue Force Tracking. Výchozí: Ne</Czech>
-           <Spanish>Activar Blue Force Tracking. Por defecto: No</Spanish>
-           <French>Active le SFA. Défaut : non</French>
-           <Hungarian>Blue Force követés engedélyezése. Alapértelmezett: Nem</Hungarian>
-           <Russian>Включает систему служения BFT. По-умолчанию: Нет</Russian>
-           <Italian>Abilita Blue Force Tracking. Default: No</Italian>
-           <Japanese>ブルー フォース トラッキングを有効化します。標準: 無効</Japanese>
-           <Korean>GPS피아식별기 켭니다. 기본설정: 아니요</Korean>
-           <Chinesesimp>启用显示蓝方踪迹. 预设: 否</Chinesesimp>
-           <Chinese>啟用顯示藍方蹤跡. 預設: 否</Chinese>
+           <English>Enable Blue Force Tracking. Default: Yes</English>
+           <German>Aktiviert Blue Force Tracking. Standard: Ja</German>
+           <Portuguese>Ativa Rastreio de Forças Azuis. Padrão: sim</Portuguese>
+           <Polish>Aktywuj Blue Force Tracking. Domyślnie: tak</Polish>
+           <Czech>Povolit Blue Force Tracking. Výchozí: Ano</Czech>
+           <Spanish>Activar Blue Force Tracking. Por defecto: sí</Spanish>
+           <French>Active le SFA. Défaut : Oui</French>
+           <Hungarian>Blue Force követés engedélyezése. Alapértelmezett: Igen</Hungarian>
+           <Russian>Включает систему служения BFT. По-умолчанию: да</Russian>
+           <Italian>Abilita Blue Force Tracking. Default: sì</Italian>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Delay_DisplayName">
            <English>Interval</English>
@@ -50,10 +42,6 @@
            <Hungarian>Intervallum</Hungarian>
            <Russian>Интервал</Russian>
            <Italian>Intervallo</Italian>
-           <Japanese>間隔</Japanese>
-           <Korean>간격</Korean>
-           <Chinesesimp>间隔</Chinesesimp>
-           <Chinese>間隔</Chinese>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Delay_Description">
            <English>How often the markers should be refreshed (in seconds)</English>
@@ -66,10 +54,6 @@
            <Hungarian>Milyen gyakran frissüljenek a jelölők (másodpercben)</Hungarian>
            <Russian>Как часто должны обновляться маркеры (в секундах)</Russian>
            <Italian>Quanto spesso vengono aggiornati i marker (in secondi)</Italian>
-           <Japanese>マーカが再描画される間隔を設定できます (秒)</Japanese>
-           <Korean>몇 초마다 마커를 새로 갱신합니까?</Korean>
-           <Chinesesimp>设定每多少时间重新标示出单位位置 (秒)</Chinesesimp>
-           <Chinese>設定每多少時間重新標示出單位位置 (秒)</Chinese>
         </Key>
         <Key ID="STR_CAV_Map_BFT_HideAi_DisplayName">
            <English>Hide AI groups</English>
@@ -82,10 +66,6 @@
            <Hungarian>AI csoportok elrejtése</Hungarian>
            <Russian>Скрыть группы ботов</Russian>
            <Italian>Nascondere gruppi IA</Italian>
-           <Japanese>AI グループを非表示にしますか</Japanese>
-           <Korean>인공지능 그룹을 숨깁니까</Korean>
-           <Chinesesimp>隐藏AI小队</Chinesesimp>
-           <Chinese>隱藏AI小隊</Chinese>
         </Key>
         <Key ID="STR_CAV_Map_BFT_HideAi_Description">
            <English>Hide markers for 'AI only' groups?</English>
@@ -98,10 +78,6 @@
            <Hungarian>Jelölők elrejtése "csak AI" csoportoknál?</Hungarian>
            <Russian>Скрыть маркеры групп, которые состоят полностью из ботов?</Russian>
            <Italian>Nascondi markers per gruppi di sole IA?</Italian>
-           <Japanese>'AI のみ'グループのマーカを隠しますか?</Japanese>
-           <Korean>인공지능만 있는 그룹의 마커를 숨깁니까?</Korean>
-           <Chinesesimp>隐藏'AI小队'的踪迹?</Chinesesimp>
-           <Chinese>隱藏'AI小隊'的蹤跡?</Chinese>
         </Key>
         <Key ID="STR_CAV_Map_fTMarkers_Module_DisplayName">
            <English>Fireteam Markers</English>
@@ -110,7 +86,7 @@
 			<English>Enable Fireteam Markers</English>
 		</Key>
 		<Key ID="STR_CAV_Map_fTMarkers_Enabled_Description">
-			<English>Should markers on map for group memebers be shown.</English>
+			<English>Should markers on map for group memebers be shown. Default: Yes</English>
 		</Key>
 		<Key ID="STR_CAV_Map_fTMarkers_Delay_DisplayName">
 			<English>Marker Update Delay</English>

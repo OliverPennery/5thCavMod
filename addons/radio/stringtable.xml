@@ -2,11 +2,11 @@
 <Project name="CAV">
     <Package name="Map">
         <Key ID="STR_CAV_Radio_Module_DisplayName">
-           <English>Radio Presets</English>
+           <English>Radio</English>
        </Key>
-       <Key ID="STR_CAV_Radio_Module_Description">
-           <English>This module contains functions to preset frequencies.</English>
-       </Key>
+       <Key ID="STR_CAV_Radio_Presets_Module_DisplayName">
+          <English>Presets</English>
+      </Key>
        <Key ID="STR_CAV_Radio_Player_Preset_Enable_DisplayName">
            <English>Player Radio Presets Enable</English>
        </Key>

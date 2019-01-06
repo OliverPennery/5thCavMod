@@ -13,4 +13,6 @@ class CfgPatches {
     };
 };
 
+
 #include "CfgEventHandlers.hpp"
+#include "CfgDebriefing.hpp"

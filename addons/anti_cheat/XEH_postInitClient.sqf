@@ -5,6 +5,6 @@ if (!hasInterface) exitWith {};
 
 LOG(MSG_INIT);
 
-if GVAR(AC_Enable) then{
-    [] call FUNC(arsenalChecker);
+if GVAR(AA_Enable) then{
+    [GVAR(AA_AK_Enable), GVAR(AA_AK_Amt)] call FUNC(arsenalChecker);
 };
