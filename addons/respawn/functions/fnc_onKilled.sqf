@@ -16,7 +16,7 @@ sleep 0.5;
 		if (playerRespawnTime > 900) then {
 			systemChat "Respawn Unavailable";
 		}else{
-			format ["%1 Seconds Remaining!", (playerRespawnTime)] remoteExec ["systemChat", player];
+			format ["%1 Seconds Until Respawn!", (playerRespawnTime)] remoteExec ["systemChat", player];
 		};
 	};
 
@@ -76,7 +76,7 @@ switch (GVAR(CustomRespawnMode)) do
 				([player,nil,true] call BIS_fnc_respawnTickets > 0)
 				)
 			};
-			setPlayerRespawnTime (playerRespawnTime + GVAR(NumberofRespawns) - 99999);
+			setPlayerRespawnTime (playerRespawnTime + GVAR(RespawnTime) - 99999);
 			waitUntil {sleep 0.5; (playerRespawnTime <= 0.6)};
 			[false] call ace_spectator_fnc_setSpectator;
 		};
