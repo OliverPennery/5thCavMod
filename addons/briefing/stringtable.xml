@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CAV">
+    <Package name="briefing">
+		<Key ID="STR_CAV_briefing_Module_DisplayName">
+			<English>Briefing</English>
+		</Key>
+		<Key ID="STR_CAV_briefing_Open_Roster">
+			<English>Open Roster</English>
+		</Key>
+		<Key ID="STR_CAV_briefing_Close_Roster">
+			<English>Close Roster</English>
+		</Key>
+
+   </Package>
+</Project>
