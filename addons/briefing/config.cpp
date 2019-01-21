@@ -14,4 +14,4 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgDialogs.hpp"
+#include "ui\roster.hpp"

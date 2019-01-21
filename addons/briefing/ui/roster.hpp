@@ -1,5 +1,9 @@
 #include "..\script_component.hpp"
-class GVAR(RscButton_31050): GVAR(RscButton)
+class RscListbox;
+class RscButton;
+class RscStructuredText;
+
+class GVAR(RscButton_31050): RscButton
 {
 	idc = 31050;
 	text = CSTRING(Open_Roster);
@@ -8,7 +12,7 @@ class GVAR(RscButton_31050): GVAR(RscButton)
 	w = 0.0721875 * safezoneW;
 	h = 0.022 * safezoneH;
 };
-class GVAR(RscStructuredText_31051): GVAR(RscStructuredText)
+class GVAR(RscStructuredText_31051): RscStructuredText
 {
 	idc = 31051;
 	x = 0.6 * safezoneW + safezoneX;
@@ -16,7 +20,7 @@ class GVAR(RscStructuredText_31051): GVAR(RscStructuredText)
 	w = 0.4125 * safezoneW;
 	h = 0.737 * safezoneH;
 };
-class GVAR(RscListBox_31052): GVAR(RscListBox)
+class GVAR(RscListBox_31052): RscListBox
 {
 	idc = 31052;
 	x = 0.6 * safezoneW + safezoneX;

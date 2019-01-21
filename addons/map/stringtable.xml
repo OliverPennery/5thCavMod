@@ -97,7 +97,7 @@
 		<Key ID="STR_CAV_Map_fTMarkers_ColorTeams_DisplayName">
 			<English>Marker Color Teams</English>
 		</Key>
-		<Key ID="STR_CAV_Map_fTMarkers_Delay_Description">
+		<Key ID="STR_CAV_Map_fTMarkers_ColorTeams_Description">
 			<English>Should fireteam markers respect color teams?</English>
 		</Key>
 
