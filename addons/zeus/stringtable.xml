@@ -16,5 +16,47 @@
 		<Key ID="STR_CAV_Zeus_ModuleDropBomb_Height_Tooltip">
 			<English>How far above the ground should the bomb drop</English>
 		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleSpawnGrenade_DisplayName">
+			<English>Spawn Grenade</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleSpawnGrenade_Type">
+			<English>Grenade Type</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleSpawnGrenade_Type_Tooltip">
+			<English>Choose the type of grenade to spawn.</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleMissileTarget_DisplayName">
+			<English>Missile Target</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleMissileTarget_Name">
+			<English>Target Name</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleMissileTarget_Name_Tooltip">
+			<English>What the target is named, used for launching missiles.</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleLaunchMissile_DisplayName">
+			<English>Launch Missile</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleLaunchMissile_Type">
+			<English>Missile Type</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleLaunchMissile_Type_Tooltip">
+			<English>Choose the type of missile to launch.</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleLaunchMissile_Target">
+			<English>Missile Target</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_ModuleLaunchMissile_Target_Tooltip">
+			<English>Choose the target the missile will aim at.</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_Target_Exists">
+			<English>A target with that name already exists.</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_No_Target_Exists">
+			<English>Please choose a valid target.</English>
+		</Key>
+    <Key ID="STR_CAV_Zeus_OrdnanceGroup">
+			<English>5thCav Ordnance</English>
+		</Key>
    </Package>
 </Project>

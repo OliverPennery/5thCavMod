@@ -18,5 +18,25 @@ class CfgVehicles {
         icon = "a3\ui_f\data\IGUI\Cfg\simpleTasks\types\destroy_ca.paa";
         curatorInfoType = QGVAR(RscDropBomb);
     };
-	
+    class GVAR(moduleSpawnGrenade): GVAR(moduleBase) {
+        curatorCanAttach = 0;
+        category = GVAR(Ordnance);
+        displayName = CSTRING(ModuleSpawnGrenade_DisplayName);
+        icon = "a3\ui_f\data\IGUI\Cfg\simpleTasks\types\destroy_ca.paa";
+        curatorInfoType = QGVAR(RscSpawnGrenade);
+    };
+    class GVAR(moduleMissileTarget): GVAR(moduleBase) {
+        curatorCanAttach = 0;
+        category = GVAR(Ordnance);
+        displayName = CSTRING(ModuleMissileTarget_DisplayName);
+        icon = "a3\ui_f\data\IGUI\Cfg\simpleTasks\types\destroy_ca.paa";
+        curatorInfoType = QGVAR(RscMissileTarget);
+    };
+    class GVAR(moduleLaunchMissile): GVAR(moduleBase) {
+        curatorCanAttach = 0;
+        category = GVAR(Ordnance);
+        displayName = CSTRING(ModuleLaunchMissile_DisplayName);
+        icon = "a3\ui_f\data\IGUI\Cfg\simpleTasks\types\destroy_ca.paa";
+        curatorInfoType = QGVAR(RscLaunchMissile);
+    };
 };

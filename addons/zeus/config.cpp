@@ -4,8 +4,10 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-			GVAR(moduleDropBomb)
-		
+			  GVAR(moduleDropBomb),
+        GVAR(moduleLaunchMissile),
+        GVAR(moduleSpawnGrenade),
+        GVAR(moduleMissileTarget)
 		};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
