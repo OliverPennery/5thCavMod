@@ -10,11 +10,15 @@ if (GVAR(CustomRespawnMode) != 3) then {
 	setPlayerRespawnTime GVAR(RespawnTime);
 };
 
-if (GVAR(CustomRespawnMode) == 1) then {
-	if (isNull call (compile GVAR(medVicString))) then {
+if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
+	_medVic = call (compile GVAR(medVicString));
+	//systemChat str(_medvic);
+	if (isNull _medVic) then {
 		systemchat localize LSTRING(medVic_errorMessage);
 	} else {
-		GVAR(medVic) = call (compile GVAR(medVicString));
+		GVAR(medVic) = _medVic;
 	};
-	call FUNC(medDeploy);
+	if (GVAR(CustomRespawnMode) == 1) then {
+		call FUNC(medDeploy);
+	};
 };

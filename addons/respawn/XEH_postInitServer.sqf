@@ -2,11 +2,14 @@
 
 LOG(MSG_INIT);
 
-if (GVAR(CustomRespawnMode) == 1) then {
-	if (isNull call (compile GVAR(medVicString))) then {
-		systemChat "medVic not found";
+if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
+	_medVic = call (compile GVAR(medVicString));
+	if (isNull _medVic) then {
+		systemchat localize LSTRING(medVic_errorMessage);
 	} else {
-		GVAR(medVic) = call (compile GVAR(medVicString));
+		GVAR(medVic) = _medVic;
 	};
-	GVAR(medVic) setVariable ["deployed",false,true];
+	if (GVAR(CustomRespawnMode) == 1) then {
+		GVAR(medVic) setVariable ["deployed",false,true];
+	};
 };

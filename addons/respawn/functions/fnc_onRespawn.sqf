@@ -17,6 +17,5 @@ switch (GVAR(CustomRespawnMode)) do
 if ([player,0,true] call BIS_fnc_respawnTickets == 1) then {
 	"1 Respawn Remaining!" remoteExec ["systemChat", player];
 } else {
-	format ["%1 Respawns Remaining!", ([player,0,true] call BIS_fnc_respawnTickets)] remoteExec ["systemChat", player];
+	format ["%1 Respawns Remaining!", ([player,0,true] call BIS_fnc_respawnTickets)] remoteExecCall ["systemChat", player];
 };
-setPlayerRespawnTime GVAR(RespawnTime);
