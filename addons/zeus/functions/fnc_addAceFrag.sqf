@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_projectile","_ammo","_startPos"]
+params ["_projectile","_ammo","_startPos"];
 
 _dummygrp = createGroup sideLogic;
 _dummy = _dummygrp createUnit ["Logic", _startPos, [], 0, "CAN_COLLIDE"];
