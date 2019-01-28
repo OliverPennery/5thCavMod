@@ -7,6 +7,9 @@
 		<Key ID="STR_CAV_Respawn_Core_Module_DisplayName">
 			<English>Core Respawn Settings</English>
 		</Key>
+    <Key ID="STR_CAV_Respawn_3DEN_Category">
+			<English>5thCav Respawn</English>
+		</Key>
 		<Key ID="STR_CAV_Respawn_Vehicle_Module_DisplayName">
 			<English>Respawn Vehicle Settings</English>
 		</Key>
@@ -29,7 +32,7 @@
 			<English>Respawn Mode</English>
 		</Key>
 		<Key ID="STR_CAV_Respawn_CustomRespawnMode_Description">
-			<English>Custom Respawn Modes</English>
+			<English>Custom Respawn Modes. This setting and all other 5thCav Respawn Settings have no effect unless cav_respawn_5thCavRespawn is set in respawnTemplates.</English>
 		</Key>
 		<Key ID="STR_CAV_Respawn_Disabled_errorMessage">
 			<English>Custom Respawn Disabled. Choose a different Respawn Template or set a custom respawn mode in Addon Options.</English>
@@ -61,6 +64,5 @@
 		<Key ID="STR_CAV_Respawn_medVicDeployTime_Description">
 			<English>Time to Deploy Medical Vehicle. Only applicable when using Medical Vehicle Respawn Mode.</English>
 		</Key>
-
    </Package>
 </Project>
