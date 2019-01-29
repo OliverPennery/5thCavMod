@@ -1,5 +1,57 @@
 
 [
+    QGVAR(requireGPSTransmit),
+    "CHECKBOX",
+    [localize LSTRING(requireGPSTransmit_DisplayName), localize LSTRING(requireGPSTransmit_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(GPS_Module_DisplayName)],
+    false,
+    true,
+    {
+        params ["_value"];
+        GVAR(requireGPSTransmit) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(requireGPSReceive),
+    "CHECKBOX",
+    [localize LSTRING(requireGPSReceive_DisplayName), localize LSTRING(requireGPSReceive_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(GPS_Module_DisplayName)],
+    false,
+    true,
+    {
+        params ["_value"];
+        GVAR(requireGPSReceive) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(giveGPS),
+    "LIST",
+    [localize LSTRING(giveGPS_DisplayName), localize LSTRING(giveGPS_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(GPS_Module_DisplayName)],
+    [[0,1,2],[LSTRING(giveGPS_0),LSTRING(giveGPS_1),LSTRING(giveGPS_2)],0],
+    true,
+    {
+        params ["_value"];
+        GVAR(giveGPS) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(giveGPSAI),
+    "CHECKBOX",
+    [localize LSTRING(giveGPSAI_DisplayName), localize LSTRING(giveGPSAI_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(GPS_Module_DisplayName)],
+    false,
+    true,
+    {
+        params ["_value"];
+        GVAR(giveGPSAI) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(BFT_Enable),
     "CHECKBOX",
     [localize LSTRING(BFT_Enable_DisplayName), localize LSTRING(BFT_Enable_Description)],

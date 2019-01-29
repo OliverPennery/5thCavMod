@@ -33,6 +33,8 @@ Example:
 
  	bFTMarkers = [];
 
+  if (GVAR(requireGPSReceive) && !([player] call FUNC(isGPS))) exitWith {};
+
  	if ((!isNull player) and (alive player)) then {
 
  		private _groupsToDrawMarkers = [];
@@ -48,6 +50,12 @@ Example:
  				} count units _x > 0;
  			};
  		};
+
+    if (GVAR(requireGPSTransmit)) then {
+      _groupsToDrawMarkers = _groupsToDrawMarkers select {
+        [leader _x] call FUNC(isGPS);
+      };
+    };
 
  		{
  			//systemChat str(_x);

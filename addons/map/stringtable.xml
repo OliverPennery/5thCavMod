@@ -2,104 +2,139 @@
 <Project name="CAV">
     <Package name="Map">
         <Key ID="STR_CAV_Map_Module_DisplayName">
-           <English>Map</English>
+            <English>Map</English>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Module_DisplayName">
-           <English>Blue Force Tracker.</English>
+            <English>Blue Force Tracker.</English>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Enable_DisplayName">
-           <English>BFT Enable</English>
-           <German>BFT aktivieren</German>
-           <Portuguese>RFA ativo</Portuguese>
-           <Polish>Aktywuj BFT</Polish>
-           <Czech>Povolit BFT</Czech>
-           <Spanish>Activar BFT</Spanish>
-           <French>Activer le Suivi des Forces Alliées</French>
-           <Hungarian>BFT engedélyezése</Hungarian>
-           <Russian>Включить BFT</Russian>
-           <Italian>Abilita BFT</Italian>
+            <English>BFT Enable</English>
+            <German>BFT aktivieren</German>
+            <Portuguese>RFA ativo</Portuguese>
+            <Polish>Aktywuj BFT</Polish>
+            <Czech>Povolit BFT</Czech>
+            <Spanish>Activar BFT</Spanish>
+            <French>Activer le Suivi des Forces Alliées</French>
+            <Hungarian>BFT engedélyezése</Hungarian>
+            <Russian>Включить BFT</Russian>
+            <Italian>Abilita BFT</Italian>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Enable_Description">
-           <English>Enable Blue Force Tracking. Default: Yes</English>
-           <German>Aktiviert Blue Force Tracking. Standard: Ja</German>
-           <Portuguese>Ativa Rastreio de Forças Azuis. Padrão: sim</Portuguese>
-           <Polish>Aktywuj Blue Force Tracking. Domyślnie: tak</Polish>
-           <Czech>Povolit Blue Force Tracking. Výchozí: Ano</Czech>
-           <Spanish>Activar Blue Force Tracking. Por defecto: sí</Spanish>
-           <French>Active le SFA. Défaut : Oui</French>
-           <Hungarian>Blue Force követés engedélyezése. Alapértelmezett: Igen</Hungarian>
-           <Russian>Включает систему служения BFT. По-умолчанию: да</Russian>
-           <Italian>Abilita Blue Force Tracking. Default: sì</Italian>
+            <English>Enable Blue Force Tracking. Default: Yes</English>
+            <German>Aktiviert Blue Force Tracking. Standard: Ja</German>
+            <Portuguese>Ativa Rastreio de Forças Azuis. Padrão: sim</Portuguese>
+            <Polish>Aktywuj Blue Force Tracking. Domyślnie: tak</Polish>
+            <Czech>Povolit Blue Force Tracking. Výchozí: Ano</Czech>
+            <Spanish>Activar Blue Force Tracking. Por defecto: sí</Spanish>
+            <French>Active le SFA. Défaut : Oui</French>
+            <Hungarian>Blue Force követés engedélyezése. Alapértelmezett: Igen</Hungarian>
+            <Russian>Включает систему служения BFT. По-умолчанию: да</Russian>
+            <Italian>Abilita Blue Force Tracking. Default: sì</Italian>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Delay_DisplayName">
-           <English>Interval</English>
-           <Polish>Interwał</Polish>
-           <Spanish>Intervalo</Spanish>
-           <German>Intervall</German>
-           <Czech>Interval</Czech>
-           <Portuguese>Intervalo</Portuguese>
-           <French>Intervalle</French>
-           <Hungarian>Intervallum</Hungarian>
-           <Russian>Интервал</Russian>
-           <Italian>Intervallo</Italian>
+            <English>Interval</English>
+            <Polish>Interwał</Polish>
+            <Spanish>Intervalo</Spanish>
+            <German>Intervall</German>
+            <Czech>Interval</Czech>
+            <Portuguese>Intervalo</Portuguese>
+            <French>Intervalle</French>
+            <Hungarian>Intervallum</Hungarian>
+            <Russian>Интервал</Russian>
+            <Italian>Intervallo</Italian>
         </Key>
         <Key ID="STR_CAV_Map_BFT_Delay_Description">
-           <English>How often the markers should be refreshed (in seconds)</English>
-           <Polish>Jak często markery powinny być odświeżane (w sekundach)</Polish>
-           <Spanish>Frecuencia de actualización de los marcadores (en segundos)</Spanish>
-           <German>Wie oft sollen die Markierungen aktualisiert werden (in Sekunden)</German>
-           <Czech>Jak často budou značky aktualizovány (v sekundách)</Czech>
-           <Portuguese>Frequência em que os marcadores devem ser atualizados (em segundos)</Portuguese>
-           <French>Fréquence de rafraîchissement des marqueurs ?</French>
-           <Hungarian>Milyen gyakran frissüljenek a jelölők (másodpercben)</Hungarian>
-           <Russian>Как часто должны обновляться маркеры (в секундах)</Russian>
-           <Italian>Quanto spesso vengono aggiornati i marker (in secondi)</Italian>
+            <English>How often the markers should be refreshed (in seconds)</English>
+            <Polish>Jak często markery powinny być odświeżane (w sekundach)</Polish>
+            <Spanish>Frecuencia de actualización de los marcadores (en segundos)</Spanish>
+            <German>Wie oft sollen die Markierungen aktualisiert werden (in Sekunden)</German>
+            <Czech>Jak často budou značky aktualizovány (v sekundách)</Czech>
+            <Portuguese>Frequência em que os marcadores devem ser atualizados (em segundos)</Portuguese>
+            <French>Fréquence de rafraîchissement des marqueurs ?</French>
+            <Hungarian>Milyen gyakran frissüljenek a jelölők (másodpercben)</Hungarian>
+            <Russian>Как часто должны обновляться маркеры (в секундах)</Russian>
+            <Italian>Quanto spesso vengono aggiornati i marker (in secondi)</Italian>
         </Key>
         <Key ID="STR_CAV_Map_BFT_HideAi_DisplayName">
-           <English>Hide AI groups</English>
-           <Polish>Ukryj grupy AI</Polish>
-           <Spanish>¿Ocultar grupos de IA</Spanish>
-           <German>KI-Gruppen verstecken</German>
-           <Czech>Skrýt AI skupiny</Czech>
-           <Portuguese>Esconder grupos de IA</Portuguese>
-           <French>Cacher les groupes d'IA</French>
-           <Hungarian>AI csoportok elrejtése</Hungarian>
-           <Russian>Скрыть группы ботов</Russian>
-           <Italian>Nascondere gruppi IA</Italian>
+            <English>Hide AI groups</English>
+            <Polish>Ukryj grupy AI</Polish>
+            <Spanish>¿Ocultar grupos de IA</Spanish>
+            <German>KI-Gruppen verstecken</German>
+            <Czech>Skrýt AI skupiny</Czech>
+            <Portuguese>Esconder grupos de IA</Portuguese>
+            <French>Cacher les groupes d'IA</French>
+            <Hungarian>AI csoportok elrejtése</Hungarian>
+            <Russian>Скрыть группы ботов</Russian>
+            <Italian>Nascondere gruppi IA</Italian>
         </Key>
         <Key ID="STR_CAV_Map_BFT_HideAi_Description">
-           <English>Hide markers for 'AI only' groups?</English>
-           <Polish>Ukrywa markery dla grup złożonych tylko z AI</Polish>
-           <Spanish>Oculta las marcas de grupos 'solo IA'</Spanish>
-           <German>Verstecke Marker für "nur KI"-Gruppen?</German>
-           <Czech>Skrýt značky pouze pro AI skupiny?</Czech>
-           <Portuguese>Esconder marcadores que pertencem ao grupo de IA?</Portuguese>
-           <French>Cacher les marqueurs pour les groupes d'IA seulement ?</French>
-           <Hungarian>Jelölők elrejtése "csak AI" csoportoknál?</Hungarian>
-           <Russian>Скрыть маркеры групп, которые состоят полностью из ботов?</Russian>
-           <Italian>Nascondi markers per gruppi di sole IA?</Italian>
+            <English>Hide markers for 'AI only' groups?</English>
+            <Polish>Ukrywa markery dla grup złożonych tylko z AI</Polish>
+            <Spanish>Oculta las marcas de grupos 'solo IA'</Spanish>
+            <German>Verstecke Marker für "nur KI"-Gruppen?</German>
+            <Czech>Skrýt značky pouze pro AI skupiny?</Czech>
+            <Portuguese>Esconder marcadores que pertencem ao grupo de IA?</Portuguese>
+            <French>Cacher les marqueurs pour les groupes d'IA seulement ?</French>
+            <Hungarian>Jelölők elrejtése "csak AI" csoportoknál?</Hungarian>
+            <Russian>Скрыть маркеры групп, которые состоят полностью из ботов?</Russian>
+            <Italian>Nascondi markers per gruppi di sole IA?</Italian>
         </Key>
         <Key ID="STR_CAV_Map_fTMarkers_Module_DisplayName">
-           <English>Fireteam Markers</English>
+            <English>Fireteam Markers</English>
         </Key>
-		<Key ID="STR_CAV_Map_fTMarkers_Enabled_DisplayName">
-			<English>Enable Fireteam Markers</English>
-		</Key>
-		<Key ID="STR_CAV_Map_fTMarkers_Enabled_Description">
-			<English>Should markers on map for group memebers be shown. Default: Yes</English>
-		</Key>
-		<Key ID="STR_CAV_Map_fTMarkers_Delay_DisplayName">
-			<English>Marker Update Delay</English>
-		</Key>
-		<Key ID="STR_CAV_Map_fTMarkers_Delay_Description">
-			<English>How often the markers are refreshed (in sec).</English>
-		</Key>
-		<Key ID="STR_CAV_Map_fTMarkers_ColorTeams_DisplayName">
-			<English>Marker Color Teams</English>
-		</Key>
-		<Key ID="STR_CAV_Map_fTMarkers_ColorTeams_Description">
-			<English>Should fireteam markers respect color teams?</English>
-		</Key>
-
-   </Package>
+        <Key ID="STR_CAV_Map_fTMarkers_Enabled_DisplayName">
+            <English>Enable Fireteam Markers</English>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_Enabled_Description">
+            <English>Should markers on map for group memebers be shown. Default: Yes</English>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_Delay_DisplayName">
+            <English>Marker Update Delay</English>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_Delay_Description">
+            <English>How often the markers are refreshed (in sec).</English>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_ColorTeams_DisplayName">
+            <English>Marker Color Teams</English>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_ColorTeams_Description">
+            <English>Should fireteam markers respect color teams?</English>
+        </Key>
+        <Key ID="STR_CAV_Map_requireGPSTransmit_DisplayName">
+            <English>Require GPS to Transmit</English>
+        </Key>
+        <Key ID="STR_CAV_Map_requireGPSTransmit_Description">
+            <English>Do units need a GPS to show their position on the map?</English>
+        </Key>
+        <Key ID="STR_CAV_Map_requireGPSReceive_DisplayName">
+            <English>Require GPS to Recieve</English>
+        </Key>
+        <Key ID="STR_CAV_Map_requireGPSReceive_Description">
+            <English>Do units need a GPS to see markers of others?</English>
+        </Key>
+        <Key ID="STR_CAV_Map_giveGPS_DisplayName">
+            <English>Give GPS</English>
+        </Key>
+        <Key ID="STR_CAV_Map_giveGPS_Description">
+            <English>Should GPS be given </English>
+        </Key>
+        <Key ID="STR_CAV_Map_giveGPS_0">
+            <English>Do not give GPS</English>
+        </Key>
+        <Key ID="STR_CAV_Map_giveGPS_1">
+            <English>Give GPS to Squad Leaders</English>
+        </Key>
+        <Key ID="STR_CAV_Map_giveGPS_2">
+            <English>Give GPS to everyone</English>
+        </Key>
+        <Key ID="STR_CAV_Map_GPS_Module_DisplayName">
+            <English>GPS</English>
+        </Key>
+        <Key ID="STR_CAV_Map_giveGPSAI_DisplayName">
+            <English>Give GPS AI</English>
+        </Key>
+        <Key ID="STR_CAV_Map_giveGPSAI_Description">
+            <English>Should AI be given GPS? They are affected by GPS receive/transmit settings.</English>
+        </Key>
+    </Package>
 </Project>
