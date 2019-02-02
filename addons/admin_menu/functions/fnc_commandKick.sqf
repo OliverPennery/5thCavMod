@@ -17,6 +17,6 @@ if ((call BIS_fnc_admin) != 0) then {
         [format ["Kicked %1", name player, _unit], 2] call FUNC(clientLog);
         [format ["%1 Kicked %2", name player, _unit], 2, true] call FUNC(log);
         
-        ['bill', (format ['#kick %1', _unit])] remoteExecCall ["serverCommand", 2];
+        [GVAR(ServerCommandPassword), (format ['#kick %1', _unit])] remoteExecCall ["serverCommand", 2];
         }];
 };

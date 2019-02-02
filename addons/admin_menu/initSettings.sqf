@@ -13,6 +13,19 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(ServerCommandPassword),
+    "EDITBOX",
+    [localize LSTRING(ServerCommandPassword_DisplayName), localize LSTRING(ServerCommandPassword_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(AM_Module_DisplayName)],
+    "",
+    true,
+    {
+        params ["_value"];
+        GVAR(ServerCommandPassword) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(AM_Admin_UID),
     "EDITBOX",
     [localize LSTRING(AM_Admin_UID_DisplayName), localize LSTRING(AM_Admin_UID_Description)],

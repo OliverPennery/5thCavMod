@@ -13,6 +13,12 @@
         <Key ID="STR_CAV_Admin_Menu_AM_Enable_Description">
            <English>Enable Admin Menu. Default: Yes</English>
         </Key>
+        <Key ID="STR_CAV_Admin_Menu_ServerCommandPassword_DisplayName">
+           <English>Server Command Password</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_ServerCommandPassword_Description">
+           <English>The serverCommandPassword Whcih Allows All Admins To Use Commands</English>
+        </Key>
         <Key ID="STR_CAV_Admin_Menu_AM_Admin_UID_DisplayName">
            <English>Admin UIDs</English>
         </Key>

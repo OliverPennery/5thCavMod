@@ -6,7 +6,7 @@ params ["_btnControl"];
     _btnControl ctrlAddEventHandler["ButtonClick", {serverCommand format ['#mission %1', (ctrlText ((ctrlParent (_this # 0)) displayCtrl 1400))];}];
 
 }else{
-    _btnControl ctrlAddEventHandler["ButtonClick", {['bill', (format ['#mission %1', (ctrlText ((ctrlParent (_this # 0)) displayCtrl 1400))])] remoteExecCall ["serverCommand", 2];}];
+    _btnControl ctrlAddEventHandler["ButtonClick", {[GVAR(ServerCommandPassword), (format ['#mission %1', (ctrlText ((ctrlParent (_this # 0)) displayCtrl 1400))])] remoteExecCall ["serverCommand", 2];}];
 }; */
 
 if ((call BIS_fnc_admin) != 0) then {
@@ -24,6 +24,6 @@ if ((call BIS_fnc_admin) != 0) then {
         [format ["Ran #mission %1", _cmd], 2] call FUNC(clientLog);
         [format ["%1 Ran #mission %2", name player, _cmd], 2, true] call FUNC(log);
 
-        ['bill', (format ['#mission %1', _cmd])] remoteExecCall ["serverCommand", 2];
+        [GVAR(ServerCommandPassword), (format ['#mission %1', _cmd])] remoteExecCall ["serverCommand", 2];
         }];
 };

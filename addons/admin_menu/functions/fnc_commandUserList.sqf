@@ -6,7 +6,7 @@ params ["_btnControl"];
     _btnControl ctrlAddEventHandler["ButtonClick", {serverCommand '#userlist';}];
 
 }else{
-    _btnControl ctrlAddEventHandler["ButtonClick", {['bill', '#userlist'] remoteExecCall ["serverCommand", 2];}];
+    _btnControl ctrlAddEventHandler["ButtonClick", {[GVAR(ServerCommandPassword), '#userlist'] remoteExecCall ["serverCommand", 2];}];
 }; */
 
 if ((call BIS_fnc_admin) != 0) then {
@@ -22,6 +22,6 @@ if ((call BIS_fnc_admin) != 0) then {
         ["Ran #userlist", 2] call FUNC(clientLog);
         [format ["%1 Ran #userlist", name player], 2, true] call FUNC(log);
         
-        ['bill', '#userlist'] remoteExecCall ["serverCommand", 2];
+        [GVAR(ServerCommandPassword), '#userlist'] remoteExecCall ["serverCommand", 2];
         }];
 };
