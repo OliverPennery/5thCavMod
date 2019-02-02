@@ -3,12 +3,13 @@
 params ["_logic","_pos","_type","_tarName"];
 
 _alltargets = allMissionObjects QGVAR(moduleMissileTarget);
-_target = (_alltargets select {name _x == _tarName}) select 0;
-if (_tarName == "" || isNull _target) exitWith {
+_targets = _alltargets select {name _x == _tarName};
+if (_targets isEqualTo [] || {isNull (_targets select 0)}) exitWith {
   systemChat (localize LSTRING(No_Target_Exists));
   deleteVehicle _logic;
 };
 
+_target = _targets select 0;
 _destination = getPosASL _target;
 _launchPos = [_pos select 0, _pos select 1, (_pos select 2) + 3];
 _launchPosATL = ASLToATL _launchPos;
