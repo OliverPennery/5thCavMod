@@ -8,13 +8,13 @@
  *
  * Arguments:
  * 0: Item <STRING>
+ * 1: Mode <INT>
  *
  * Return Value:
- * 0: Type ("weapon", "item", "magazine", "") <STRING>
- * 1: Item Description <STRING>
+ * 0: Category (0,1,2,3) <INT>
  *
  * Example:
- * ["tire"] call ace_common_fnc_getItemType
+ * ["tire"] call cav_admin_menu_fnc_getItemClass
  *
  * Public: Yes
  */
