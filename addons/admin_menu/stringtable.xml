@@ -32,10 +32,10 @@
            <English>The Menu Which Is Opened By Default.</English>
         </Key>
         <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_Name_Description">
-           <English>UIDs Of Players With Access To Menu.</English>
+           <English>Name of the Custom Button.</English>
         </Key>
         <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_Func_Description">
-           <English>Custom</English>
+           <English>String which is call compiled on Menu Load in a ButtonClick EH. \nparams [_unit:selected player, (_this # 0): button control]</English>
         </Key>
         <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_1_Name_DisplayName">
            <English>Custom Button 1 Name.</English>
