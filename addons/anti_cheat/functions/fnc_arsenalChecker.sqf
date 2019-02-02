@@ -53,7 +53,7 @@ _biArs = [{
 //--- Check for ACE Arsenal
 _aceArs = ["ace_arsenal_displayOpened", {
     _thisArgs params ["_autoKick", "_autoKickAmt"];
-    systemChat format ["%1 %2", _autoKick, _autoKickAmt];
+    //systemChat format ["%1 %2", _autoKick, _autoKickAmt];
     if ((CBA_missionTime - (player getVariable QGVAR(aceArsLast)) > 3) and
          (((player getVariable QGVAR(aceArsAmt)) < _autoKickAmt) or
          (!(_autoKick)))) then {

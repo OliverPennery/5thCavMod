@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CAV">
+    <Package name="Admin_Menu">
+        <Key ID="STR_CAV_Admin_Menu_Module_DisplayName">
+           <English>Admin Menu</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Module_DisplayName">
+          <English>Admin Menu</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Enable_DisplayName">
+           <English>Admin Menu Enable</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Enable_Description">
+           <English>Enable Admin Menu. Default: Yes</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Admin_UID_DisplayName">
+           <English>Admin UIDs</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Admin_UID_Description">
+           <English>UIDs Of Players With Access To Menu.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Default_Menu_DisplayName">
+           <English>Default Menu</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Default_Menu_Description">
+           <English>The Menu Which Is Opened By Default.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_Name_Description">
+           <English>UIDs Of Players With Access To Menu.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_Func_Description">
+           <English>Custom</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_1_Name_DisplayName">
+           <English>Custom Button 1 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_1_Func_DisplayName">
+           <English>Custom Button 1 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_2_Name_DisplayName">
+           <English>Custom Button 2 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_2_Func_DisplayName">
+           <English>Custom Button 2 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_3_Name_DisplayName">
+           <English>Custom Button 3 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_3_Func_DisplayName">
+           <English>Custom Button 3 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_4_Name_DisplayName">
+           <English>Custom Button 4 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_4_Func_DisplayName">
+           <English>Custom Button 4 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_5_Name_DisplayName">
+           <English>Custom Button 5 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_5_Func_DisplayName">
+           <English>Custom Button 5 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_6_Name_DisplayName">
+           <English>Custom Button 6 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_6_Func_DisplayName">
+           <English>Custom Button 6 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_7_Name_DisplayName">
+           <English>Custom Button 7 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_7_Func_DisplayName">
+           <English>Custom Button 7 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_8_Name_DisplayName">
+           <English>Custom Button 8 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_8_Func_DisplayName">
+           <English>Custom Button 8 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_9_Name_DisplayName">
+           <English>Custom Button 9 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_9_Func_DisplayName">
+           <English>Custom Button 9 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_10_Name_DisplayName">
+           <English>Custom Button 10 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_10_Func_DisplayName">
+           <English>Custom Button 10 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_11_Name_DisplayName">
+           <English>Custom Button 11 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_11_Func_DisplayName">
+           <English>Custom Button 11 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_12_Name_DisplayName">
+           <English>Custom Button 12 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_12_Func_DisplayName">
+           <English>Custom Button 12 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_13_Name_DisplayName">
+           <English>Custom Button 13 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_13_Func_DisplayName">
+           <English>Custom Button 13 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_14_Name_DisplayName">
+           <English>Custom Button 14 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_14_Func_DisplayName">
+           <English>Custom Button 14 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_15_Name_DisplayName">
+           <English>Custom Button 15 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_15_Func_DisplayName">
+           <English>Custom Button 15 Function.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_16_Name_DisplayName">
+           <English>Custom Button 16 Name.</English>
+        </Key>
+        <Key ID="STR_CAV_Admin_Menu_AM_Func_Btn_16_Func_DisplayName">
+           <English>Custom Button 16 Function.</English>
+        </Key>
+   </Package>
+</Project>

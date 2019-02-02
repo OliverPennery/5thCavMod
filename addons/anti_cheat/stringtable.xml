@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CAV">
-    <Package name="Map">
+    <Package name="Anti_Cheat">
         <Key ID="STR_CAV_Anti_Cheat_Ending_AC_Title">
            <English>Personal Arsenal Dectected</English>
         </Key>
