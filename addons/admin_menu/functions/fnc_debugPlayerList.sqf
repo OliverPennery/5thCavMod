@@ -18,8 +18,12 @@ _handle = [
     {
     	if (isPlayer _x) then
     	{
+            private _id = (_x call BIS_fnc_netId);
     		private _index = _control lbAdd (name _x);
-            _control lbSetData [_index, (_x call BIS_fnc_netId)];
+            _control lbSetData [_index, _id];
+
+            private _playersZeusModule = format ["cav_admin_menu_zeusModule_%1", ((_id splitString ":") joinString "_")];
+            private _zeusModuleIndex = (missionNamespace getVariable [QGVAR(zeusModules), []]) find _playersZeusModule;
 
             private _text = "";
 
@@ -31,7 +35,7 @@ _handle = [
             _text = _text + (_toggleFormat select parseNumber (_x getVariable ["ace_captives_isHandcuffed", false]));
             _text = _text + (_toggleFormat select parseNumber ([_x] call ace_medical_fnc_isMedic));
             _text = _text + (_toggleFormat select parseNumber ([_x] call ace_repair_fnc_isEngineer));
-            _text = _text + (_toggleFormat select parseNumber (false));
+            _text = _text + (_toggleFormat select parseNumber (if (_zeusModuleIndex != -1) then {true}else{false}));
 
             _control lbSetTextRight  [_index, _text];
             if !(alive _x) then{
