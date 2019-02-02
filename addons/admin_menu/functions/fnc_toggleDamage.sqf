@@ -23,12 +23,14 @@ if (count _unit == 0) then{
     if (!isDamageAllowed _unit) then
     {
         _unit allowDamage true;
+        [_unit, true] remoteExecCall ["allowDamage", _unit];
 
         [format ["Toggled Damage On For %1", (name _unit)], 2] call FUNC(clientLog);
         [format ["%1 Toggled Damage On For %2", name player, (name _unit)], 2, true] call FUNC(log);
     }else {
         _unit allowDamage false;
-        
+        [_unit, false] remoteExecCall ["allowDamage", _unit];
+
         [format ["Toggled Damage Off For %1", (name _unit)], 2] call FUNC(clientLog);
         [format ["%1 Toggled Damage Off For %2", name player, (name _unit)], 2, true] call FUNC(log);
     };

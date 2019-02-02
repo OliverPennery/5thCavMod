@@ -21,11 +21,15 @@ if (count _unit == 0) then{
     _unit = _unit call BIS_fnc_objectFromNetId;
     if (!captive _unit) then
     {
-        _unit setCaptive true;
-        [format ["Toggled Targeting Of for %1", (name _unit)], 2] call FUNC(clientLog);
-        [format ["%1 Toggled Targeting Of for %2", name player, (name _unit)], 2, true] call FUNC(log);
+        //_unit setCaptive true;
+        [_unit, true] remoteExecCall ["setCaptive", _unit];
+
+        [format ["Toggled Targeting Off for %1", (name _unit)], 2] call FUNC(clientLog);
+        [format ["%1 Toggled Targeting Off for %2", name player, (name _unit)], 2, true] call FUNC(log);
     }else {
         _unit setCaptive false;
+        [_unit, false] remoteExecCall ["setCaptive", _unit];
+
         [format ["Toggled Targeting On for %1", (name _unit)], 2] call FUNC(clientLog);
         [format ["%1 Toggled Targeting On for %2", name player, (name _unit)], 2, true] call FUNC(log);
     };
