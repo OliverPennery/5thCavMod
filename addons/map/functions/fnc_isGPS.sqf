@@ -1,11 +1,13 @@
 params ["_unit"];
 
-private _items = assignedItems _unit;
-_items append (items _unit);
-private _gps = false;
-
-if ("ItemMap" in _items && ("ItemGPS" in _items || "ACE_microDAGR" in _items || "ACE_DAGR" in _items)) then {
-  _gps = true;
+if ("ItemGPS" in assignedItems _unit) exitwith {
+  true
 };
 
-_gps
+private _items = items _unit;
+
+if ("ACE_microDAGR" in _items || "ACE_DAGR" in _items) exitwith {
+  true
+};
+
+false

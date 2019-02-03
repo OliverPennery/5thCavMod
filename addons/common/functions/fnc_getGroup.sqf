@@ -2,9 +2,8 @@
 
 params ["_group"];
 
-private ["_x", "_result"];
-_x = (str(_group) splitString " " joinString "");
+private _groupId = groupId _group;
 
-if (count (_x splitString "-") == 1) exitwith{
-	call(compile("CAV_" + (_x select [1])))
+if (count (_groupId splitString "-") == 1) exitwith{
+	call(compile("CAV_" + _groupId))
 };
