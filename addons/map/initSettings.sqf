@@ -108,7 +108,7 @@
     "SLIDER",
     [localize LSTRING(fTMarkers_Delay_DisplayName), localize LSTRING(fTMarkers_Delay_Description)],
     [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(fTMarkers_Module_DisplayName)],
-    [0.2,20,1,1],
+    [0.1,20,1,1],
     nil,
     {
         params ["_value"];
@@ -126,5 +126,18 @@
     {
         params ["_value"];
         GVAR(fTMarkers_ColorTeams) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(fTMarkers_Type),
+    "CHECKBOX",
+    [localize LSTRING(fTMarkers_Type_DisplayName), localize LSTRING(fTMarkers_Type_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(fTMarkers_Module_DisplayName)],
+    [true],
+    nil,
+    {
+        params ["_value"];
+        GVAR(fTMarkers_Type) = _value;
     }
 ] call CBA_Settings_fnc_init;

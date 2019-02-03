@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cav_main", "cav_common"};
+        requiredAddons[] = {"A3_Ui_F_Data","cav_main", "cav_common"};
         author = "";
         authors[] = {"Brecon, Field"};
         VERSION_CONFIG;
@@ -14,3 +14,5 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgMarkerColors.hpp"
+#include "CfgMarkers.hpp"

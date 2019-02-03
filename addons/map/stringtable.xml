@@ -136,5 +136,50 @@
         <Key ID="STR_CAV_Map_giveGPSAI_Description">
             <English>Should AI be given GPS? They are affected by GPS receive/transmit settings.</English>
         </Key>
+        <Key ID="STR_CAV_Map_ColorTurquoise">
+            <English>Turquoise</English>
+        </Key>
+        <Key ID="STR_CAV_Map_Man_Icons">
+            <English>5thCav Man Icons</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man">
+            <English>Rifleman</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_leader">
+            <English>Leader</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_medic">
+            <English>Medic</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_mg">
+            <English>Machine Gunner</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_at">
+            <English>Anti-Tank</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_engineer">
+            <English>Engineer</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_cargo">
+            <English>Cargo</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_driver">
+            <English>Driver</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_ffv">
+            <English>Fire From Vehicle</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_gunner">
+            <English>Gunner</English>
+        </Key>
+        <Key ID="STR_CAV_Map_man_commander">
+            <English>Commander</English>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_Type_DisplayName">
+            <English>Show Unit Type</English>
+        </Key>
+        <Key ID="STR_CAV_Map_Type_Description">
+            <English>Should fireteam markers show unit type or vehicle position?</English>
+        </Key>
     </Package>
 </Project>

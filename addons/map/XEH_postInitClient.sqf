@@ -8,4 +8,4 @@ LOG(MSG_INIT);
 if GVAR(BFT_Enable) then{
     [GVAR(BFT_Delay), GVAR(BFT_HideAi)] call FUNC(blueForceTrackingUpdate);
 };
-[] call FUNC(fTMarker);
+[GVAR(fTMarkers_Delay)] call FUNC(fTMarker);
