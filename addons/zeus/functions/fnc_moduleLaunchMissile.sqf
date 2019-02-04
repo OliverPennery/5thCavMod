@@ -5,8 +5,8 @@ params ["_logic","_pos","_type","_tarName"];
 _alltargets = allMissionObjects QGVAR(moduleMissileTarget);
 _targets = _alltargets select {name _x == _tarName};
 if (_targets isEqualTo [] || {isNull (_targets select 0)}) exitWith {
-  systemChat (localize LSTRING(No_Target_Exists));
-  deleteVehicle _logic;
+    systemChat (localize LSTRING(No_Target_Exists));
+    deleteVehicle _logic;
 };
 
 _target = _targets select 0;

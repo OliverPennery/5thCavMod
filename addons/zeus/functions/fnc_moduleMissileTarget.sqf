@@ -4,8 +4,8 @@ params ["_logic", "_name"];
 
 _alltargets = allMissionObjects QGVAR(moduleMissileTarget);
 if (({(name _x == _name) && (_x != _logic)} count _alltargets) > 0) exitWith {
-  systemChat localize LSTRING(Target_Exists);
-  deleteVehicle _logic;
+    systemChat localize LSTRING(Target_Exists);
+    deleteVehicle _logic;
 };
 
 systemChat ("Created " + _name);

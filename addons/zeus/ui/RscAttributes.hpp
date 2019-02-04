@@ -53,7 +53,7 @@ class GVAR(RscDropBomb): RscDisplayAttributes {
                             colorBackground[] = {0, 0, 0, 0.5};
                         };
                         class BombType: RscListbox {
-							              class ListScrollBar {};
+                            class ListScrollBar {};
                             idc = 36181;
                             x = W_PART(10.1);
                             y = 0;
@@ -70,14 +70,14 @@ class GVAR(RscDropBomb): RscDisplayAttributes {
                             x = W_PART(10.1);
                             y = H_PART(3.1);
                             w = W_PART(15.9);
-							              h = H_PART(1);
+                            h = H_PART(1);
                         };
                         class HeightText: RscEdit {
                             idc = 36183;
-							              x = W_PART(10.1);
+                            x = W_PART(10.1);
                             y = H_PART(4.2);
                             w = W_PART(15.9);
-							              h = H_PART(1);
+                            h = H_PART(1);
                             autocomplete = "";
                             maxChars = 3;
                             canModify = 0;
@@ -160,7 +160,7 @@ class GVAR(RscLaunchMissile): RscDisplayAttributes {
                             colorBackground[] = {0, 0, 0, 0.5};
                         };
                         class MissileType: RscListbox {
-							              class ListScrollBar {};
+                            class ListScrollBar {};
                             idc = 36201;
                             x = W_PART(10.1);
                             y = 0;
@@ -175,7 +175,7 @@ class GVAR(RscLaunchMissile): RscDisplayAttributes {
                         class Target: MissileType {
                             idc = 36202;
                             y = H_PART(3.1);
-							              h = H_PART(2.1);
+                            h = H_PART(2.1);
                         };
                     };
                 };

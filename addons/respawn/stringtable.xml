@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CAV">
     <Package name="Respawn">
-		<Key ID="STR_CAV_Respawn_Module_DisplayName">
-			<English>Respawn</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_Core_Module_DisplayName">
-			<English>Core Respawn Settings</English>
-		</Key>
-    <Key ID="STR_CAV_Respawn_3DEN_Category">
-			<English>5thCav Respawn</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_Vehicle_Module_DisplayName">
-			<English>Respawn Vehicle Settings</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_RespawnTemplate_DisplayName">
-			<English>5th Cav Custom Respawn</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_NumberOfRespawns_DisplayName">
-			<English>Number of Respawns</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_NumberOfRespawns_Description">
-			<English>Amount of times a player can respawn.</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_RespawnTime_DisplayName">
-			<English>Respawn Time</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_RespawnTime_Description">
-			<English>Time from death until a player respawns.</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_CustomRespawnMode_DisplayName">
-			<English>Respawn Mode</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_CustomRespawnMode_Description">
-			<English>Custom Respawn Modes. This setting and all other 5thCav Respawn Settings have no effect unless cav_respawn_5thCavRespawn is set in respawnTemplates.</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_Disabled_errorMessage">
-			<English>Custom Respawn Disabled. Choose a different Respawn Template or set a custom respawn mode in Addon Options.</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_medVic_errorMessage">
-			<English>Medical Vehicle not found.</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_CustomRespawnMode_0_DisplayName">
-			<English>Tickets</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_CustomRespawnMode_1_DisplayName">
-			<English>Medical Vehicle w/ Tickets</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_CustomRespawnMode_2_DisplayName">
-			<English>RHS M1085A1P2B Respawn w/ Tickets</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_CustomRespawnMode_3_DisplayName">
-			<English>Disabled</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_medVic_DisplayName">
-			<English>Medical Vehicle</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_medVic_Description">
-			<English>Variable Name of the Respawn Vehicle. Only applicable when using Medical Vehicle Respawn Mode.</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_medVicDeployTime_DisplayName">
-			<English>Medical Vehicle Deploy Time</English>
-		</Key>
-		<Key ID="STR_CAV_Respawn_medVicDeployTime_Description">
-			<English>Time to Deploy Medical Vehicle. Only applicable when using Medical Vehicle Respawn Mode.</English>
-		</Key>
+        <Key ID="STR_CAV_Respawn_Module_DisplayName">
+            <English>Respawn</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_Core_Module_DisplayName">
+            <English>Core Respawn Settings</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_3DEN_Category">
+            <English>5thCav Respawn</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_Vehicle_Module_DisplayName">
+            <English>Respawn Vehicle Settings</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_RespawnTemplate_DisplayName">
+            <English>5th Cav Custom Respawn</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_NumberOfRespawns_DisplayName">
+            <English>Number of Respawns</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_NumberOfRespawns_Description">
+            <English>Amount of times a player can respawn.</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_RespawnTime_DisplayName">
+            <English>Respawn Time</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_RespawnTime_Description">
+            <English>Time from death until a player respawns.</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_CustomRespawnMode_DisplayName">
+            <English>Respawn Mode</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_CustomRespawnMode_Description">
+            <English>Custom Respawn Modes. This setting and all other 5thCav Respawn Settings have no effect unless cav_respawn_5thCavRespawn is set in respawnTemplates.</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_Disabled_errorMessage">
+            <English>Custom Respawn Disabled. Choose a different Respawn Template or set a custom respawn mode in Addon Options.</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_medVic_errorMessage">
+            <English>Medical Vehicle not found.</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_CustomRespawnMode_0_DisplayName">
+            <English>Tickets</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_CustomRespawnMode_1_DisplayName">
+            <English>Medical Vehicle w/ Tickets</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_CustomRespawnMode_2_DisplayName">
+            <English>RHS M1085A1P2B Respawn w/ Tickets</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_CustomRespawnMode_3_DisplayName">
+            <English>Disabled</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_medVic_DisplayName">
+            <English>Medical Vehicle</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_medVic_Description">
+            <English>Variable Name of the Respawn Vehicle. Only applicable when using Medical Vehicle Respawn Mode.</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_medVicDeployTime_DisplayName">
+            <English>Medical Vehicle Deploy Time</English>
+        </Key>
+        <Key ID="STR_CAV_Respawn_medVicDeployTime_Description">
+            <English>Time to Deploy Medical Vehicle. Only applicable when using Medical Vehicle Respawn Mode.</English>
+        </Key>
    </Package>
 </Project>

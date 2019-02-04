@@ -16,9 +16,9 @@ _control ctrlRemoveAllEventHandlers "SetFocus";
 // Specific onLoad stuff
 private _ctrlListBox = (_display displayCtrl 36191);
 {
-	_ctrlListBox lbAdd (_x select 0);
-	_ctrlListBox lbSetData [_forEachIndex, (_x select 1)];
-	_ctrlListBox lbSetTooltip [_forEachIndex, (_x select 1)];
+    _ctrlListBox lbAdd (_x select 0);
+    _ctrlListBox lbSetData [_forEachIndex, (_x select 1)];
+    _ctrlListBox lbSetTooltip [_forEachIndex, (_x select 1)];
 } forEach GVAR(zeusGrenades);
 _ctrlListBox lbSetCurSel 0;
 

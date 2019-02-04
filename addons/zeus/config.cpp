@@ -4,11 +4,11 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-  			    GVAR(moduleDropBomb),
-  			    GVAR(moduleLaunchMissile),
-  			    GVAR(moduleSpawnGrenade),
-  			    GVAR(moduleMissileTarget)
-		    };
+            GVAR(moduleDropBomb),
+            GVAR(moduleLaunchMissile),
+            GVAR(moduleSpawnGrenade),
+            GVAR(moduleMissileTarget)
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cav_main","cav_common"};

@@ -46,7 +46,7 @@ private _isEngineer = _unit getVariable ["ACE_isEngineer", _unit getUnitTrait "e
 if (_isEngineer isEqualType 0) then {_isEngineer = _isEngineer > 0};
 
 if (_isEngineer) exitWith {
-  QGVAR(man_engineer)
+    QGVAR(man_engineer)
 };
 
 QGVAR(man)

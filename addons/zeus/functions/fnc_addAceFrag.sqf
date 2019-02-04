@@ -10,9 +10,9 @@ _dummygrp deleteGroupWhenEmpty true;
 [_dummy, _ammo, _projectile] call ace_frag_fnc_addPfhRound;
 
 [{
-  (_this select 0) params ["_dummy","_projectile"];
-  if (!alive _projectile) then {
-    deleteVehicle _dummy;
-    [_this select 1] call CBA_fnc_removePerFrameHandler;
-  };
+    (_this select 0) params ["_dummy","_projectile"];
+    if (!alive _projectile) then {
+        deleteVehicle _dummy;
+        [_this select 1] call CBA_fnc_removePerFrameHandler;
+    };
 },1,[_dummy,_projectile]] call CBA_fnc_addPerFrameHandler;
