@@ -4,6 +4,54 @@
 		<Key ID="STR_CAV_Common_Authors">
 			<English>Brecon and FieldGeneral</English>
 		</Key>
+        <Key ID="STR_CAV_common_ColourPlatoon">
+            <English>Yellow</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourAlpha">
+            <English>Red</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourBravo">
+            <English>Blue</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourCharlie">
+            <English>Green</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourDelta">
+            <English>Turquoise</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourSupport">
+            <English>Orange</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourArmour">
+            <English>Black</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourAir">
+            <English>Pink</English>
+        </Key>
 
+        <Key ID="STR_CAV_common_ColourJedPlatoon">
+            <English>French blue</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourJedAlpha">
+            <English>OwO Pink</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourJedBravo">
+            <English>Unpleasant Ocean Green</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourJedCharlie">
+            <English>Orange</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourJedDelta">
+            <English>colourblind green</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourJedSupport">
+            <English>Ayaya yellow</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourJedArmour">
+            <English>Greenscreen green</English>
+        </Key>
+        <Key ID="STR_CAV_common_ColourJedAir">
+            <English>literally the most ugly colour in the world</English>
+        </Key>
    </Package>
 </Project>

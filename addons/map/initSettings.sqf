@@ -91,6 +91,20 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(BFT_Colour_Preset),
+    "LIST",
+    [localize LSTRING(BFT_Colour_Preset_DisplayName), localize LSTRING(BFT_Colour_Preset_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(BFT_Module_DisplayName)],
+    [[0,1,2], ["Vanilla", "Shack Tac", "Jed"], 0],
+    0,
+    {
+        params ["_value"];
+        //GVAR(BFT_Colour_Preset) = _value;
+        _value call FUNC(updateConfigColours);
+    }
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(fTMarkers_Enabled),
     "CHECKBOX",
     [localize LSTRING(fTMarkers_Enabled_DisplayName), localize LSTRING(fTMarkers_Enabled_Description)],

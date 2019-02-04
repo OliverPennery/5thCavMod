@@ -136,9 +136,6 @@
         <Key ID="STR_CAV_Map_giveGPSAI_Description">
             <English>Should AI be given GPS? They are affected by GPS receive/transmit settings.</English>
         </Key>
-        <Key ID="STR_CAV_Map_ColorTurquoise">
-            <English>Turquoise</English>
-        </Key>
         <Key ID="STR_CAV_Map_Man_Icons">
             <English>5thCav Man Icons</English>
         </Key>
