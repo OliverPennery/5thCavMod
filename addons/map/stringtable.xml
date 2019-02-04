@@ -178,5 +178,11 @@
         <Key ID="STR_CAV_Map_Type_Description">
             <English>Should fireteam markers show unit type or vehicle position?</English>
         </Key>
+        <Key ID="STR_CAV_Map_BFT_Colour_Preset_DisplayName">
+            <English>BFT Colour Presets</English>
+        </Key>
+        <Key ID="STR_CAV_Map_BFT_Colour_Preset_Description">
+            <English>Colour Presets For BFT Markers</English>
+        </Key>
     </Package>
 </Project>
