@@ -1,4 +1,5 @@
 #define COMPONENT main
+#define COMPONENT_BEAUTIFIED Main
 #include "\y\cav\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
