@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-    <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a> And <a href="https://github.com/acemod/ACE3">ACE 3</a>.<br/>
+    <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a> And <a href="https://github.com/acemod/ACE3">ACE 3</a>.</strong><br/>
      <a href="https://discord.gg/bXUTSsf"><img src="https://lh3.googleusercontent.com/3U-416d-r3wZX0J_CCRhvJqLYIrSY1siSvYNdSc7SEX5J7KHuGTlZJtUwRe3h32rP-Xk7hZv=w128-h128-e365"></a><br/>
         Come Join Us, 5th Cavalry Discord 
     </sup>
