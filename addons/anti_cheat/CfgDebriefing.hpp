@@ -1,5 +1,3 @@
-#include "script_component.hpp"
-
 class CfgDebriefing
 {
 	class GVAR(Ending_AC)

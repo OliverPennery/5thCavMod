@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class CfgRespawnTemplates
 {
 	class GVAR(5thCavRespawn)

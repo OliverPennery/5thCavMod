@@ -1,4 +1,3 @@
-#include "..\script_component.hpp"
 class RscListbox;
 class RscButton;
 class RscStructuredText;

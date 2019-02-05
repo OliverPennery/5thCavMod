@@ -11,7 +11,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cav_main","cav_common"};
+        requiredAddons[] = {"cav_common"};
         author = "";
         authors[] = {"FieldGeneral"};
         VERSION_CONFIG;

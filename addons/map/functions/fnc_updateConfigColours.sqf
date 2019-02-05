@@ -4,11 +4,7 @@ params ["_i"];
 
 private _colours = [["ColorYellow","ColorRed","ColorBlue","ColorGreen","ColorPink","ColorOrange","ColorBlack","ColorRed"],[QEGVAR(common,ColourPlatoon),QEGVAR(common,ColourAlpha),QEGVAR(common,ColourBravo),QEGVAR(common,ColourCharlie),QEGVAR(common,ColourDelta),QEGVAR(common,ColourSupport),QEGVAR(common,ColourArmour),QEGVAR(common,ColourAir)],[QEGVAR(common,ColourJedPlatoon),QEGVAR(common,ColourJedAlpha),QEGVAR(common,ColourJedBravo),QEGVAR(common,ColourJedCharlie),QEGVAR(common,ColourJedDelta),QEGVAR(common,ColourJedSupport),QEGVAR(common,ColourJedArmour),QEGVAR(common,ColourJedAir)]];
 
-systemChat str _colours;
-
 _colours = (_colours # _i);
-
-systemChat str _colours;
 
 _fnc = {
     params ["_colour", "_array"];
