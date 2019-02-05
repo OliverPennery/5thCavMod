@@ -53,3 +53,8 @@ Framework used by the 5th Cavalry during our missions. This mod can be used outs
 - **Arma Only** - You may not convert or adapt this material to be used in other games than Arma.
 - **No Derivatives** - If you remix, transform, or build upon the material, you may not distribute the modified material.
 
+Some folders of this project may contain a separate LICENSE file. Should
+that be the case, everything in that folder and all subfolders is subject
+to that license instead.
+
+- MIT (\addons\main)
