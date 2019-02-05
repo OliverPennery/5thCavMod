@@ -158,7 +158,7 @@ class cav_admin_menu_gui_listbox:RscListBox
 
 class _CT_TREE
 {
-    access = 0; // Control access (0 - ReadAndWrite, 1 - ReadAndCreate, 2 - ReadOnly, 3 - ReadOnlyVerified)
+    //access = 0; // Control access (0 - ReadAndWrite, 1 - ReadAndCreate, 2 - ReadOnly, 3 - ReadOnlyVerified)
     idc = CT_TREE; // Control identification (without it, the control won't be displayed)
     idcSearch = 1337; //The ctrlEdit with this IDC will automatically be used as search input. Can be any unique number
     type = CT_TREE; // Type is 12

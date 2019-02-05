@@ -58,7 +58,7 @@ if sys.platform == "win32":
 
 ######## GLOBALS #########
 project = "@cav"
-project_version = "3.0.0"
+project_version = "0.8.0"
 arma3tools_path = ""
 work_drive = ""
 module_root = ""
@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "cav"
 pbo_name_prefix = "cav_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE", "logo_cav_ca.paa"]
+importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE", "logo_5cav_ca.paa"]
 versionFiles = ["README.md", "mod.cpp"]
 
 ciBuild = False # Used for CI builds

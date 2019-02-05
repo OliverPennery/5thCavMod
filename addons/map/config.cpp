@@ -6,9 +6,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"A3_Ui_F_Data","cav_main", "cav_common"};
+        requiredAddons[] = {"A3_Ui_F_Data","cav_common"};
         author = "";
-        authors[] = {"Brecon, Field"};
+        authors[] = {"Brecon", "FieldGeneral"};
         VERSION_CONFIG;
     };
 };

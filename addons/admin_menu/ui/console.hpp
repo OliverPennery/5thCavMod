@@ -56,7 +56,7 @@ class GVAR(console):GVAR(main)
         GVAR(console_button_load),
         GVAR(console_button_save),
         GVAR(console_button_delete),
-        GVAR(console_combo_files),
+        GVAR(console_combo_files)
     };
 
     class GVAR(console_background): IGUIBack

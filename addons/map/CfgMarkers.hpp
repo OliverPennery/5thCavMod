@@ -6,7 +6,7 @@ class cfgMarkerClasses {
 class cfgMarkers {
     class GVAR(man) {
         name = CSTRING(man);
-        markerClass = QGVAR(man_icons)
+        markerClass = QGVAR(man_icons);
         icon = "\A3\ui_f\data\map\vehicleicons\iconMan_ca.paa";
         color[] = {1, 1, 1, 1};
         size = 22;

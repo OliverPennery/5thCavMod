@@ -1,6 +1,7 @@
 ﻿# CONTRIBUTOR LIST
 
 # CORE TEAM
-
+Brecon <ojp.dev@protonmail.com>
+FieldGeneral
 
 # CONTRIBUTORS
