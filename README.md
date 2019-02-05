@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/5c/5cdf348f4c6424491583317626dad2948a52fd08_full.jpg">
+<img src="https://github.com/Brecon1/5thCavMod/blob/master/extras/1stbatlogo-gimp240.png">
 </p>
 
 <p align="center">
