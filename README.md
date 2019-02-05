@@ -42,3 +42,14 @@ Framework used by the 5th Cavalry during our missions. This mod can be used outs
 - BI for Arma
 - ACE and CBA for their great mod and their framework
 - Everyone who posted on BI's wiki and forums filling in BI's gaping gaps in Arma's documentation
+
+## Licence
+
+<a href="https://www.bohemia.net/community/licenses/arma-public-license-nd">
+    <img src="https://lh3.googleusercontent.com/LXqJgV4SkDCJx5JEb2ivWzbPasqfWA9Z98Y2E-8xey_f6jPDFKRtsyQnTVPCNJDCYNEP5g=s170">                                                                                                                         </a></br>
+                                                                                                                              
+- **Attribution** - You must attribute the material in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the material).
+- **Noncommercial** - You may not use this material for any commercial purposes.
+- **Arma Only** - You may not convert or adapt this material to be used in other games than Arma.
+- **No Derivatives** - If you remix, transform, or build upon the material, you may not distribute the modified material.
+
