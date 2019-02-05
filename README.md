@@ -1,1 +1,44 @@
-# 5thCavMod
+<p align="center">
+<img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/5c/5cdf348f4c6424491583317626dad2948a52fd08_full.jpg">
+</p>
+
+<p align="center">
+    <a href="https://github.com/Brecon1/5thCavMod/releases">
+        <img src="https://img.shields.io/badge/Version-0.8-blue.svg?style=flat-square" alt="5th Cav Mod Version">
+    </a>
+    <a href="https://github.com/Brecon1/5thCavMod/issues">
+        <img src="https://img.shields.io/github/issues-raw/Brecon1/5thCavMod.svg?style=flat-square&label=Issues" alt="5th Cav Mod Issues">
+    </a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1644556162">
+        <img src="https://img.shields.io/github/downloads/Brecon1/5thCavMod/total.svg?style=flat-square&label=Downloads" alt="5th Cav Mod Downloads">
+    </a>
+    <a href="https://github.com/Brecon1/5thCavMod/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/License-APL--ND-red.svg?style=flat-square" alt="5th Cav Mod License">
+    </a>
+</p>
+
+<p align="center">
+    <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a> And <a href="https://github.com/acemod/ACE3">ACE 3</a>.<br/>
+     <a href="https://discord.gg/bXUTSsf"><img src="https://lh3.googleusercontent.com/3U-416d-r3wZX0J_CCRhvJqLYIrSY1siSvYNdSc7SEX5J7KHuGTlZJtUwRe3h32rP-Xk7hZv=w128-h128-e365"></a><br/>
+        Come Join Us, 5th Cavalry Discord 
+    </sup>
+</p>
+    
+Framework used by the 5th Cavalry during our missions. This mod can be used outside the 5th Cavalry however, as it is made to suit our very specific needs, there may be incompatible with other mods not used by the 5th Cav.
+**WE WILL NOT ADD FEATURES OR FIX ISSUES THAT WOULD NOT BE USED/NEEDED WITHIN THE 5TH CAV**
+
+## Features
+
+- Squad and Group Map Markers
+- Automatic TFAR Presets
+- Additional Zeus Explosion with Targeting
+- Debug/Admin Menu
+- Updating Roster with Frequency
+- Deployable Vehicle Respawn Mode
+- Anti Arsenal Checker
+- Customisable Marker Colours
+
+## Credits
+- BI for Arma
+- ACE and CBA for their great mod and their framework
+- Everyone who posted on BI's wiki and forums filling in BI's gaping gaps in Arma's documentation
