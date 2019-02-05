@@ -58,3 +58,4 @@ that be the case, everything in that folder and all subfolders is subject
 to that license instead.
 
 - MIT (\addons\main)
+- GPLv2 (\tools)
