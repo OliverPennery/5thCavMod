@@ -19,7 +19,17 @@ GVAR(zeusMissiles) = [
 ];
 
 //check for mods and add their stuff
-/*if (isClass(configFile >> "cfgPatches" >> "rhs_main")) then {
-    GVAR(zeusMissiles) pushback ["Display Nmae","class_name"];
+if (isClass(configFile >> "cfgPatches" >> "rhs_main")) then {
+    GVAR(zeusMissiles) pushback ["RHS M136 HEDP","rhs_ammo_M136_hedp_rocket"];
+    GVAR(zeusMissiles) pushback ["RHS M136 HP","rhs_ammo_M136_hp_rocket"];
+    GVAR(zeusMissiles) pushback ["RHS M136 HE","rhs_ammo_M136_rocket"];
+    GVAR(zeusMissiles) pushback ["RHS Maaws HE","rhs_ammo_maaws_HE"];
+    GVAR(zeusMissiles) pushback ["RHS Maaws HEAT","rhs_ammo_maaws_HEAT"];
+    GVAR(zeusMissiles) pushback ["RHS Maaws HEDP","rhs_ammo_maaws_HEDP"];
+    GVAR(zeusMissiles) pushback ["RHS 9M113 Konkurs","rhs_ammo_9m113m"];
+    GVAR(zeusMissiles) pushback ["RHS AGM-65","rhs_ammo_agm65"];
+    GVAR(zeusMissiles) pushback ["RHS Hydra (M151)","rhs_ammo_Hydra_M151"];
+    GVAR(zeusMissiles) pushback ["RHS Hydra (M229)","rhs_ammo_Hydra_M229"];
+    GVAR(zeusMissiles) pushback ["RHS Hellfire","rhs_ammo_Hellfire_AT"];
+    GVAR(zeusMissiles) pushback ["RHS DAGR","RHS_Ammo_DAGR"];
 };
-*/

@@ -26,14 +26,14 @@ params ["_delay"];
         deleteMarkerLocal _x;
     } forEach GVAR(FTMarkers);
 
-	GVAR(FTMarkers) = [];
+    GVAR(FTMarkers) = [];
 
     if (GVAR(fTMarkers_Delay) != _delay) then {
         [GVAR(fTMarkers_Delay)] call FUNC(fTMarker);
         [_this select 1] call CBA_fnc_removePerFrameHandler;
     };
 
-  if (GVAR(requireGPSReceive) && !([player] call FUNC(isGPS))) exitWith {};
+    if (GVAR(requireGPSReceive) && !([player] call FUNC(isGPS))) exitWith {};
 
     if ((!isNull player) && (alive player) && (GVAR(fTMarkers_Enabled))) then {
         private _PlayerGroup = [];

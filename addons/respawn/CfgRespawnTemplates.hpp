@@ -1,7 +1,7 @@
 class CfgRespawnTemplates
 {
-	class GVAR(5thCavRespawn)
-	{
+    class GVAR(5thCavRespawn)
+    {
         displayName = CSTRING(RespawnTemplate_DisplayName);
         onPlayerKilled = QFUNC(OnKilled);
         onPlayerRespawn = QFUNC(OnRespawn);

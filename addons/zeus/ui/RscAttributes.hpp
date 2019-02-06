@@ -40,7 +40,7 @@ class GVAR(RscDropBomb): RscDisplayAttributes {
                     x = 0;
                     y = 0;
                     w = W_PART(26);
-                    h = H_PART(5.2);
+                    h = H_PART(9.7);
                     class controls {
                         class BombTypeLabel: RscText {
                             idc = -1;
@@ -80,7 +80,33 @@ class GVAR(RscDropBomb): RscDisplayAttributes {
                             h = H_PART(1);
                             autocomplete = "";
                             maxChars = 3;
-                            canModify = 0;
+                            canModify = 1;
+                        };
+                        class VelLabel: BombTypeLabel {
+                            text = CSTRING(ModuleDropBomb_Vel);
+                            tooltip = CSTRING(ModuleDropBomb_Vel_Tooltip);
+                            y = H_PART(5.3);
+                        };
+                        class Vel: Height {
+                            idc = 36184;
+                            y = H_PART(5.3);
+                        };
+                        class VelText: HeightText {
+                            idc = 36185;
+                            y = H_PART(6.4);
+                        };
+                        class DirLabel: BombTypeLabel {
+                            text = CSTRING(ModuleDropBomb_Dir);
+                            tooltip = CSTRING(ModuleDropBomb_Dir_Tooltip);
+                            y = H_PART(7.5);
+                        };
+                        class Dir: Height {
+                            idc = 36186;
+                            y = H_PART(7.5);
+                        };
+                        class DirText: HeightText {
+                            idc = 36187;
+                            y = H_PART(8.6);
                         };
                     };
                 };
@@ -147,7 +173,7 @@ class GVAR(RscLaunchMissile): RscDisplayAttributes {
                     x = 0;
                     y = 0;
                     w = W_PART(26);
-                    h = H_PART(5.2);
+                    h = H_PART(7.4);
                     class controls {
                         class MissileTypeLabel: RscText {
                             idc = -1;
@@ -175,7 +201,29 @@ class GVAR(RscLaunchMissile): RscDisplayAttributes {
                         class Target: MissileType {
                             idc = 36202;
                             y = H_PART(3.1);
-                            h = H_PART(2.1);
+                            h = H_PART(2);
+                        };
+                        class VelLabel: MissileTypeLabel {
+                            text = CSTRING(ModuleLaunchMissile_Vel);
+                            tooltip = CSTRING(ModuleLaunchMissile_Vel_Tooltip);
+                            y = H_PART(5.2);
+                        };
+                        class Vel: RscXSliderH {
+                            idc = 36203;
+                            x = W_PART(10.1);
+                            h = H_PART(1);
+                            y = H_PART(5.2);
+                            w = W_PART(15.9);
+                        };
+                        class VelText: RscEdit {
+                            idc = 36204;
+                            x = W_PART(10.1);
+                            y = H_PART(6.3);
+                            w = W_PART(15.9);
+                            h = H_PART(1);
+                            autocomplete = "";
+                            maxChars = 4;
+                            canModify = 1;
                         };
                     };
                 };
