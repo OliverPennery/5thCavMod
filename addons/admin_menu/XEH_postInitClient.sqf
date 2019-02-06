@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "\A3\ui_f\hpp\defineDIKCodes.inc"
 
 // Exit on Headless as well
 if (!hasInterface) exitWith {};
