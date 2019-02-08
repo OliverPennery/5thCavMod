@@ -166,6 +166,7 @@ class GVAR(respawn):GVAR(main)
     	y = 0.697431 * safezoneH + safezoneY;
     	w = 0.215844 * safezoneW;
     	h = 0.0376059 * safezoneH;
+        onLoad = QUOTE([ARR_1(_this)] call FUNC(medVicStatus););
     };
     class GVAR(respawn_button_debug_deployMedVic): RscButton
     {
@@ -175,5 +176,6 @@ class GVAR(respawn):GVAR(main)
     	y = 0.697431 * safezoneH + safezoneY;
     	w = 0.0704798 * safezoneW;
     	h = 0.0376059 * safezoneH;
+        onButtonClick = QUOTE([ARR_1(_this)] call FUNC(toggleMedVic););
     };
 };
