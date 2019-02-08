@@ -100,7 +100,7 @@ class GVAR(respawn):GVAR(main)
     	y = 0.321372 * safezoneH + safezoneY;
     	w = 0.0704798 * safezoneW;
     	h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE([ARR_3(_this # 0, 1500, 1)] call FUNC(setTicket););
+        onButtonClick = QUOTE([ARR_3(_this, 1500, 1)] call FUNC(setTicket););
     };
     class GVAR(respawn_button_selected_removeTicket): RscButton
     {
@@ -110,7 +110,7 @@ class GVAR(respawn):GVAR(main)
     	y = 0.377781 * safezoneH + safezoneY;
     	w = 0.0704798 * safezoneW;
     	h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE([ARR_3(_this # 0, 1500, -1)] call FUNC(setTicket););
+        onButtonClick = QUOTE([ARR_3(_this, 1500, -1)] call FUNC(setTicket););
     };
     class GVAR(respawn_button_selected_setRespawnTime): RscButton
     {
@@ -120,7 +120,7 @@ class GVAR(respawn):GVAR(main)
     	y = 0.43419 * safezoneH + safezoneY;
     	w = 0.0704798 * safezoneW;
     	h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE([ARR_3(_this # 0, 1500, 1400)] call FUNC(setRespawnTime););
+        onButtonClick = QUOTE([ARR_3(_this, 1500, 1400)] call FUNC(setRespawnTime););
     };
     class GVAR(respawn_edit_selected_respawnTime): RscEdit
     {
@@ -138,7 +138,7 @@ class GVAR(respawn):GVAR(main)
     	y = 0.547007 * safezoneH + safezoneY;
     	w = 0.0704798 * safezoneW;
     	h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE([ARR_2(_this # 0, 1500)] call FUNC(setRespawnTime););
+        onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(setRespawnTime););
     };
     class GVAR(respawn_button_selected_forceRespawn): RscButton
     {

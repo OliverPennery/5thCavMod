@@ -2,13 +2,11 @@
 
 params ["_btnControl", "_listboxIdc", "_editIdc"];
 
-private _parentDisplay = ctrlParent _btnControl;
-
-private _id = ([_parentDisplay, _listboxIdc] call FUNC(getListboxData)) # 2;
+private _id = ([(ctrlParent (_btnControl # 0)), _listboxIdc] call FUNC(getListboxData)) # 2;
 private _time = 1;
 
 if (!isNil "_editIdc") then {
-    _time = parseNumber(([_parentDisplay, _editIdc] call FUNC(getEditData)) # 1);
+    _time = parseNumber(([(ctrlParent (_btnControl # 0)), _editIdc] call FUNC(getEditData)) # 1);
 };
 
 if (count _id == 0) then{

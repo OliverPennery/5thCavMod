@@ -2,9 +2,7 @@
 
 params ["_btnControl", "_listboxIdc","_ticket"];
 
-private _parentDisplay = ctrlParent _btnControl;
-
-private _id = ([_parentDisplay, _listboxIdc] call FUNC(getListboxData)) # 2;
+private _id = ([(ctrlParent (_btnControl # 0)), _listboxIdc] call FUNC(getListboxData)) # 2;
 
 if (count _id  == 0) then{
     {

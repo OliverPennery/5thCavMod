@@ -37,7 +37,7 @@ switch (GVAR(CustomRespawnMode)) do {
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
                 _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
-                if 	((GVAR(medVic) getVariable 'deployed') and ((side GVAR(medVic) == side player) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (((count fullCrew [GVAR(medVic), "cargo", true]) - (count fullCrew [GVAR(medVic), "cargo"])) > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
+                if 	((GVAR(medVic) getVariable ['deployed', false]) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (((count fullCrew [GVAR(medVic), "cargo", true]) - (count fullCrew [GVAR(medVic), "cargo"])) > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
                     if (playerRespawnTime > 1) then {
                         _respawnTime = _respawnTime - 1;
                         setPlayerRespawnTime _respawnTime;
@@ -59,7 +59,7 @@ switch (GVAR(CustomRespawnMode)) do {
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
                 _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
-                if ((GVAR(medVic) animationSourcePhase 'deploy_tent' == 1) and ((side GVAR(medVic) == side player) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
+                if ((GVAR(medVic) animationSourcePhase 'deploy_tent' == 1) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
                     if (playerRespawnTime > 1) then {
                         _respawnTime = _respawnTime - 1;
                         setPlayerRespawnTime _respawnTime;
