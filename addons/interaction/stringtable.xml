@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CAV">
+    <Package name="Interaction">
+        <Key ID="STR_CAV_Interaction_ejectSide">
+            <English>Side Eject</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_openInventory">
+            <English>Open Inventory</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_openBag">
+            <English>Open Bag</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_collectIntel">
+            <English>Collect Intel</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_collectingIntel">
+            <English>Collecting Intel</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_collectedIntel">
+            <English>Collected Intel</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_PickUp">
+            <English>Pick Up</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_left">
+            <English>Left</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_right">
+            <English>Right</English>
+        </Key>
+   </Package>
+</Project>
