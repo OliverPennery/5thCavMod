@@ -10,7 +10,7 @@ parameters:
     4: failFunction (code)
 
 example:
-    [object,5,{true},{call function},{}] call cav_interaction_fnc_createIntel;
+    [this,5,{true},{call function},{}] call cav_interaction_fnc_createIntel;
 */
 
 params ["_object","_time","_condition","_function","_failFunction"];
@@ -19,15 +19,13 @@ private _name = format["intelaction_%1",_object];
 private _intelAction = [
     _name,
     localize LSTRING(collectIntel),
-    "",
+    "\a3\ui_f\data\igui\cfg\simpletasks\types\documents_ca.paa",
     {
-        systemChat str(_this);
         (_this select 2) params ["_object","_time","_condition","_function","_name","_failFunction"];
         [
             _time,
             [_object,_time,_condition,_function,_name,_failFunction],
             {
-                systemChat str(_this);
                 (_this select 0) params ["_object","_time","_condition","_function","_name"];
                 hint localize LSTRING(collectedIntel);
                 [_object,0,["ACE_MainActions", _name]] call ace_interact_menu_fnc_removeActionFromObject;
