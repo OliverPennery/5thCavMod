@@ -13,11 +13,11 @@ switch (_side) do {
     case "right" : {
         private _movedir = _dirvic + 90;
         _unit setDir _movedir;
-        _unit setpos (_pos vectorAdd [0.5*_width*sin(_movedir),0.2*cos(_movedir),0]);
+        _unit setpos (_pos vectorAdd [0.3*_width*sin(_movedir),0.3*cos(_movedir),0]);
     };
     case "left" : {
         private _movedir = _dirvic + -90;
         _unit setDir _movedir;
-        _unit setpos (_pos vectorAdd [0.5*_width*sin(_movedir),0.2*cos(_movedir),0]);
+        _unit setpos (_pos vectorAdd [0.3*_width*sin(_movedir),0.3*cos(_movedir),0]);
     };
 };
