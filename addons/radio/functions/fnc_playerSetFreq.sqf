@@ -20,8 +20,9 @@ Example:
 
  _____________________________________________________________________________*/
 
+params [["_group",group player],["_update",false]];
 //private _grp = call(compile(str((group player)) select [2]));
-private _grp = [(group player)] call EFUNC(common,getGroup);
+private _grp = [_group] call EFUNC(common,getGroup);
 if (isNil {_grp}) then {
 	_grp = CAV_Platoon;
 };
@@ -45,6 +46,10 @@ if (isClass (configFile >> "CfgPatches" >> "task_force_radio_items")) then{
 	if (player == leader player) then {
 		[(call TFAR_fnc_activeSwRadio), 0] call TFAR_fnc_setAdditionalSwChannel;
 	};
+};
+
+if (_update) exitwith {
+    (["Radio Frequencies Updated to ",_grp select 2] joinString "") remoteExec ["systemChat", player];
 };
 
 "Radio Frequencies set!" remoteExec ["systemChat", player];

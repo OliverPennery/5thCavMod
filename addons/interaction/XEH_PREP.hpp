@@ -6,3 +6,4 @@ PREP(hasBag);
 PREP(openBag);
 PREP(createIntel);
 PREP(hasInventory);
+PREP(setRadio);

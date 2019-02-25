@@ -4,6 +4,9 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_Actions {
             class ACE_MainActions {
+                class ACE_JoinGroup {
+                    statement = QUOTE([_player] joinSilent group _target; [_target] call FUNC(setRadio););
+                };
                 class GVAR(openInventory) {
                     displayName = CSTRING(openInventory);
                     condition = QUOTE(!alive _target);
@@ -87,15 +90,6 @@ class CfgVehicles {
                     statement = QUOTE([ARR_2(_this, 'right')] call FUNC(ejectSide););
                 };
             };
-            class GVAR(openInventory) {
-                displayName = CSTRING(openInventory);
-                condition = QUOTE(alive _target && _target call FUNC(hasInventory));
-                statement = QUOTE(_this call FUNC(openInventory));
-                showDisabled = 0;
-                distance = 3;
-                exceptions[] = {"isNotSwimming"};
-                icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-            };
         };
     };
     class Tank: LandVehicle {
@@ -126,15 +120,6 @@ class CfgVehicles {
                     statement = QUOTE([ARR_2(_this, 'right')] call FUNC(ejectSide););
                 };
             };
-            class GVAR(openInventory) {
-                displayName = CSTRING(openInventory);
-                condition = QUOTE(alive _target && _target call FUNC(hasInventory));
-                statement = QUOTE(_this call FUNC(openInventory));
-                showDisabled = 0;
-                distance = 3;
-                exceptions[] = {"isNotSwimming"};
-                icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-            };
         };
     };
     class Motorcycle: LandVehicle {
@@ -164,15 +149,6 @@ class CfgVehicles {
                     displayName = CSTRING(right);
                     statement = QUOTE([ARR_2(_this, 'right')] call FUNC(ejectSide););
                 };
-            };
-            class GVAR(openInventory) {
-                displayName = CSTRING(openInventory);
-                condition = QUOTE(alive _target && _target call FUNC(hasInventory));
-                statement = QUOTE(_this call FUNC(openInventory));
-                showDisabled = 0;
-                distance = 3;
-                exceptions[] = {"isNotSwimming"};
-                icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
             };
         };
     };
@@ -205,15 +181,6 @@ class CfgVehicles {
                     statement = QUOTE([ARR_2(_this, 'right')] call FUNC(ejectSide););
                 };
             };
-            class GVAR(openInventory) {
-                displayName = CSTRING(openInventory);
-                condition = QUOTE(alive _target && _target call FUNC(hasInventory));
-                statement = QUOTE(_this call FUNC(openInventory));
-                showDisabled = 0;
-                distance = 3;
-                exceptions[] = {"isNotSwimming"};
-                icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-            };
         };
     };
     class Plane: Air {
@@ -243,15 +210,6 @@ class CfgVehicles {
                     displayName = CSTRING(right);
                     statement = QUOTE([ARR_2(_this, 'right')] call FUNC(ejectSide););
                 };
-            };
-            class GVAR(openInventory) {
-                displayName = CSTRING(openInventory);
-                condition = QUOTE(alive _target && _target call FUNC(hasInventory));
-                statement = QUOTE(_this call FUNC(openInventory));
-                showDisabled = 0;
-                distance = 3;
-                exceptions[] = {"isNotSwimming"};
-                icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
             };
         };
     };
@@ -283,15 +241,6 @@ class CfgVehicles {
                     displayName = CSTRING(right);
                     statement = QUOTE([ARR_2(_this, 'right')] call FUNC(ejectSide););
                 };
-            };
-            class GVAR(openInventory) {
-                displayName = CSTRING(openInventory);
-                condition = QUOTE(alive _target && _target call FUNC(hasInventory));
-                statement = QUOTE(_this call FUNC(openInventory));
-                showDisabled = 0;
-                distance = 3;
-                exceptions[] = {"isNotSwimming"};
-                icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
             };
         };
     };
