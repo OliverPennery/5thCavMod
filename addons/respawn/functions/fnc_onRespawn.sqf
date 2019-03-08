@@ -4,7 +4,11 @@ switch (GVAR(CustomRespawnMode)) do
 {
     case 1 :
     {
-        player moveInCargo GVAR(medVic);
+        if (!player moveInAny GVAR(medVic)) then {
+            [true] call ace_spectator_fnc_setSpectator;
+            "Respawn Failed. Retrying. Contact an Admin if issue persists!" remoteExecCall ["systemChat", player];
+            [{player moveInAny GVAR(medVic)},{[false] call ace_spectator_fnc_setSpectator;}] call CBA_fnc_waitUntilAndExecute;
+        };
     };
 
     case 2 :
@@ -15,7 +19,7 @@ switch (GVAR(CustomRespawnMode)) do
 
 [player,-1,true] call BIS_fnc_respawnTickets;
 if ([player,0,true] call BIS_fnc_respawnTickets == 1) then {
-    "1 Respawn Remaining!" remoteExec ["systemChat", player];
+    "1 Respawn Remaining!" remoteExecCall ["systemChat", player];
 } else {
     format ["%1 Respawns Remaining!", ([player,0,true] call BIS_fnc_respawnTickets)] remoteExecCall ["systemChat", player];
 };

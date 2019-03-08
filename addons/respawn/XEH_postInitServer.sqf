@@ -10,6 +10,6 @@ if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
         GVAR(medVic) = _medVic;
     };
     if (GVAR(CustomRespawnMode) == 1) then {
-        GVAR(medVic) setVariable [QGVAR(deployed),false,true];
+        missionNamespace setVariable [QGVAR(deployed),false,true];
     };
 };

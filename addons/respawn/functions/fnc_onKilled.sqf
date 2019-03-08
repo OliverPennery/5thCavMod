@@ -9,6 +9,7 @@ switch (GVAR(CustomRespawnMode)) do {
     // --- Standard respawn_west ticket system
     case 0 :
     {
+        SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
         [{
             if (alive player) then {
                 SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
@@ -31,13 +32,14 @@ switch (GVAR(CustomRespawnMode)) do {
     // --- Universal vehicle deploy respawn, the vehicle need to be deployed to respawn
     case 1 :
     {
+        SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
         [{
             if (alive player) then {
                 SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
                 _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
-                if 	((missionNamespace getVariable [QGVAR(deployed), false]) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (((count fullCrew [GVAR(medVic), "cargo", true]) - (count fullCrew [GVAR(medVic), "cargo"])) > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
+                if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (((count fullCrew [GVAR(medVic), "cargo", true]) - (count fullCrew [GVAR(medVic), "cargo"])) > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
                     if (playerRespawnTime > 1) then {
                         _respawnTime = _respawnTime - 1;
                         setPlayerRespawnTime _respawnTime;
@@ -53,6 +55,7 @@ switch (GVAR(CustomRespawnMode)) do {
     // --- Respawn using the RHS M1085A1P2B Medical Truck with its tent deploy system
     case 2 :
     {
+        SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
         [{
             if (alive player) then {
                 SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
