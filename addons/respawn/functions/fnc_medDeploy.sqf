@@ -21,7 +21,8 @@ Description:
     {},																											// Code executed on every progress tick
     {
     missionNamespace setVariable [QGVAR(deployed), true, true];
-    [GVAR(medVic), "", 1] remoteExec ["rhs_fnc_fmtv_deploy", 0];
+    [GVAR(medVic), 0] call FUNC(vehicleDeploy);
+    /* [GVAR(medVic), "", 1] remoteExec [QFUNC(vehicleDeploy), 0]; */
     },																											// Code executed on completion
     {},																											// Code executed on interrupted
     [],																											// Arguments passed to the scripts as _this select 3
@@ -42,7 +43,8 @@ Description:
     {},																											// Code executed on every progress tick
     {
     missionNamespace setVariable [QGVAR(deployed), false, true];
-    [GVAR(medVic), "", 0] remoteExec ["rhs_fnc_fmtv_deploy", 0];
+    [GVAR(medVic), 1] call FUNC(vehicleDeploy);
+    /* [GVAR(medVic), "", 0] remoteExec [QFUNC(vehicleDeploy), 0]; */
     },																											// Code executed on completion
     {},																											// Code executed on interrupted
     [],																											// Arguments passed to the scripts as _this select 3
