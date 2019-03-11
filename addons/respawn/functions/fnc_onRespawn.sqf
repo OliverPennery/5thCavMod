@@ -4,11 +4,10 @@ switch (GVAR(CustomRespawnMode)) do
 {
     case 1 :
     {
-        if (!player moveInAny GVAR(medVic)) then {
-            [true] call ace_spectator_fnc_setSpectator;
-            "Respawn Failed. Retrying. Contact an Admin if issue persists!" remoteExecCall ["systemChat", player];
-            [{player moveInAny GVAR(medVic)},{[false] call ace_spectator_fnc_setSpectator;}] call CBA_fnc_waitUntilAndExecute;
-        };
+        private _queue = GETMVAR(deathQueue, [player]);
+        _queue deleteAt 0;
+        SETMPVAR(deathQueue, _queue);
+        player moveInAny GVAR(medVic)
     };
 
     case 2 :

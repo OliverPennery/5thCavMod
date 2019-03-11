@@ -13,3 +13,7 @@ if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
         missionNamespace setVariable [QGVAR(deployed),false,true];
     };
 };
+
+if (GVAR(CustomRespawnMode) == 1) then{
+    SETMPVAR(deathQueue, []);
+};
