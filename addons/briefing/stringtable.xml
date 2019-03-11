@@ -10,5 +10,23 @@
         <Key ID="STR_CAV_briefing_Close_Roster">
             <English>Close Roster</English>
         </Key>
+        <Key ID="STR_CAV_briefing_Roster">
+            <English>Roster</English>
+        </Key>
+        <Key ID="STR_CAV_briefing_enableRoster">
+            <English>Enable Roster</English>
+        </Key>
+        <Key ID="STR_CAV_briefing_enableRoster_Description">
+            <English>Adds a button to the map screen to show the roster.</English>
+        </Key>
+        <Key ID="STR_CAV_briefing_enableSafeStart">
+            <English>Enable Safe Start</English>
+        </Key>
+        <Key ID="STR_CAV_briefing_enableSafeStart_Description">
+            <English>Enables Safe Start for the Mission. Must be disabled by Admin or via trigger.</English>
+        </Key>
+        <Key ID="STR_CAV_briefing_SafeStart">
+            <English>Safe Start</English>
+        </Key>
    </Package>
 </Project>

@@ -5,4 +5,6 @@ if (!hasInterface) exitWith {};
 
 LOG(MSG_INIT);
 
-[] spawn FUNC(initRoster);
+if (GVAR(enableRoster)) then {
+    [] spawn FUNC(initRoster);
+};
