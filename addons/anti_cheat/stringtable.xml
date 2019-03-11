@@ -37,5 +37,11 @@
         <Key ID="STR_CAV_Anti_Cheat_AA_AK_Amt_Description">
            <English>Amount of Infringements to get kicked[Auto Kick must be enabled]. Default: 3</English>
         </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_AK_XLA_Enable_DisplayName">
+           <English>XLA Auto Kick Enable</English>
+        </Key>
+        <Key ID="STR_CAV_Anti_Cheat_AA_AK_XLA_Enable_Description">
+           <English>Enable Auto Kick for using XLA Arsenal. Default: Yes</English>
+        </Key>
    </Package>
 </Project>

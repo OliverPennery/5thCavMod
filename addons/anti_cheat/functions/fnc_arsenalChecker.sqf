@@ -27,7 +27,6 @@ player setVariable [QGVAR(biArsAmt), 0];
 player setVariable [QGVAR(aceArsLast), -5];
 player setVariable [QGVAR(aceArsAmt), 0];
 
-
 //--- Check for BI Arsenal
 _biArs = [{
     (_this select 0) params ["_autoKick", "_autoKickAmt"];
@@ -69,3 +68,13 @@ _aceArs = ["ace_arsenal_displayOpened", {
         };
     };
     }, [_autoKick, _autoKickAmt]] call CBA_fnc_addEventHandlerArgs;
+
+//--- Check for xla Arsenal
+if (isClass (configFile >> "CfgPatches" >> "XLA_FixedArsenal")) then {
+    if (!(GVAR(AA_AK_XLA_Enable))) then {
+        format ["%1 is using arsenal", name player] remoteExecCall ["hintSilent"];
+    }else {
+        format ["%1 was kicked for using arsenal!", name player] remoteExecCall ["hintSilent"];
+        [QGVAR(Ending_AC), false, 2] call BIS_fnc_endMission;
+    };
+}
