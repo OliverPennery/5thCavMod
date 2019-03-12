@@ -9,7 +9,7 @@ _colours = (_colours # _i);
 _fnc = {
     params ["_colour", "_array"];
     {
-        _x set [3, _colour];
+        _x set [2, _colour];
     } forEach _array;
 };
 

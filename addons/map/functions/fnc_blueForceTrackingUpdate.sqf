@@ -64,10 +64,10 @@ if (GVAR(requireGPSReceive) && !([player] call FUNC(isGPS))) exitWith {};
 
             if (!isNil {_grp}) then
             {
-                private _marker = createMarkerLocal [_grp select 0, [(getPos leader _x) select 0, (getPos leader _x) select 1]];
-                _marker setMarkerTypeLocal (_grp select 1);
-                _marker setMarkerTextLocal (_grp select 2);
-                _marker setMarkerColorLocal (_grp select 3);
+                private _marker = createMarkerLocal [str(_x), [(getPos leader _x) select 0, (getPos leader _x) select 1]];
+                _marker setMarkerTypeLocal (_grp select 0);
+                _marker setMarkerTextLocal (_grp select 1);
+                _marker setMarkerColorLocal (_grp select 2);
                 bFTMarkers pushBack _marker;
             }else{
                 private _marker = createMarkerLocal [str(_x), [(getPos leader _x) select 0, (getPos leader _x) select 1]];

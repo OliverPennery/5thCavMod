@@ -3,9 +3,8 @@
 params ["_group"];
 
 
-private _groupId = ((groupId _group) splitString " ") joinString "";
-//private _groupId = groupId _group;
+private _groupId = "CAV_" + (groupId _group);
 
-if (count (_groupId splitString "-") == 1) exitwith{
-	call(compile("CAV_" + _groupId))
+if (_groupId in CAV_GROUP_LIST) exitwith{
+	call(compile(_groupId))
 };
