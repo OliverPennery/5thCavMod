@@ -11,7 +11,7 @@ if (!hasInterface) exitWith {};
 if GVAR(AM_Enable) then{
     ["ace_spectatorSet", {
         params ["_isSpectator", "_player"];
-        if (_isSpectator) then {
+        if (_isSpectator and ((call BIS_fnc_admin != 0) or (GVAR(AM_Admin_UID) find (getPlayerUID player) != -1))) then {
             [{!isNull findDisplay 60000}, {
                 findDisplay 60000 ctrlCreate [QGVAR(aceSpectator_button_openMenu), 312206];
             }, []] call CBA_fnc_waitUntilAndExecute;

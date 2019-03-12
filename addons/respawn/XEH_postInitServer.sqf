@@ -15,5 +15,7 @@ if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
 };
 
 if (GVAR(CustomRespawnMode) == 1) then{
-    SETMPVAR(deathQueue, []);
+    /* SETMPVAR(GVAR(deathQueue), []); */
+    CAV_DQ = [];
+    publicVariable "CAV_DQ";
 };

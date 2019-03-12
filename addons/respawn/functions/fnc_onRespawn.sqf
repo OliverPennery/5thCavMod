@@ -4,10 +4,8 @@ switch (GVAR(CustomRespawnMode)) do
 {
     case 1 :
     {
-        private _queue = GETMVAR(deathQueue, [player]);
-        _queue deleteAt 0;
-        SETMPVAR(deathQueue, _queue);
-        player moveInAny GVAR(medVic)
+        [player] remoteExecCall [QFUNC(popQueue), 2];
+        player moveInAny GVAR(medVic);
     };
 
     case 2 :

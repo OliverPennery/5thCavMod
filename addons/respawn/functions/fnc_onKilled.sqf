@@ -33,9 +33,7 @@ switch (GVAR(CustomRespawnMode)) do {
     case 1 :
     {
         SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
-        private _queue = GETMVAR(deathQueue, []);
-        _queue pushBack player;
-        SETMPVAR(deathQueue, _queue);
+        [player] remoteExecCall [QFUNC(addPlayerToQueue), 2];
         [{
             if (alive player) then {
                 SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
@@ -48,10 +46,10 @@ switch (GVAR(CustomRespawnMode)) do {
                             _respawnTime = _respawnTime - 1;
                             SETVAR(player,GVAR(playerRespawnTime),_respawnTime);
                         }else{
-                            if (GETMVAR(deathQueue, [player]) select 0 == player) then{
+                            if ((CAV_DQ find player) == 0) then{
                                 setPlayerRespawnTime 0;
                             }else{
-                                private _place = (GETMVAR(deathQueue, [player]) find player);
+                                private _place = (CAV_DQ find player);
                                 if (_place != -1) then{
                                     format ["You are place %1 in the queue.", _place] remoteExecCall ["systemChat", player];
                                 }else{
