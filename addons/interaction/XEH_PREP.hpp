@@ -7,3 +7,4 @@ PREP(openBag);
 PREP(createIntel);
 PREP(hasInventory);
 PREP(setRadio);
+PREP(handleGroupChange);
