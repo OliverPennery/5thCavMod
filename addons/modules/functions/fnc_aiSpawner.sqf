@@ -20,9 +20,11 @@ _wp1 setWaypointType "MOVE";
             if (_waves == -1) then{
                 _errorCode = 0;
             }else{
-                if (_waves > 0)then{
+                if (_waves > 1)then{
                     _errorCode = 0;
                     _waves = _waves -1;
+                }else{
+                    _errorCode = 2;
                 };
             };
         }else {
@@ -49,7 +51,7 @@ _wp1 setWaypointType "MOVE";
         [_this select 1] call CBA_fnc_removePerFrameHandler;
 
         if (_errorCode == 0) then{
-            [_side, _groupConfig, _spawnMarker, _moveMarker, _waves, _con, _huntTrigger, _sadTrigger] call FUNC(aiSpawner);
+            [_side, _groupConfig, _spawnPos, _moveMarker, _waves, _con, _huntTrigger, _sadTrigger] call FUNC(aiSpawner);
         };
 
         if (_errorCode == 1) then{

@@ -13,7 +13,7 @@ class CfgVehicles {
         category = "CAV_modules";
         function =  QUOTE(DFUNC(moduleAiSpawner));
         functionPriority = 1;
-        isGlobal = 1;
+        isGlobal = 0;
         isTriggerActivated = 1;
         isDisposable = 0;
         is3DEN = 0;
@@ -112,7 +112,7 @@ class CfgVehicles {
         category = "CAV_modules";
         function =  QUOTE(DFUNC(moduleAiHunter));
         functionPriority = 1;
-        isGlobal = 1;
+        isGlobal = 0;
         isTriggerActivated = 1;
         isDisposable = 0;
         is3DEN = 0;

@@ -18,9 +18,11 @@ _group deleteGroupWhenEmpty true;
         if (_waves == -1) then{
             _errorCode = 0;
         }else{
-            if (_waves > 0)then{
+            if (_waves > 1)then{
                 _errorCode = 0;
                 _waves = _waves -1;
+            }else{
+                _errorCode = 2;
             };
         };
 	}else {
@@ -38,7 +40,7 @@ _group deleteGroupWhenEmpty true;
         [_this select 1] call CBA_fnc_removePerFrameHandler;
 
 		if (_errorCode == 0) then{
-            [_side, _groupType, _spawnMarker, _waves, _huntTrigger] call FUNC(aiHunter);
+            [_side, _groupType, _spawnPos, _waves, _huntTrigger] call FUNC(aiHunter);
         };
 
     };
