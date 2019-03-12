@@ -12,4 +12,4 @@ if (!isClass (configFile >> "CfgPatches" >> "cav_radio") || isNil {(_group call 
     false
 };
 
-[_group, true] call EFUNC(radio,playerSetFreq);
+[_group, false] call EFUNC(radio,playerSetFreq);
