@@ -28,5 +28,20 @@
         <Key ID="STR_CAV_Interaction_right">
             <English>Right</English>
         </Key>
+        <Key ID="STR_CAV_Interaction_Module_DisplayName">
+            <English>Interaction</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_switchFreqOnJoin">
+            <English>Switch Freqencies on Join</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_allowSideEject">
+            <English>Allow Side Ejection</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_allowSideEject_Description">
+            <English>Should players be able to eject left/right from vehicles?</English>
+        </Key>
+        <Key ID="STR_CAV_Interaction_sideEjectFailed">
+            <English>Side Ejection is Disabled</English>
+        </Key>
    </Package>
 </Project>

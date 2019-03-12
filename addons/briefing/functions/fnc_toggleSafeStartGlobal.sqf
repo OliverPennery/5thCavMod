@@ -2,6 +2,10 @@
 
 params ["_enable"];
 
+if (!isServer) exitwith {
+    false
+};
+
 if (_enable) then {
     if (!(GETMVAR(GVAR(safeStartEnabled),false))) then {
         SETMPVAR(GVAR(safeStartEnabled),true);

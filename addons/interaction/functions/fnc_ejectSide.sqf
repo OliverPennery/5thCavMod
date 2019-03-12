@@ -2,6 +2,10 @@
 
 params ["_intParams","_side"];
 
+if (!GVAR(allowSideEject)) exitwith {
+    systemChat localize LSTRING(sideEjectFailed);
+    false
+};
 //systemChat str(_intParams);
 private _unit = _intParams select 1;
 private _parent = objectParent _unit;
