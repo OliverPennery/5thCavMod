@@ -20,3 +20,6 @@ if ([player,0,true] call BIS_fnc_respawnTickets == 1) then {
 } else {
     format ["%1 Respawns Remaining!", ([player,0,true] call BIS_fnc_respawnTickets)] remoteExecCall ["systemChat", player];
 };
+
+[false] call ace_spectator_fnc_setSpectator;
+setPlayerRespawnTime 99999;

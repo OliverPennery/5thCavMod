@@ -14,3 +14,9 @@ if (_group in _groupList) then{
 }else{
     (group _player) setGroupId [_group];
 };
+
+if (!GVAR(switchFreqOnJoin)) exitwith {
+    false
+};
+
+[group _player, true] call EFUNC(radio,playerSetFreq);

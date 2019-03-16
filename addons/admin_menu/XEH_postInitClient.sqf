@@ -4,8 +4,12 @@
 // Exit on Headless as well
 if (!hasInterface) exitWith {};
 
+player setVariable [QGVAR(respawnTime), 99999, true];
+
 [{
-    player setVariable [QGVAR(respawnTime), playerRespawnTime, true];
+    if !(alive player)then{
+        player setVariable [QGVAR(respawnTime), playerRespawnTime, true];
+    };
 }, 0, []] call CBA_fnc_addPerFrameHandler;
 
 if GVAR(AM_Enable) then{

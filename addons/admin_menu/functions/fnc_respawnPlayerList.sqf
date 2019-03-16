@@ -17,7 +17,10 @@ _handle = [
     	{
     		private _index = _control lbAdd (name _x);
             _control lbSetData [_index, (_x call BIS_fnc_netId)];
-            private _playerRespawnTime = _x getVariable QGVAR(respawnTime);
+            private _playerRespawnTime = 99999;
+            if !(alive _x) then{
+                _playerRespawnTime = _x getVariable QGVAR(respawnTime);
+            };
             private _text = format ["- %1 |   %2   |     %3     ",groupId group _x, [_x,nil,true] call BIS_fnc_respawnTickets, _playerRespawnTime];
             _control lbSetTextRight  [_index, _text];
             if !(alive _x) then{
