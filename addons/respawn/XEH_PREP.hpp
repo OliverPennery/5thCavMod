@@ -7,4 +7,5 @@ PREP(OnKilled);
 PREP(OnRespawn);
 PREP(playerTicketsLeft);
 PREP(popQueue);
+PREP(removePlayerQueue);
 PREP(vehicleDeploy);

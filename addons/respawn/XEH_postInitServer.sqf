@@ -19,3 +19,9 @@ if (GVAR(CustomRespawnMode) == 1) then{
     CAV_DQ = [];
     publicVariable "CAV_DQ";
 };
+
+addMissionEventHandler ["HandleDisconnect", {
+	params ["_unit", "_id", "_uid", "_name"];
+    _unit call FUNC(removePlayerQueue);
+	true;
+}];
