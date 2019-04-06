@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/Brecon1/5thCavMod/releases">
-        <img src="https://img.shields.io/badge/Version-0.9.2-blue.svg?style=flat-square" alt="5th Cav Mod Version">
+        <img src="https://img.shields.io/badge/Version-0.9.3-blue.svg?style=flat-square" alt="5th Cav Mod Version">
     </a>
     <a href="https://github.com/Brecon1/5thCavMod/issues">
         <img src="https://img.shields.io/github/issues-raw/Brecon1/5thCavMod.svg?style=flat-square&label=Issues" alt="5th Cav Mod Issues">
