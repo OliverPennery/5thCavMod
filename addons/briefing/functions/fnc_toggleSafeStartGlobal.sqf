@@ -14,7 +14,7 @@ if (_enable) then {
             if (!(GETMVAR(GVAR(safeStartEnabled),true))) exitWith {
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             };
-            format ["Safe Start Enabled. %1 minutes have pased since mission start.",round (time/60)] remoteExecCall ["hintSilent", 0];
+            format ["Safe Start Enabled. %1 minutes have passed since mission start.",round (time/60)] remoteExecCall ["hintSilent", 0];
         },30,[]] call CBA_fnc_addPerFrameHandler;
     };
 } else {
