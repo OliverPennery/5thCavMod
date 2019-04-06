@@ -44,8 +44,8 @@ switch (GVAR(CustomRespawnMode)) do {
                 SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
-                if ([player,nil,true] call BIS_fnc_respawnTickets > 0) then{
-                    [player] remoteExecCall [QFUNC(addPlayerToQueue), 2];    
+                if (([player,nil,true] call BIS_fnc_respawnTickets > 0) and ((CAV_DQ find player) == -1)) then{
+                    [player] remoteExecCall [QFUNC(addPlayerToQueue), 2];
                 };
                 private _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (((count fullCrew [GVAR(medVic), "cargo", true]) - (count fullCrew [GVAR(medVic), "cargo"])) > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
