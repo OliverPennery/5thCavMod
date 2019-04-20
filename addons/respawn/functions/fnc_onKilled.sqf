@@ -4,6 +4,9 @@ setPlayerRespawnTime 99999;
 
 [{[true] call ace_spectator_fnc_setSpectator;}, [], 0.5] call CBA_fnc_waitAndExecute;
 
+if (alive player) then {
+    [format ["%1 Respawn Time Failed To SET!", player]] remoteExecCall ["hint", 0];
+};
 
 switch (GVAR(CustomRespawnMode)) do {
     // --- Standard respawn_west ticket system
@@ -41,7 +44,7 @@ switch (GVAR(CustomRespawnMode)) do {
         SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
         [{
             if (alive player) then {
-                SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
+                setPlayerRespawnTime 99999;
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
                 if (([player,nil,true] call BIS_fnc_respawnTickets > 0) and ((CAV_DQ find player) == -1)) then{
@@ -52,19 +55,22 @@ switch (GVAR(CustomRespawnMode)) do {
                     if (_respawnTime > 1) then{
                         _respawnTime = _respawnTime - 1;
                         SETVAR(player,GVAR(playerRespawnTime),_respawnTime);
+                        systemChat format ["respawn time:%1", _respawnTime];
                         if (_respawnTime % 10 == 0) then{
                             format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
                         };
                     }else{
+                        systemChat format ["CAV_DQ:%1", CAV_DQ];
                         if ((CAV_DQ find player) == 0) then{
                             setPlayerRespawnTime 0;
+                            [_this select 1] call CBA_fnc_removePerFrameHandler;
                         }else{
                             private _place = (CAV_DQ find player);
                             if (_place != -1) then{
                                 format ["You are place %1 in the queue.", _place] remoteExecCall ["systemChat", player];
                             }else{
                                 format ["The respawn queue is broken with %1!", name player] remoteExecCall ["globalChat", 0];
-                            }
+                            };
                         };
                     };
                 } else {

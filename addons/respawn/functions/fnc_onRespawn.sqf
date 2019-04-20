@@ -4,8 +4,11 @@ switch (GVAR(CustomRespawnMode)) do
 {
     case 1 :
     {
-        [player] remoteExecCall [QFUNC(popQueue), 2];
-        player moveInAny GVAR(medVic);
+        [{if (player moveInAny GVAR(medVic)) then{
+            [player] remoteExecCall [QFUNC(popQueue), 2];
+            [_this select 1] call CBA_fnc_removePerFrameHandler;
+        };
+        }, 1, []] call CBA_fnc_addPerFrameHandler;
     };
 
     case 2 :
@@ -22,4 +25,15 @@ if ([player,0,true] call BIS_fnc_respawnTickets == 1) then {
 };
 
 [false] call ace_spectator_fnc_setSpectator;
+
 setPlayerRespawnTime 99999;
+
+/* systemChat format ["Respawn Time Set:%1", playerRespawnTime];  */
+
+/* [{
+    systemChat format ["Respawn Time Set Player:%1", player];
+    setPlayerRespawnTime 99999;
+    if (playerRespawnTime > 9999) then{
+        [_this select 1] call CBA_fnc_removePerFrameHandler;
+    };
+}, 1, []] call CBA_fnc_addPerFrameHandler; */

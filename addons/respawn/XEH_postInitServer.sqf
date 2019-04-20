@@ -22,6 +22,6 @@ if (GVAR(CustomRespawnMode) == 1) then{
     addMissionEventHandler ["HandleDisconnect", {
     	params ["_unit", "_id", "_uid", "_name"];
         _unit call FUNC(removePlayerQueue);
-    	true;
+    	false
     }];
 };
