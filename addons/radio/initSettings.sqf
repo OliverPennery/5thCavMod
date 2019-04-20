@@ -30,7 +30,7 @@
     "LIST",
     [localize LSTRING(Preset_Side_DisplayName), localize LSTRING(Preset_Side_Description)],
     [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Presets_Module_DisplayName)],
-    [["WEST","EAST"], ["WEST","EAST"], 0],
+    [["west","east","resistance"], ["West","East","Independent"], 0],
     true,
     {
         params ["_value"];
