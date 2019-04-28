@@ -52,7 +52,7 @@ switch (GVAR(CustomRespawnMode)) do {
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
                 private _respawnTime = GETMVAR(GVAR(playerRespawnTime),GVAR(respawnTime));
-                if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (GVAR(medVic) emptyPositions "cargo" > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
+                if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
                     _respawnTime = _respawnTime - 1;
                     SETMVAR(GVAR(playerRespawnTime),_respawnTime);
                     if (_respawnTime % 10 == 0) then{
