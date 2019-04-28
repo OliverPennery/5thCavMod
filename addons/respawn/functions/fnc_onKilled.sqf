@@ -35,7 +35,7 @@ switch (GVAR(CustomRespawnMode)) do {
                         format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
                     };
                 } else {
-                    if (playerRespawnTime % 10 == 0) then{
+                    if (playerRespawnTime % 10 == 0) then {
                         systemChat "Respawn Unavailable";
                         setPlayerRespawnTime 99999;
                     };
@@ -55,11 +55,11 @@ switch (GVAR(CustomRespawnMode)) do {
                 if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
                     _respawnTime = _respawnTime - 1;
                     SETMVAR(GVAR(playerRespawnTime),_respawnTime);
-                    if (_respawnTime % 10 == 0) then{
+                    if (_respawnTime % 10 == 0) then {
                         format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
                     };
                 } else {
-                    if (playerRespawnTime % 10 == 0) then{
+                    if (playerRespawnTime % 10 == 0) then {
                         systemChat "Respawn Unavailable";
                         setPlayerRespawnTime 99999;
                     };
@@ -79,11 +79,11 @@ switch (GVAR(CustomRespawnMode)) do {
                 if ((GVAR(medVic) animationSourcePhase 'deploy_tent' == 1) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
                     _respawnTime = _respawnTime - 1;
                     SETMVAR(GVAR(playerRespawnTime),_respawnTime);
-                    if (_respawnTime % 10 == 0) then{
+                    if (_respawnTime % 10 == 0) then {
                         format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
                     };
                 } else {
-                    if (playerRespawnTime % 10 == 0) then{
+                    if (playerRespawnTime % 10 == 0) then {
                         systemChat "Respawn Unavailable";
                         setPlayerRespawnTime 99999;
                     };
@@ -101,7 +101,7 @@ switch (GVAR(CustomRespawnMode)) do {
                 private _respawnTime = GETMVAR(GVAR(playerRespawnTime),GVAR(RespawnTime));
                 _respawnTime = _respawnTime - 1;
                 SETMVAR(GVAR(playerRespawnTime),_respawnTime);
-                if (_respawnTime % 10 == 0) then{
+                if (_respawnTime % 10 == 0) then {
                     format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
                 };
             };
