@@ -52,12 +52,12 @@ switch (GVAR(CustomRespawnMode)) do {
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
                 private _respawnTime = GETMVAR(GVAR(playerRespawnTime),GVAR(respawnTime));
-                if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
-                    _respawnTime = _respawnTime - 1;
-                    SETMVAR(GVAR(playerRespawnTime),_respawnTime);
+                if ((GETVAR(GVAR(medVic),GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
                     if (_respawnTime % 10 == 0) then {
                         format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
                     };
+                    _respawnTime = _respawnTime - 1;
+                    SETMVAR(GVAR(playerRespawnTime),_respawnTime);
                 } else {
                     if (playerRespawnTime % 10 == 0) then {
                         systemChat "Respawn Unavailable";

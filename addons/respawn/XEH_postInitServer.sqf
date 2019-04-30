@@ -2,7 +2,7 @@
 
 LOG(MSG_INIT);
 
-if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
+/* if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
     _medVic = call (compile GVAR(medVicString));
     if (isNull _medVic) then {
         systemchat localize LSTRING(medVic_errorMessage);
@@ -12,4 +12,4 @@ if (GVAR(CustomRespawnMode) == 1 || GVAR(CustomRespawnMode) == 2) then {
     if (GVAR(CustomRespawnMode) == 1) then {
         missionNamespace setVariable [QGVAR(deployed),false,true];
     };
-};
+}; */
