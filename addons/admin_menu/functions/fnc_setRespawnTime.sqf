@@ -9,15 +9,30 @@ if (!isNil "_editIdc") then {
     _time = parseNumber(([(ctrlParent (_btnControl # 0)), _editIdc] call FUNC(getEditData)) # 1);
 };
 
-if (count _id == 0) then{
-    [_time] remoteExecCall ["setPlayerRespawnTime", 0];
+if (GETMVAR(EGVAR(respawn,customRespawnActive),false)) then {
+    if (count _id == 0) then{
+        [missionNamespace,[QEGVAR(respawn,playerRespawnTime),_time]] remoteExecCall ["setVariable", 0];
 
-    [format ["Set Everyones Respawn Time To %1", _time], 2] call FUNC(clientLog);
-    [format ["%1 Set Everyones Respawn Time To %2", name player, _time], 2, true] call FUNC(log);
-}else{
-    private _unit = _id call BIS_fnc_objectFromNetId;
-    [_time] remoteExecCall ["setPlayerRespawnTime", _unit];
+        [format ["Set Everyones Respawn Time To %1", _time], 2] call FUNC(clientLog);
+        [format ["%1 Set Everyones Respawn Time To %2", name player, _time], 2, true] call FUNC(log);
+    }else{
+        private _unit = _id call BIS_fnc_objectFromNetId;
+        [missionNamespace,[QEGVAR(respawn,playerRespawnTime),_time]] remoteExecCall ["setVariable", _unit];
 
-    [format ["%1 Set Respawn Time To %2", (name _unit), _time], 2] call FUNC(clientLog);
-    [format ["%1 Set %2 Respawn Time To %3", name player, (name _unit), _time], 2, true] call FUNC(log);
+        [format ["%1 Set Respawn Time To %2", (name _unit), _time], 2] call FUNC(clientLog);
+        [format ["%1 Set %2 Respawn Time To %3", name player, (name _unit), _time], 2, true] call FUNC(log);
+    };
+} else {
+    if (count _id == 0) then{
+        [_time] remoteExecCall ["setPlayerRespawnTime", 0];
+
+        [format ["Set Everyones Respawn Time To %1", _time], 2] call FUNC(clientLog);
+        [format ["%1 Set Everyones Respawn Time To %2", name player, _time], 2, true] call FUNC(log);
+    }else{
+        private _unit = _id call BIS_fnc_objectFromNetId;
+        [_time] remoteExecCall ["setPlayerRespawnTime", _unit];
+
+        [format ["%1 Set Respawn Time To %2", (name _unit), _time], 2] call FUNC(clientLog);
+        [format ["%1 Set %2 Respawn Time To %3", name player, (name _unit), _time], 2, true] call FUNC(log);
+    };
 };

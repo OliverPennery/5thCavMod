@@ -20,7 +20,7 @@
     true,
     {
         params ["_value"];
-        GVAR(NumberOfRespawns) = _value;
+        GVAR(NumberOfRespawns) = round _value;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -33,7 +33,7 @@
     true,
     {
         params ["_value"];
-        GVAR(RespawnTime) = _value;
+        GVAR(RespawnTime) = round _value;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -59,6 +59,6 @@
     true,
     {
         params ["_value"];
-        GVAR(medVicDeployTime) = _value;
+        GVAR(medVicDeployTime) = round _value;
     }
 ] call CBA_Settings_fnc_init;
