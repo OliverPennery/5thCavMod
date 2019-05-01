@@ -2,6 +2,9 @@
 
 setPlayerRespawnTime 99999;
 
+if (isNil {GVAR(customRespawnActive)}) then {
+    SETMPVAR(GVAR(customRespawnActive),true);
+};
 SETMVAR(GVAR(playerRespawnTime),GVAR(respawnTime));
 
 [{[true] call ace_spectator_fnc_setSpectator;}, [], 0.5] call CBA_fnc_waitAndExecute;

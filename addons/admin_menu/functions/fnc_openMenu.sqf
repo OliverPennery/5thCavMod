@@ -2,7 +2,7 @@
 
 params ["_menu"];
 if (isMultiplayer) then {
-    if ((call BIS_fnc_admin != 0) or (GVAR(AM_Admin_UID) find (getPlayerUID player) != -1)) then{
+    if ((call BIS_fnc_admin != 0) or (GVAR(AM_Admin_UID) find (getPlayerUID player) != -1) or (isServer)) then{
         private _display = uiNamespace getVariable QGVAR(currentDisplay);
         if (!isNil "_display") then {
             _display closeDisplay 1;
