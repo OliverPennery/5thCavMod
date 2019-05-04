@@ -9,11 +9,7 @@ _handle = [
         [_this select 1] call CBA_fnc_removePerFrameHandler;
     };
     lbClear (_control # 0);
-    {
-        if !(_x isEqualTo 0) then {
-            private _index = (_control # 0) lbAdd str(_x);
-            private _status = ["0", "X"] select (_x getVariable [QEGVAR(respawn,deployed), false]);
-            (_control # 0) lbSetTextRight  [_index, _status];
-        };
-    } forEach EGVAR(respawn,medVic_Server);
+    private _index = (_control # 0) lbAdd "MEDVIC";
+    private _status = ["0", "X"] select (missionNamespace getVariable [QEGVAR(respawn,deployed), false]);
+    (_control # 0) lbSetTextRight  [_index, _status];
 },1,[_control]] call CBA_fnc_addPerFrameHandler;
