@@ -8,15 +8,14 @@ player setVariable [QGVAR(respawnTime), 99999, true];
 
 [{
     if !(alive player)then{
-        private _respawnTime = GETMVAR(EGVAR(respawn,playerRespawnTime),EGVAR(respawn,respawnTime));
-        SETPVAR(player,GVAR(respawnTime),_respawnTime);
+        player setVariable [QGVAR(respawnTime), playerRespawnTime, true];
     };
-}, 1, []] call CBA_fnc_addPerFrameHandler;
+}, 0, []] call CBA_fnc_addPerFrameHandler;
 
 if GVAR(AM_Enable) then{
     ["ace_spectatorSet", {
         params ["_isSpectator", "_player"];
-        if (_isSpectator and ((call BIS_fnc_admin != 0) or (GVAR(AM_Admin_UID) find (getPlayerUID player) != -1) or (isServer))) then {
+        if (_isSpectator and ((call BIS_fnc_admin != 0) or (GVAR(AM_Admin_UID) find (getPlayerUID player) != -1))) then {
             [{!isNull findDisplay 60000}, {
                 findDisplay 60000 ctrlCreate [QGVAR(aceSpectator_button_openMenu), 312206];
             }, []] call CBA_fnc_waitUntilAndExecute;

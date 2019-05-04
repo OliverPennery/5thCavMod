@@ -2,43 +2,34 @@
 
 setPlayerRespawnTime 99999;
 
-if (isNil {GVAR(customRespawnActive)}) then {
-    SETMPVAR(GVAR(customRespawnActive),true);
-};
-SETMVAR(GVAR(playerRespawnTime),GVAR(respawnTime));
-
 [{[true] call ace_spectator_fnc_setSpectator;}, [], 0.5] call CBA_fnc_waitAndExecute;
 
 if (alive player) then {
     [format ["%1 Respawn Time Failed To SET!", player]] remoteExecCall ["hint", 0];
 };
 
-[{
-    if(GVAR(playerRespawnTime) < 0) then {
-        setPlayerRespawnTime 0;
-        [_this select 1] call CBA_fnc_removePerFrameHandler;
-    };
-},1,[]] call CBA_fnc_addPerFrameHandler;
-
-
 switch (GVAR(CustomRespawnMode)) do {
     // --- Standard respawn_west ticket system
     case 0 :
     {
+        SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
         [{
             if (alive player) then {
+                SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
-                private _respawnTime = GETMVAR(GVAR(playerRespawnTime),GVAR(respawnTime));
+                private _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 if ([player,nil,true] call BIS_fnc_respawnTickets > 0) then {
-                    _respawnTime = _respawnTime - 1;
-                    setPlayerRespawnTime _respawnTime;
-                    SETMVAR(GVAR(playerRespawnTime),_respawnTime);
-                    if (_respawnTime % 10 == 0) then {
-                        format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
+                    if (playerRespawnTime > 1) then {
+                        _respawnTime = _respawnTime - 1;
+                        setPlayerRespawnTime _respawnTime;
+                        SETVAR(player,GVAR(playerRespawnTime),_respawnTime);
+                        if (_respawnTime % 10 == 0) then{
+                            format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
+                        };
                     };
                 } else {
-                    if (playerRespawnTime % 10 == 0) then {
+                    if (playerRespawnTime % 10 == 0) then{
                         systemChat "Respawn Unavailable";
                         setPlayerRespawnTime 99999;
                     };
@@ -50,19 +41,40 @@ switch (GVAR(CustomRespawnMode)) do {
     // --- Universal vehicle deploy respawn, the vehicle need to be deployed to respawn
     case 1 :
     {
+        SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
         [{
             if (alive player) then {
+                setPlayerRespawnTime 99999;
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
-                private _respawnTime = GETMVAR(GVAR(playerRespawnTime),GVAR(respawnTime));
-                if ((GETVAR(GVAR(medVic),GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
-                    if (_respawnTime % 10 == 0) then {
-                        format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
+                if (([player,nil,true] call BIS_fnc_respawnTickets > 0) and ((CAV_DQ find player) == -1)) then{
+                    [player] remoteExecCall [QFUNC(addPlayerToQueue), 2];
+                };
+                private _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
+                if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (((count fullCrew [GVAR(medVic), "cargo", true]) - (count fullCrew [GVAR(medVic), "cargo"])) > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
+                    if (_respawnTime > 1) then{
+                        _respawnTime = _respawnTime - 1;
+                        SETVAR(player,GVAR(playerRespawnTime),_respawnTime);
+                        systemChat format ["respawn time:%1", _respawnTime];
+                        if (_respawnTime % 10 == 0) then{
+                            format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
+                        };
+                    }else{
+                        systemChat format ["CAV_DQ:%1", CAV_DQ];
+                        if ((CAV_DQ find player) == 0) then{
+                            setPlayerRespawnTime 0;
+                            [_this select 1] call CBA_fnc_removePerFrameHandler;
+                        }else{
+                            private _place = (CAV_DQ find player);
+                            if (_place != -1) then{
+                                format ["You are place %1 in the queue.", _place] remoteExecCall ["systemChat", player];
+                            }else{
+                                format ["The respawn queue is broken with %1!", name player] remoteExecCall ["globalChat", 0];
+                            };
+                        };
                     };
-                    _respawnTime = _respawnTime - 1;
-                    SETMVAR(GVAR(playerRespawnTime),_respawnTime);
                 } else {
-                    if (playerRespawnTime % 10 == 0) then {
+                    if (playerRespawnTime % 10 == 0) then{
                         systemChat "Respawn Unavailable";
                         setPlayerRespawnTime 99999;
                     };
@@ -74,19 +86,24 @@ switch (GVAR(CustomRespawnMode)) do {
     // --- Respawn using the RHS M1085A1P2B Medical Truck with its tent deploy system
     case 2 :
     {
+        SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
         [{
             if (alive player) then {
+                SETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
-                private _respawnTime = GETMVAR(GVAR(playerRespawnTime),GVAR(RespawnTime));
+                private _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 if ((GVAR(medVic) animationSourcePhase 'deploy_tent' == 1) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
-                    _respawnTime = _respawnTime - 1;
-                    SETMVAR(GVAR(playerRespawnTime),_respawnTime);
-                    if (_respawnTime % 10 == 0) then {
-                        format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
+                    if (playerRespawnTime > 1) then {
+                        _respawnTime = _respawnTime - 1;
+                        setPlayerRespawnTime _respawnTime;
+                        SETVAR(player,GVAR(playerRespawnTime),_respawnTime);
+                        if (_respawnTime % 10 == 0) then{
+                            format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
+                        };
                     };
                 } else {
-                    if (playerRespawnTime % 10 == 0) then {
+                    if (playerRespawnTime % 10 == 0) then{
                         systemChat "Respawn Unavailable";
                         setPlayerRespawnTime 99999;
                     };
@@ -97,18 +114,7 @@ switch (GVAR(CustomRespawnMode)) do {
 
     case 3:
     {
-        [{
-            if (alive player) then {
-                [_this select 1] call CBA_fnc_removePerFrameHandler;
-            } else {
-                private _respawnTime = GETMVAR(GVAR(playerRespawnTime),GVAR(RespawnTime));
-                _respawnTime = _respawnTime - 1;
-                SETMVAR(GVAR(playerRespawnTime),_respawnTime);
-                if (_respawnTime % 10 == 0) then {
-                    format ["%1 Seconds Until Respawn!", (_respawnTime)] remoteExecCall ["systemChat", player];
-                };
-            };
-        }, 1, []] call CBA_fnc_addPerFrameHandler;
+        systemchat localize LSTRING(Disabled_errorMessage);
     };
 
     default {"Custom Respawn Error" remoteExecCall ["hint", 0];};

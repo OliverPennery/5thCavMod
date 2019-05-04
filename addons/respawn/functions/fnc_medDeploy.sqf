@@ -15,11 +15,12 @@ Description:
     "Deploy",																									// Title of the action
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa",	// Idle icon shown on screen
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_reviveMedic_ca.paa",	// Progress icon shown on screen
-    format["(((objectParent player) == %1) and !(%1 getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to be shown
-    format["(((objectParent player) == %1) and !(%1 getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to progress
+    format["(((objectParent player) == %1) and !(missionNamespace getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to be shown
+    format["(((objectParent player) == %1) and !(missionNamespace getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to progress
     {},																											// Code executed when action starts
     {},																											// Code executed on every progress tick
     {
+    missionNamespace setVariable [QGVAR(deployed), true, true];
     [GVAR(medVic), 0] call FUNC(vehicleDeploy);
     /* [GVAR(medVic), "", 1] remoteExec [QFUNC(vehicleDeploy), 0]; */
     },																											// Code executed on completion
@@ -36,11 +37,12 @@ Description:
     "Undeploy",																									// Title of the action
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_reviveMedic_ca.paa",	// Idle icon shown on screen
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa",	// Progress icon shown on screen
-    format["(((objectParent player) == %1) and (%1 getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to be shown
-    format["(((objectParent player) == %1) and (%1 getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to progress
+    format["(((objectParent player) == %1) and (missionNamespace getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to be shown
+    format["(((objectParent player) == %1) and (missionNamespace getVariable ['%2', false]) and (getDammage %1 != 1))", GVAR(medVic), QGVAR(deployed)],		// Condition for the action to progress
     {},																											// Code executed when action starts
     {},																											// Code executed on every progress tick
     {
+    missionNamespace setVariable [QGVAR(deployed), false, true];
     [GVAR(medVic), 1] call FUNC(vehicleDeploy);
     /* [GVAR(medVic), "", 0] remoteExec [QFUNC(vehicleDeploy), 0]; */
     },																											// Code executed on completion

@@ -12,9 +12,9 @@ $[
 [1400,"cav_admin_menu_respawn_edit_selected_respawnTime",[1,"",["0.610125 * safezoneW + safezoneX","0.490598 * safezoneH + safezoneY","0.0704798 * safezoneW","0.0376059 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 [1611,"cav_admin_menu_respawn_button_selected_forceDeploy",[1,"Force Deploy",["0.610125 * safezoneW + safezoneX","0.547007 * safezoneH + safezoneY","0.0704798 * safezoneW","0.0376059 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 [1610,"cav_admin_menu_respawn_button_selected_forceRespawn",[1,"Force Respawn",["0.610125 * safezoneW + safezoneX","0.603416 * safezoneH + safezoneY","0.0704798 * safezoneW","0.0376059 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-[1802,"cav_admin_menu_respawn_frame_debug",[1,"Debug",["0.381065 * safezoneW + safezoneX","0.654 * safezoneH + safezoneY","0.308349 * safezoneW","0.088 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-[1501,"cav_admin_menu_respawn_listbox_debug_vars",[1,"",["0.38547 * safezoneW + safezoneX","0.665 * safezoneH + safezoneY","0.215844 * safezoneW","0.066 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-[1616,"cav_admin_menu_respawn_button_debug_deployMedVic",[1,"Deploy MedVic",["0.610125 * safezoneW + safezoneX","0.676 * safezoneH + safezoneY","0.0704798 * safezoneW","0.0376059 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+[1802,"cav_admin_menu_respawn_frame_debug",[1,"Debug",["0.381065 * safezoneW + safezoneX","0.678628 * safezoneH + safezoneY","0.308349 * safezoneW","0.0658103 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+[1501,"cav_admin_menu_respawn_listbox_debug_vars",[1,"",["0.38547 * safezoneW + safezoneX","0.697431 * safezoneH + safezoneY","0.215844 * safezoneW","0.0376059 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+[1616,"cav_admin_menu_respawn_button_debug_deployMedVic",[1,"Deploy MedVic",["0.610125 * safezoneW + safezoneX","0.697431 * safezoneH + safezoneY","0.0704798 * safezoneW","0.0376059 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
 ]
 */
 
@@ -155,17 +155,17 @@ class GVAR(respawn):GVAR(main)
     	idc = 1802;
     	text = "Debug"; //--- ToDo: Localize;
     	x = 0.381065 * safezoneW + safezoneX;
-    	y = 0.654 * safezoneH + safezoneY;
+    	y = 0.678628 * safezoneH + safezoneY;
     	w = 0.308349 * safezoneW;
-    	h = 0.088 * safezoneH;
+    	h = 0.0658103 * safezoneH;
     };
     class GVAR(respawn_listbox_debug_vars): RscListbox
     {
     	idc = 1501;
     	x = 0.38547 * safezoneW + safezoneX;
-    	y = 0.665 * safezoneH + safezoneY;
+    	y = 0.697431 * safezoneH + safezoneY;
     	w = 0.215844 * safezoneW;
-    	h = 0.066 * safezoneH;
+    	h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_1(_this)] call FUNC(medVicStatus););
     };
     class GVAR(respawn_button_debug_deployMedVic): RscButton
@@ -173,9 +173,9 @@ class GVAR(respawn):GVAR(main)
     	idc = 1616;
     	text = "Deploy MedVic"; //--- ToDo: Localize;
     	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.676 * safezoneH + safezoneY;
+    	y = 0.697431 * safezoneH + safezoneY;
     	w = 0.0704798 * safezoneW;
     	h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE([ARR_2(_this # 0,1501)] call FUNC(toggleMedVic););
+        onButtonClick = QUOTE([ARR_1(_this)] call FUNC(toggleMedVic););
     };
 };

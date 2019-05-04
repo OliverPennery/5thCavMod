@@ -30,7 +30,7 @@
 
 ###############################################################################
 
-__version__ = "0.9.4"
+__version__ = "0.9.3"
 
 import sys
 
@@ -58,7 +58,7 @@ if sys.platform == "win32":
 
 ######## GLOBALS #########
 project = "@cav"
-project_version = "0.9.4"
+project_version = "0.9.2"
 arma3tools_path = ""
 work_drive = ""
 module_root = ""
