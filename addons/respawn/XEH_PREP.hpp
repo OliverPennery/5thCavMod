@@ -6,3 +6,4 @@ PREP(OnKilled);
 PREP(OnRespawn);
 PREP(playerTicketsLeft);
 PREP(vehicleDeploy);
+PREP(forceInsertInVehicle);
