@@ -1,7 +1,10 @@
 #include "script_component.hpp"
 
-params ["_player"];
+params ["_id"];
 
-CAV_DQ pushBack _player;
-publicVariable "CAV_DQ";
-true
+if (isPlayer (objectFromNetId _id)) then {
+    CAV_DQ pushBack _id;
+    publicVariable "CAV_DQ";
+    true
+};
+false

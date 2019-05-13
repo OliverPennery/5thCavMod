@@ -5,7 +5,7 @@ switch (GVAR(CustomRespawnMode)) do
     case 1 :
     {
         [{if (player moveInAny GVAR(medVic)) then{
-            [player] remoteExecCall [QFUNC(popQueue), 2];
+            (netId player) remoteExecCall [QFUNC(popQueue), 2];
             [_this select 1] call CBA_fnc_removePerFrameHandler;
         };
         }, 1, []] call CBA_fnc_addPerFrameHandler;

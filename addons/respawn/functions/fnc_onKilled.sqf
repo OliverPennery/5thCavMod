@@ -47,8 +47,8 @@ switch (GVAR(CustomRespawnMode)) do {
                 setPlayerRespawnTime 99999;
                 [_this select 1] call CBA_fnc_removePerFrameHandler;
             } else {
-                if (([player,nil,true] call BIS_fnc_respawnTickets > 0) and ((CAV_DQ find player) == -1)) then{
-                    [player] remoteExecCall [QFUNC(addPlayerToQueue), 2];
+                if (([player,nil,true] call BIS_fnc_respawnTickets > 0) and ((CAV_DQ find (netId player)) == -1)) then{
+                    (netId player) remoteExecCall [QFUNC(addPlayerToQueue), 2];
                 };
                 private _respawnTime = GETVAR(player,GVAR(playerRespawnTime),GVAR(RespawnTime));
                 if ((GETMVAR(GVAR(deployed),false)) and ((side GVAR(medVic) == (call ace_common_fnc_playerSide)) or (side GVAR(medVic) == civilian)) and (getDammage GVAR(medVic) != 1) and (((count fullCrew [GVAR(medVic), "cargo", true]) - (count fullCrew [GVAR(medVic), "cargo"])) > 0) and ([player,nil,true] call BIS_fnc_respawnTickets > 0)) then {
@@ -61,15 +61,13 @@ switch (GVAR(CustomRespawnMode)) do {
                         };
                     }else{
                         systemChat format ["CAV_DQ:%1", CAV_DQ];
-                        if ((CAV_DQ find player) == 0) then{
+                        if ((CAV_DQ find (netId player)) == 0) then{
                             setPlayerRespawnTime 0;
                             [_this select 1] call CBA_fnc_removePerFrameHandler;
                         }else{
-                            private _place = (CAV_DQ find player);
+                            private _place = (CAV_DQ find (netId player));
                             if (_place != -1) then{
                                 format ["You are place %1 in the queue.", _place] remoteExecCall ["systemChat", player];
-                            }else{
-                                format ["The respawn queue is broken with %1!", name player] remoteExecCall ["globalChat", 0];
                             };
                         };
                     };

@@ -1,9 +1,9 @@
 #include "script_component.hpp"
 
-params ["_player"];
+params ["_id"];
 
-if (_player in CAV_DQ) exitWith{
-    CAV_DQ deleteAt (CAV_DQ find _player);
+if (_id in CAV_DQ) exitWith{
+    CAV_DQ deleteAt (CAV_DQ find _id);
     publicVariable "CAV_DQ";
     true
 };
