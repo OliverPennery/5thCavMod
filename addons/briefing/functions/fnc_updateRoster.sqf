@@ -28,7 +28,7 @@ _grps = _grps select {
 
     _text = _text + format ["<t color='%3'>%1 - %2</t> - SW:%4 / LR:%5", (str(_x) select [2]), (name leader _x), ("#0080FF"), _sWFreq, _lRFreq] + "<br />";
     {
-        if (([_x] call ace_medical_fnc_isMedic) && {_x != leader group _x}) then {
+        if (([_x] call ace_medical_treatment_fnc_isMedic) && {_x != leader group _x}) then {
             _text = _text + format["<t color='%2'>|- %1 [M]</t>", (name _x), ("#B40404")] + "<br />";
         };
     } forEach units _x;

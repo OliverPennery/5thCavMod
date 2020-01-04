@@ -33,7 +33,7 @@ _handle = [
             _text = _text + (_toggleFormat select ((!isNull objectParent _x) and (!isDamageAllowed vehicle _x)));
             _text = _text + (_toggleFormat select (_x getVariable ["ace_captives_isSurrendering", false]));
             _text = _text + (_toggleFormat select (_x getVariable ["ace_captives_isHandcuffed", false]));
-            _text = _text + (_toggleFormat select ([_x] call ace_medical_fnc_isMedic));
+            _text = _text + (_toggleFormat select ([_x] call ace_medical_treatment_fnc_isMedic));
             _text = _text + (_toggleFormat select ([_x] call ace_repair_fnc_isEngineer));
             _text = _text + (_toggleFormat select (if (_zeusModuleIndex != -1) then {true}else{false}));
 

@@ -6,7 +6,7 @@ private _id = ([(ctrlParent (_btnControl # 0)), _listboxIdc] call FUNC(getListbo
 
 if (count _id == 0) then{
     {
-        [_x, _x] call ACE_medical_fnc_treatmentAdvanced_fullHealLocal;
+        [_x] call ace_medical_treatment_fnc_fullHealLocal;
         _x setDamage 0;
     } forEach allPlayers - entities "HeadlessClient_F";
 
@@ -15,7 +15,7 @@ if (count _id == 0) then{
 
 }else{
     private _unit = _id call BIS_fnc_objectFromNetId;
-    [_unit, _unit] call ACE_medical_fnc_treatmentAdvanced_fullHealLocal;
+    [_unit] call ace_medical_treatment_fnc_fullHealLocal;
     _unit setDamage 0;
 
     [format ["Healed %1", (name _unit)], 2] call FUNC(clientLog);
