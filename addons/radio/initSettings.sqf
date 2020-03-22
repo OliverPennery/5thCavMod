@@ -37,3 +37,42 @@
 		GVAR(Preset_Side) = _value;
     }
 ] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(giveAssetsRadios),
+    "CHECKBOX",
+    [localize LSTRING(giveAssetsRadios_DisplayName), localize LSTRING(giveAssetsRadios_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Presets_Module_DisplayName)],
+    true,
+    true,
+    {
+        params ["_value"];
+        GVAR(giveAssetsRadios) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(giveLeadersRadios),
+    "CHECKBOX",
+    [localize LSTRING(giveLeadersRadios_DisplayName), localize LSTRING(giveLeadersRadios_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Presets_Module_DisplayName)],
+    true,
+    true,
+    {
+        params ["_value"];
+        GVAR(giveLeadersRadios) = _value;
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(giveSoldiersRadios),
+    "CHECKBOX",
+    [localize LSTRING(giveSoldiersRadios_DisplayName), localize LSTRING(giveSoldiersRadios_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Presets_Module_DisplayName)],
+    true,
+    true,
+    {
+        params ["_value"];
+        GVAR(giveSoldiersRadios) = _value;
+    }
+] call CBA_Settings_fnc_init;

@@ -25,5 +25,23 @@
        <Key ID="STR_CAV_Radio_Preset_Side_Description">
            <English>Set Vehicle Radio Side. Default: WEST</English>
        </Key>
+       <Key ID="STR_CAV_Radio_giveSoldiersRadios_DisplayName">
+           <English>Give Soldiers Radios</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_giveSoldiersRadios_Description">
+           <English>Gives Soldiers PRC 343s on spawn.</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_giveAssetsRadios_DisplayName">
+           <English>Give Assets Radios</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_giveAssetsRadios_Description">
+           <English>Gives Assets PRC 152s for Platoon Comms. (The First element is considered a leader. Ex: TH1, TANK1)</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_giveLeadersRadios_DisplayName">
+           <English>Give Leaders Radios</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_giveLeadersRadios_Description">
+           <English>Gives Leaders PRC 152s for Platoon Comms.</English>
+       </Key>
    </Package>
 </Project>

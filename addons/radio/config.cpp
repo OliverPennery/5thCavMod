@@ -8,9 +8,10 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cav_common"};
         author = "";
-        authors[] = {"Brecon"};
+        authors[] = {"Brecon","FieldGeneral"};
         VERSION_CONFIG;
     };
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgWeapons.hpp"
