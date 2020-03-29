@@ -177,4 +177,88 @@ class CfgVehicles {
             };
         };
     };
+
+    class CAV_moduleSafeStart: Module_F {
+        scope = 2;
+        displayName = "Safe Start Disabler";
+        author = "Brecon";
+        vehicleClass = "Modules";
+        category = "CAV_modules";
+        function =  QUOTE(DFUNC(moduleSafeStart));
+        functionPriority = 1;
+        isGlobal = 1;
+        isTriggerActivated = 0;
+        isDisposable = 1;
+        is3DEN = 0;
+        canSetArea = 1;
+
+        class AttributeValues {
+            size3[] = {25,50,-1};
+            IsRectangle = 1;
+        };
+
+        class Arguments: ArgumentsBaseUnits {
+            class spDisable{
+                displayName = "SP Disable";
+                description = "Disable in single player";
+                typeName = "BOOL";
+                class values {
+                    class valueEnabled {
+                        name = "Enable";
+                        value = true;
+                        default = true;
+                    };
+                    class valueDisabled {
+                        name = "Disable";
+                        value = false;
+                    };
+                };
+            };
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description = "Disable Safe Start";
+            sync[] = {"LocationArea_F"};
+
+            class LocationArea_F {
+                position = 1;
+                optional = 1;
+                duplicate = 0;
+                synced[] = {"Anything"};
+            };
+        };
+    };
+
+
+    class CAV_moduleHealArea: Module_F {
+        scope = 2;
+        displayName = "Heal Area";
+        author = "Brecon";
+        vehicleClass = "Modules";
+        category = "CAV_modules";
+        function =  QUOTE(DFUNC(moduleHealArea));
+        functionPriority = 1;
+        isGlobal = 0;
+        isTriggerActivated = 0;
+        isDisposable = 1;
+        is3DEN = 0;
+        canSetArea = 1;
+
+        class AttributeValues {
+            size3[] = {25,25,-1};
+            IsRectangle = 1;
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description = "Heal Players In Area";
+            sync[] = {"LocationArea_F"};
+
+            class LocationArea_F {
+                position = 1;
+                optional = 1;
+                duplicate = 0;
+                synced[] = {"Anything"};
+            };
+        };
+    };
 };
