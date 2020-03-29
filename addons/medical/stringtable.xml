@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CAV">
+    <Package name="Medical">
+        <Key ID="STR_CAV_Medical_Actions_FastBandage">
+            <English>Fast Bandage</English>
+        </Key>
+        <Key ID="STR_CAV_Medical_Bandage_Fast_Display">
+            <English>Bandage (Fast)</English>
+        </Key>
+        <Key ID="STR_CAV_Medical_Actions_Gauze">
+            <English>Gauze</English>
+        </Key>
+        <Key ID="STR_CAV_Medical_Bandage_Gauze_Display">
+            <English>Bandage (Gauze)</English>
+        </Key>
+    </Package>
+</Project>
