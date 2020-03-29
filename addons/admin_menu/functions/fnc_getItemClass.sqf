@@ -73,6 +73,7 @@ private _ACE_MEDICAL = ["ACE_fieldDressing",
                         "ACE_salineIV_250",
                         "ACE_quikclot",
                         "ACE_personalAidKit",
+                        "ACE_splint",
                         "ACE_surgicalKit"];
 
 private _CONFIG_CFG_WEAPONS = configFile >> "CfgWeapons";
