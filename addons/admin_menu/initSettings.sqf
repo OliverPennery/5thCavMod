@@ -37,19 +37,19 @@
         GVAR(AM_Admin_UID) = (_value splitString ",");
     }
 ] call CBA_Settings_fnc_init;
-
+//TODO FIX CBA DROPDOWN
 [
     QGVAR(AM_Default_Menu),
     "LIST",
     [localize LSTRING(AM_Default_Menu_DisplayName), localize LSTRING(AM_Default_Menu_Description)],
     [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(AM_Module_DisplayName)],
-    [[QGVAR(main), QGVAR(commands), QGVAR(console), QGVAR(debug), QGVAR(functions), QGVAR(loadoutViewer), QGVAR(respawn),QGVAR(specPort)],
+    [[0,1,2,3,4,5,6,7],
      ["Main", "Commands", "Console", "Debug", "Functions", "Loadout Viewer", "Respawn", "SpecPort"],
      0],
     false,
     {
         params ["_value"];
-        GVAR(AM_Default_Menu) = _value;
+        GVAR(AM_Default_Menu) = [QGVAR(main), QGVAR(commands), QGVAR(console), QGVAR(debug), QGVAR(functions), QGVAR(loadoutViewer), QGVAR(respawn),QGVAR(specPort)] # _value;
     }
 ] call CBA_Settings_fnc_init;
 

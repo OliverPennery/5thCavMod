@@ -24,16 +24,16 @@
         GVAR(Vehicler_Preset_Enable) = _value;
     }
 ] call CBA_Settings_fnc_init;
-
+//TODO FIX CBA DROPDOWN
 [
     QGVAR(Preset_Side),
     "LIST",
     [localize LSTRING(Preset_Side_DisplayName), localize LSTRING(Preset_Side_Description)],
     [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Presets_Module_DisplayName)],
-    [["west","east","resistance"], ["West","East","Independent"], 0],
+    [[0,1,2], ["West","East","Independent"], 0],
     true,
     {
         params ["_value"];
-		GVAR(Preset_Side) = _value;
+		GVAR(Preset_Side) = ["west","east","independent"] # _value;
     }
 ] call CBA_Settings_fnc_init;
