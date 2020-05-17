@@ -11,7 +11,7 @@
         GVAR(Player_Preset_Enable) = _value;
     }
 ] call CBA_Settings_fnc_init;
-
+/*
 [
     QGVAR(Vehicler_Preset_Enable),
     "CHECKBOX",
@@ -37,7 +37,7 @@
 		GVAR(Preset_Side) = ["west","east","independent"] # _value;
     }
 ] call CBA_Settings_fnc_init;
-
+*/
 [
     QGVAR(giveAssetsRadios),
     "CHECKBOX",

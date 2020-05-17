@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cav_common"};
+        requiredAddons[] = {"cav_common","acre_api"};
         author = "";
         authors[] = {"Brecon","FieldGeneral"};
         VERSION_CONFIG;
@@ -15,3 +15,5 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgAcreComponents.hpp"
