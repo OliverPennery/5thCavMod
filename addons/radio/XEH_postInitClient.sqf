@@ -5,6 +5,7 @@ if (!hasInterface) exitWith {};
 
 LOG(MSG_INIT);
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
+    [] call FUNC(acrePlayerGiveRadio);
     if (GVAR(Player_Preset_Enable)) then {
         [] call FUNC(acreInit);
         [

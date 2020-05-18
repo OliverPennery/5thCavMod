@@ -44,7 +44,7 @@ GVAR(BFT_Custom_Colour_Support) = QGVAR(ColourSupport);
 GVAR(BFT_Custom_Colour_Tank) = QGVAR(ColourArmour);
 GVAR(BFT_Custom_Colour_Air) = QGVAR(ColourAir);
 
-CAV_SWRadioChannels = ["Alpha","Bravo","Charlie","Delta","APC","Mech","Tank","Helo 1","Helo 2","Plane","MG Teams","AT Teams","Mortar","AA Teams","Special Teams"];
+CAV_SWRadioChannels = ["Platoon","Alpha","Bravo","Charlie","Delta","APC","Mech","Tank","Helo 1","Helo 2","Plane","MG Teams","AT Teams","Mortar","AA Teams","Special Teams"];
 
 // --- Group Markers with Freq
 // --- Callsign = [Grp Name,Marker, Display Name on Map, Colour, Acre SR Channel, Acre LR Channel, Type]

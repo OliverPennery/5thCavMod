@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-params [["_group",group player],["_update",false],["_radioID",""]];
+params [["_group", group player],["_update", false],["_radioID", ""]];
 
 private _grp = [_group] call EFUNC(common,getGroup);
 if (isNil {_grp}) then {
@@ -13,8 +13,12 @@ _lrchannel = _grp select 4;
 if (_radioID != "") then {
     [_radioID, _srchannel] call acre_api_fnc_setRadioChannel;
 } else {
-    [(["ACRE_PRC343"] call acre_api_fnc_getRadioByType), _srchannel] call acre_api_fnc_setRadioChannel;
-    [(["ACRE_PRC152"] call acre_api_fnc_getRadioByType), _lrchannel] call acre_api_fnc_setRadioChannel;
+    if (!isNil {["ACRE_PRC343"] call acre_api_fnc_getRadioByType}) then {
+        [(["ACRE_PRC343"] call acre_api_fnc_getRadioByType), _srchannel] call acre_api_fnc_setRadioChannel;
+    };
+    if (!isNil {["ACRE_PRC152"] call acre_api_fnc_getRadioByType}) then {
+        [(["ACRE_PRC152"] call acre_api_fnc_getRadioByType), _lrchannel] call acre_api_fnc_setRadioChannel;
+    };
 };
 
 if (_update) exitwith {
