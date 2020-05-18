@@ -76,3 +76,16 @@
         GVAR(giveSoldiersRadios) = _value;
     }
 ] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(difSideFreqs),
+    "CHECKBOX",
+    [localize LSTRING(difSideFreqs_DisplayName), localize LSTRING(difSideFreqs_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(Presets_Module_DisplayName)],
+    false,
+    true,
+    {
+        params ["_value"];
+        GVAR(difSideFreqs) = _value;
+    }
+] call CBA_Settings_fnc_init;

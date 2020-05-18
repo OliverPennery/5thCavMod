@@ -12,6 +12,10 @@ if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
             if (GVAR(Player_Preset_Enable)) then {
                 [] call FUNC(acreInit);
                 [] call FUNC(acrePlayerSetFreq);
+            } else {
+                if (GVAR(difSideFreqs)) then {
+                    [] call FUNC(acreDifSideFreqs);
+                };
             };
         }
     ] call CBA_fnc_waitUntilAndExecute;

@@ -43,6 +43,12 @@
        <Key ID="STR_CAV_Radio_giveLeadersRadios_Description">
            <English>Gives Leaders PRC 152s for Platoon Comms.</English>
        </Key>
+       <Key ID="STR_CAV_Radio_difSideFreqs_DisplayName">
+           <English>Set different freqencies per side</English>
+       </Key>
+       <Key ID="STR_CAV_Radio_difSideFreqs_Description">
+           <English>Sides will have different freqencies preset for their radios</English>
+       </Key>
        <Key ID="STR_CAV_Radio_moduleBabelSetup_DisplayName">
            <English>Babel Setup for Mission</English>
        </Key>

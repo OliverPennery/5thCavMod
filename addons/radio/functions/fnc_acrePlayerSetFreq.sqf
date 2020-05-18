@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-params [["_group", group player],["_update", false],["_radioID", ""]];
+params [["_group", group player],["_update", false],["_radioID", ""],["_playerSide", side ACE_Player]];
 
 private _grp = [_group] call EFUNC(common,getGroup);
 if (isNil {_grp}) then {
@@ -9,6 +9,20 @@ private _srchannel = 1;
 private _lrchannel = 1;
 _srchannel = _grp select 3;
 _lrchannel = _grp select 4;
+
+if (GVAR(difSideFreqs)) then {
+    switch (_playerSide) do {
+        case (west): {
+            _srchannel = _srchannel + 16;
+        };
+        case (east): {
+            _srchannel = _srchannel + 32;
+        };
+        case (independent): {
+            _srchannel = _srchannel + 48;
+        };
+    };
+};
 
 if (_radioID != "") then {
     [_radioID, _srchannel] call acre_api_fnc_setRadioChannel;
