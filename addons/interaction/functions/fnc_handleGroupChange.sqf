@@ -19,5 +19,5 @@ if (_group in _groupList) then{
 if (!GVAR(switchFreqOnJoin)) exitwith {false};
 
 {
-    [group _player, true] remoteExecCall [QEFUNC(radio,playerSetFreq), _x];
+    [group _player, true] remoteExecCall [QEFUNC(radio,acrePlayerSetFreq), _x];
 }forEach _groupMembers;
