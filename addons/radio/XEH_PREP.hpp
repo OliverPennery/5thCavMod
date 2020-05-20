@@ -4,3 +4,7 @@ PREP(343ChannelDescription);
 PREP(moduleBabelSetup);
 PREP(acrePlayerGiveRadio);
 PREP(acreDifSideFreqs);
+PREP(acreSaveRadios);
+PREP(acreApplyRadios);
+PREP(handleKilled);
+PREP(handleRespawn);

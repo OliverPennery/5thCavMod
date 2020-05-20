@@ -16,3 +16,19 @@ class Extended_PostInit_EventHandlers {
         serverInit = QUOTE(call COMPILE_FILE(XEH_postInitServer));
     };
 };
+
+class Extended_Killed_EventHandlers {
+    class CAManBase {
+        class ADDON {
+            killed = QUOTE(_this call FUNC(handleKilled));
+        };
+    };
+};
+
+class Extended_Respawn_EventHandlers {
+    class CAManBase {
+        class ADDON {
+            respawn = QUOTE(_this call FUNC(handleRespawn));
+        };
+    };
+};
