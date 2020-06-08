@@ -61,5 +61,4 @@ PREP(toggleTargeting);
 PREP(toggleVehicleDamage);
 PREP(toggleZeus);
 PREP(zeusAddObject);
-PREP(zeusCreatePlayerModule);
 PREP(zeusReset);

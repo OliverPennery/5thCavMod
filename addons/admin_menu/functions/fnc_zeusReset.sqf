@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 {
-    {
-        deleteVehicle (call compile _x);
-    }forEach (missionNamespace getVariable [QGVAR(zeusModules), []]);
-    missionNamespace setVariable [QGVAR(zeusModules), [], true];
-} remoteExecCall ["call", 2];
+    if (GETVAR(_x,GVAR(zeusEnabled),false)) then {
+        [QGVAR(deleteZeus), _x, _x] call CBA_fnc_targetEvent;
+    };
+} forEach (allPlayers - entities "HeadlessClient_F");

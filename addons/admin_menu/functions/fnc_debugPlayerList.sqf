@@ -22,9 +22,6 @@ _handle = [
     		private _index = _control lbAdd (name _x);
             _control lbSetData [_index, _id];
 
-            private _playersZeusModule = format ["cav_admin_menu_zeusModule_%1", ((_id splitString ":") joinString "_")];
-            private _zeusModuleIndex = (missionNamespace getVariable [QGVAR(zeusModules), []]) find _playersZeusModule;
-
             private _text = "";
 
             _text = _text + (_toggleFormat select (isObjectHidden _x));
@@ -35,7 +32,7 @@ _handle = [
             _text = _text + (_toggleFormat select (_x getVariable ["ace_captives_isHandcuffed", false]));
             _text = _text + (_toggleFormat select ([_x] call ace_medical_treatment_fnc_isMedic));
             _text = _text + (_toggleFormat select ([_x] call ace_repair_fnc_isEngineer));
-            _text = _text + (_toggleFormat select (if (_zeusModuleIndex != -1) then {true}else{false}));
+            _text = _text + (_toggleFormat select (GETVAR(_x,GVAR(zeusEnabled),false)));
 
             _control lbSetTextRight  [_index, _text];
             if !(alive _x) then{

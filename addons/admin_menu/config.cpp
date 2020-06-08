@@ -6,13 +6,14 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cav_common"};
+        requiredAddons[] = {"cav_common","ace_zeus"};
         author = "";
         authors[] = {"Brecon"};
         VERSION_CONFIG;
     };
 };
 
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 
 #include "ui\defines.hpp"
