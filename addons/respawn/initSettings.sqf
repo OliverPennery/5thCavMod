@@ -9,7 +9,7 @@
         params ["_value"];
         GVAR(CustomRespawnMode) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(NumberOfRespawns),
@@ -22,7 +22,7 @@
         params ["_value"];
         GVAR(NumberOfRespawns) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(RespawnTime),
@@ -35,7 +35,7 @@
         params ["_value"];
         GVAR(RespawnTime) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(MedVicString),
@@ -48,7 +48,7 @@
         params ["_value"];
         GVAR(MedVicString) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(medVicDeployTime),
@@ -61,4 +61,4 @@
         params ["_value"];
         GVAR(medVicDeployTime) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

@@ -10,7 +10,7 @@
         params ["_value"];
         GVAR(requireGPSTransmit) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(requireGPSReceive),
@@ -23,7 +23,7 @@
         params ["_value"];
         GVAR(requireGPSReceive) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(giveGPS),
@@ -36,7 +36,7 @@
         params ["_value"];
         GVAR(giveGPS) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(giveGPSAI),
@@ -49,7 +49,7 @@
         params ["_value"];
         GVAR(giveGPSAI) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(BFT_Enable),
@@ -62,7 +62,7 @@
         params ["_value"];
         GVAR(BFT_Enable) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(BFT_HideAi),
@@ -75,7 +75,7 @@
         params ["_value"];
         GVAR(BFT_HideAi) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(BFT_Delay),
@@ -88,7 +88,7 @@
         params ["_value"];
 		GVAR(BFT_Delay) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(BFT_Colour_Preset),
@@ -102,7 +102,7 @@
         //GVAR(BFT_Colour_Preset) = _value;
         _value call FUNC(updateConfigColours);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(fTMarkers_Enabled),
@@ -115,7 +115,7 @@
         params ["_value"];
         GVAR(fTMarkers_Enabled) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(fTMarkers_Delay),
@@ -128,7 +128,7 @@
         params ["_value"];
         GVAR(fTMarkers_Delay) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(fTMarkers_ColorTeams),
@@ -141,7 +141,7 @@
         params ["_value"];
         GVAR(fTMarkers_ColorTeams) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(fTMarkers_Type),
@@ -154,4 +154,4 @@
         params ["_value"];
         GVAR(fTMarkers_Type) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

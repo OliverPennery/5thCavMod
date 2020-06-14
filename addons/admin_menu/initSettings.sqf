@@ -10,7 +10,7 @@
         params ["_value"];
         GVAR(AM_Enable) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(ServerCommandPassword),
@@ -23,7 +23,7 @@
         params ["_value"];
         GVAR(ServerCommandPassword) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Admin_UID),
@@ -36,7 +36,7 @@
         params ["_value"];
         GVAR(AM_Admin_UID) = (_value splitString ",");
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 //TODO FIX CBA DROPDOWN
 [
     QGVAR(AM_Default_Menu),
@@ -51,7 +51,7 @@
         params ["_value"];
         GVAR(AM_Default_Menu) = [QGVAR(main), QGVAR(commands), QGVAR(console), QGVAR(debug), QGVAR(functions), QGVAR(loadoutViewer), QGVAR(respawn),QGVAR(specPort)] # _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_1_Name),
@@ -64,7 +64,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_1_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_1_Func),
@@ -77,7 +77,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_1_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_2_Name),
@@ -90,7 +90,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_2_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_2_Func),
@@ -103,7 +103,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_2_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_3_Name),
@@ -116,7 +116,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_3_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_3_Func),
@@ -129,7 +129,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_3_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_4_Name),
@@ -142,7 +142,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_4_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_4_Func),
@@ -155,7 +155,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_4_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_5_Name),
@@ -168,7 +168,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_5_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_5_Func),
@@ -181,7 +181,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_5_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_6_Name),
@@ -194,7 +194,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_6_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_6_Func),
@@ -207,7 +207,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_6_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_7_Name),
@@ -220,7 +220,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_7_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_7_Func),
@@ -233,7 +233,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_7_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_8_Name),
@@ -246,7 +246,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_8_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_8_Func),
@@ -259,7 +259,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_8_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_9_Name),
@@ -272,7 +272,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_9_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_9_Func),
@@ -285,7 +285,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_9_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_10_Name),
@@ -298,7 +298,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_10_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_10_Func),
@@ -311,7 +311,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_10_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_11_Name),
@@ -324,7 +324,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_11_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_11_Func),
@@ -337,7 +337,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_11_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_12_Name),
@@ -350,7 +350,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_12_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_12_Func),
@@ -363,7 +363,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_12_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_13_Name),
@@ -376,7 +376,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_13_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_13_Func),
@@ -389,7 +389,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_13_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_14_Name),
@@ -402,7 +402,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_14_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_14_Func),
@@ -415,7 +415,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_14_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_15_Name),
@@ -428,7 +428,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_15_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_15_Func),
@@ -441,7 +441,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_15_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_16_Name),
@@ -454,7 +454,7 @@
         params ["_value"];
         GVAR(AM_Func_Btn_16_Name) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AM_Func_Btn_16_Func),
@@ -467,4 +467,4 @@
         params ["_value"];
         GVAR(AM_Func_Btn_16_Func) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

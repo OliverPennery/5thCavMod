@@ -9,7 +9,7 @@
         params ["_value"];
         GVAR(enableRoster) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 [
     QGVAR(enableSafeStart),
     "CHECKBOX",
@@ -21,4 +21,4 @@
         params ["_value"];
         GVAR(enableSafeStart) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

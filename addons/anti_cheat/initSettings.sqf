@@ -10,7 +10,7 @@
         params ["_value"];
         GVAR(AA_Enable) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AA_AK_Enable),
@@ -23,7 +23,7 @@
         params ["_value"];
         GVAR(AA_AK_Enable) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AA_AK_Amt),
@@ -36,7 +36,7 @@
         params ["_value"];
 		GVAR(AA_AK_Amt) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(AA_AK_XLA_Enable),
@@ -49,4 +49,4 @@
         params ["_value"];
         GVAR(AA_AK_XLA_Enable) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

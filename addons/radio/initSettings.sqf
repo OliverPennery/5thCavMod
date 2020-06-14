@@ -10,7 +10,7 @@
         params ["_value"];
         GVAR(Player_Preset_Enable) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(Vehicler_Preset_Enable),
@@ -23,7 +23,7 @@
         params ["_value"];
         GVAR(Vehicler_Preset_Enable) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 //TODO FIX CBA DROPDOWN
 [
     QGVAR(Preset_Side),
@@ -36,4 +36,4 @@
         params ["_value"];
 		GVAR(Preset_Side) = ["west","east","independent"] # _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
