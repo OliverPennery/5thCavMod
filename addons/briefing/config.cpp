@@ -15,3 +15,4 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "ui\roster.hpp"
+#include "ui\mapInfo.hpp"

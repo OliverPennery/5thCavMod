@@ -1,12 +1,10 @@
 #include "script_component.hpp"
 
-private ["_toggle_button"];
-
 [
 {!isnull (findDisplay 46)},
 {
     with uiNamespace do {
-        _toggle_button = (findDisplay 12) ctrlCreate [QGVAR(RscButton_31050), 31050];
+        private _toggle_button = (findDisplay 12) ctrlCreate [QGVAR(RscButton_31050), 31050];
         _toggle_button buttonSetAction QUOTE([] call FUNC(toggleRoster););
     };
     [{

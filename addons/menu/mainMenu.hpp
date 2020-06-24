@@ -1,5 +1,5 @@
 class CfgMainMenuSpotlight {
-    class customServer
+    class GVAR(joinServer)
     {
         text = "5th Cavalry Server"; // Text displayed on the square button, converted to upper-case
         textIsQuote = 0; // 1 to add quotation marks around the text
@@ -35,6 +35,30 @@ class CfgMainMenuSpotlight {
         condition="false";
     };
     class ApexProtocol
+    {
+        condition="false";
+    };
+    class Contact_Campaign
+    {
+        condition="false";
+    };
+    class OldMan
+    {
+        condition="false";
+    };
+    class Tacops_Campaign_01
+    {
+        condition="false";
+    };
+    class Tacops_Campaign_02
+    {
+        condition="false";
+    };
+    class Tacops_Campaign_03
+    {
+        condition="false";
+    };
+    class Tanks_Campaign_01
     {
         condition="false";
     };
