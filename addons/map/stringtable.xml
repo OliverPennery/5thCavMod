@@ -100,6 +100,12 @@
         <Key ID="STR_CAV_Map_fTMarkers_ColorTeams_Description">
             <English>Should fireteam markers respect color teams?</English>
         </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_Occlusion_DisplayName">
+            <English>Fireteam Marker Occlusion</English>
+        </Key>
+        <Key ID="STR_CAV_Map_fTMarkers_Occlusion_Description">
+            <English>Should markers be hidden if team member is not visible</English>
+        </Key>
         <Key ID="STR_CAV_Map_requireGPSTransmit_DisplayName">
             <English>Require GPS to Transmit</English>
         </Key>
