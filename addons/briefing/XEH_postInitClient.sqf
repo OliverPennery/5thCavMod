@@ -6,5 +6,7 @@ if (!hasInterface) exitWith {};
 LOG(MSG_INIT);
 
 if (GVAR(enableRoster)) then {
-    [] spawn FUNC(initRoster);
+    [] call FUNC(initRoster);
 };
+
+[] call FUNC(initMapName);
