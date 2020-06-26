@@ -16,10 +16,10 @@ _handle = [
 
     private _toggleFormat =  ["|0", "|X"];
     {
-    	if (isPlayer _x) then
-    	{
+        if (isPlayer _x) then
+        {
             private _id = (_x call BIS_fnc_netId);
-    		private _index = _control lbAdd (name _x);
+            private _index = _control lbAdd (name _x);
             _control lbSetData [_index, _id];
 
             private _text = "";
@@ -41,6 +41,6 @@ _handle = [
             if (_player == _x and (lbCurSel _control) == -1) then{
                 _control lbSetCurSel _index;
             };
-    	};
+        };
     } forEach allPlayers - entities "HeadlessClient_F";
 },1,[_control, _parentDisplay, player]] call CBA_fnc_addPerFrameHandler;

@@ -4,19 +4,19 @@
 @filename: arsenalChecker.sqf
 
 Author:
-	Brecon
+    Brecon
 
 Description:
-	Checks if the user, uses arsenal and if so hint name globally
+    Checks if the user, uses arsenal and if so hint name globally
 
 Arguments:
-	None
+    None
 
 Return Value:
-	None
+    None
 
 Example:
-	[] execVM "b\antiCheat\arsenalChecker.sqf";
+    [] execVM "b\antiCheat\arsenalChecker.sqf";
 
  _____________________________________________________________________________*/
 

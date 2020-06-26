@@ -34,7 +34,7 @@
     true,
     {
         params ["_value"];
-		GVAR(AA_AK_Amt) = _value;
+        GVAR(AA_AK_Amt) = _value;
     }
 ] call CBA_fnc_addSetting;
 

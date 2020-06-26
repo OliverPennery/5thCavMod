@@ -4,20 +4,20 @@
 @filename: b_fnc_blueForceTrackingUpdate.sqf
 
 Author:
-	Brecon
+    Brecon
 
 Description:
-	Update the blue force tracking.
+    Update the blue force tracking.
 
 Arguments:
-	0: delay 		<int>
-	1: hide AI  	<Bool>
+    0: delay         <int>
+    1: hide AI      <Bool>
 
 Return Value:
-	None
+    None
 
 Example:
-	[15, true] call b_fnc_blueForceTrackingUpdate;
+    [15, true] call b_fnc_blueForceTrackingUpdate;
 
  _____________________________________________________________________________*/
 
@@ -46,7 +46,7 @@ if (GVAR(requireGPSReceive) && !([player] call FUNC(isGPS))) exitWith {};
         {
             _groupsToDrawMarkers = _groupsToDrawMarkers select {
                 {
-                	[_x] call ace_common_fnc_isPlayer;
+                    [_x] call ace_common_fnc_isPlayer;
                 } count units _x > 0;
             };
         };

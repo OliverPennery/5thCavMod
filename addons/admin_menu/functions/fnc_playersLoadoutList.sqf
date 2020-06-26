@@ -160,9 +160,9 @@ _handle = [
 
     private _unit = (([(ctrlParent (_control # 0)), _listboxIdc] call FUNC(getListboxData)) # 2) call BIS_fnc_objectFromNetId;
 
-	if (isPlayer _unit) then
-	{
-		private _loadout = getUnitLoadout _unit;
+    if (isPlayer _unit) then
+    {
+        private _loadout = getUnitLoadout _unit;
         if (!((player getVariable [QGVAR(lastLoadout), []]) isEqualTo _loadout)) then{
             player setVariable [QGVAR(lastLoadout), _loadout,true];
             [format ["Viewing %1 Loadout", (name _unit)], 2] call FUNC(clientLog);

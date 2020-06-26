@@ -44,107 +44,107 @@ class GVAR(main)
 
     class GVAR(main_background): IGUIBack
     {
-    	idc = 2200;
-    	x = 0.297371 * safezoneW + safezoneX;
-    	y = 0.283766 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.470074 * safezoneH;
+        idc = 2200;
+        x = 0.297371 * safezoneW + safezoneX;
+        y = 0.283766 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.470074 * safezoneH;
     };
     class GVAR(main_frame): RscFrame
     {
-    	idc = 1800;
-    	x = 0.297371 * safezoneW + safezoneX;
-    	y = 0.283766 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.470074 * safezoneH;
+        idc = 1800;
+        x = 0.297371 * safezoneW + safezoneX;
+        y = 0.283766 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.470074 * safezoneH;
     };
     class GVAR(main_text_header): cav_admin_menu_gui_title
     {
-    	idc = 1000;
-    	text = "5th Cav Admin Menu"; //--- ToDo: Localize;
-    	x = 0.297371 * safezoneW + safezoneX;
-    	y = 0.24616 * safezoneH + safezoneY;
-    	w = 0.405259 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1000;
+        text = "5th Cav Admin Menu"; //--- ToDo: Localize;
+        x = 0.297371 * safezoneW + safezoneX;
+        y = 0.24616 * safezoneH + safezoneY;
+        w = 0.405259 * safezoneW;
+        h = 0.0376059 * safezoneH;
     };
     class GVAR(main_button_commands): RscButton
     {
-    	idc = 1606;
-    	text = "Commands"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.302569 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1606;
+        text = "Commands"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.302569 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(commands))] call FUNC(openMenu););
     };
     class GVAR(main_button_console): RscButton
     {
-    	idc = 1601;
-    	text = "Console"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.358978 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1601;
+        text = "Console"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.358978 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(console))] call FUNC(openMenu););
     };
     class GVAR(main_button_debug): RscButton
     {
-    	idc = 1605;
-    	text = "Debug"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.415387 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1605;
+        text = "Debug"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.415387 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(debug))] call FUNC(openMenu););
     };
     class GVAR(main_button_functions): RscButton
     {
-    	idc = 1604;
-    	text = "Functions"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.471796 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1604;
+        text = "Functions"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.471796 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(functions))] call FUNC(openMenu););
     };
     class GVAR(main_button_loadout): RscButton
     {
-    	idc = 1602;
-    	text = "Loadout Viewer"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.528204 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1602;
+        text = "Loadout Viewer"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.528204 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(loadoutViewer))] call FUNC(openMenu););
     };
     class GVAR(main_button_respawn): RscButton
     {
-    	idc = 1600;
-    	text = "Respawn"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.584613 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1600;
+        text = "Respawn"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.584613 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(respawn))] call FUNC(openMenu););
     };
     class GVAR(main_button_specPort): RscButton
     {
-    	idc = 1603;
-    	text = "Spectate | TP"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.641022 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1603;
+        text = "Spectate | TP"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.641022 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(specPort))] call FUNC(openMenu););
     };
     class GVAR(main_button_placeholder1): RscButton
     {
-    	idc = 1607;
-    	text = "Placeholder1"; //--- ToDo: Localize;
-    	x = 0.306181 * safezoneW + safezoneX;
-    	y = 0.697431 * safezoneH + safezoneY;
-    	w = 0.0528598 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1607;
+        text = "Placeholder1"; //--- ToDo: Localize;
+        x = 0.306181 * safezoneW + safezoneX;
+        y = 0.697431 * safezoneH + safezoneY;
+        w = 0.0528598 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(test))] call FUNC(openMenu););
     };
 };

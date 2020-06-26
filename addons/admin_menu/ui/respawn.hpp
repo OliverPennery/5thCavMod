@@ -59,123 +59,123 @@ class GVAR(respawn):GVAR(main)
     };
     class GVAR(respawn_background): IGUIBack
     {
-    	idc = 2200;
-    	x = 0.37666 * safezoneW + safezoneX;
-    	y = 0.283766 * safezoneH + safezoneY;
-    	w = 0.317159 * safezoneW;
-    	h = 0.470074 * safezoneH;
+        idc = 2200;
+        x = 0.37666 * safezoneW + safezoneX;
+        y = 0.283766 * safezoneH + safezoneY;
+        w = 0.317159 * safezoneW;
+        h = 0.470074 * safezoneH;
     };
     class GVAR(respawn_frame_border): RscFrame
     {
-    	idc = 1801;
-    	text = "Respawn"; //--- ToDo: Localize;
-    	x = 0.37666 * safezoneW + safezoneX;
-    	y = 0.283766 * safezoneH + safezoneY;
-    	w = 0.317159 * safezoneW;
-    	h = 0.470074 * safezoneH;
+        idc = 1801;
+        text = "Respawn"; //--- ToDo: Localize;
+        x = 0.37666 * safezoneW + safezoneX;
+        y = 0.283766 * safezoneH + safezoneY;
+        w = 0.317159 * safezoneW;
+        h = 0.470074 * safezoneH;
     };
     class GVAR(respawn_frame_selectedPlayers): RscFrame
     {
-    	idc = 1800;
-    	text = "Players"; //--- ToDo: Localize;
-    	x = 0.381065 * safezoneW + safezoneX;
-    	y = 0.302569 * safezoneH + safezoneY;
-    	w = 0.308349 * safezoneW;
-    	h = 0.347854 * safezoneH;
+        idc = 1800;
+        text = "Players"; //--- ToDo: Localize;
+        x = 0.381065 * safezoneW + safezoneX;
+        y = 0.302569 * safezoneH + safezoneY;
+        w = 0.308349 * safezoneW;
+        h = 0.347854 * safezoneH;
     };
     class GVAR(respawn_listbox_players): RscListbox
     {
-    	idc = 1500;
-    	x = 0.38547 * safezoneW + safezoneX;
-    	y = 0.321372 * safezoneH + safezoneY;
-    	w = 0.215844 * safezoneW;
-    	h = 0.31965 * safezoneH;
+        idc = 1500;
+        x = 0.38547 * safezoneW + safezoneX;
+        y = 0.321372 * safezoneH + safezoneY;
+        w = 0.215844 * safezoneW;
+        h = 0.31965 * safezoneH;
         onLoad = QUOTE(_this call FUNC(respawnPlayerList););
     };
     class GVAR(respawn_button_addTicket): RscButton
     {
-    	idc = 1608;
-    	text = "Add Ticket"; //--- ToDo: Localize;
-    	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.321372 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1608;
+        text = "Add Ticket"; //--- ToDo: Localize;
+        x = 0.610125 * safezoneW + safezoneX;
+        y = 0.321372 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_3(_this, 1500, 1)] call FUNC(setTicket););
     };
     class GVAR(respawn_button_selected_removeTicket): RscButton
     {
-    	idc = 1609;
-    	text = "Remove Ticket"; //--- ToDo: Localize;
-    	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.377781 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1609;
+        text = "Remove Ticket"; //--- ToDo: Localize;
+        x = 0.610125 * safezoneW + safezoneX;
+        y = 0.377781 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_3(_this, 1500, -1)] call FUNC(setTicket););
     };
     class GVAR(respawn_button_selected_setRespawnTime): RscButton
     {
-    	idc = 1617;
-    	text = "Set Respawn Time"; //--- ToDo: Localize;
-    	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.43419 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1617;
+        text = "Set Respawn Time"; //--- ToDo: Localize;
+        x = 0.610125 * safezoneW + safezoneX;
+        y = 0.43419 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_3(_this, 1500, 1400)] call FUNC(setRespawnTime););
     };
     class GVAR(respawn_edit_selected_respawnTime): RscEdit
     {
-    	idc = 1400;
-    	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.490598 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1400;
+        x = 0.610125 * safezoneW + safezoneX;
+        y = 0.490598 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
     };
     class GVAR(respawn_button_selected_forceDeploy): RscButton
     {
-    	idc = 1611;
-    	text = "Force Deploy"; //--- ToDo: Localize;
-    	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.547007 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1611;
+        text = "Force Deploy"; //--- ToDo: Localize;
+        x = 0.610125 * safezoneW + safezoneX;
+        y = 0.547007 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(setRespawnTime););
     };
     class GVAR(respawn_button_selected_forceRespawn): RscButton
     {
-    	idc = 1610;
-    	text = "Force Respawn"; //--- ToDo: Localize;
-    	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.603416 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1610;
+        text = "Force Respawn"; //--- ToDo: Localize;
+        x = 0.610125 * safezoneW + safezoneX;
+        y = 0.603416 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_2(_this # 0, 1500)] call FUNC(forceRespawn););
     };
     class GVAR(respawn_frame_debug): RscFrame
     {
-    	idc = 1802;
-    	text = "Debug"; //--- ToDo: Localize;
-    	x = 0.381065 * safezoneW + safezoneX;
-    	y = 0.678628 * safezoneH + safezoneY;
-    	w = 0.308349 * safezoneW;
-    	h = 0.0658103 * safezoneH;
+        idc = 1802;
+        text = "Debug"; //--- ToDo: Localize;
+        x = 0.381065 * safezoneW + safezoneX;
+        y = 0.678628 * safezoneH + safezoneY;
+        w = 0.308349 * safezoneW;
+        h = 0.0658103 * safezoneH;
     };
     class GVAR(respawn_listbox_debug_vars): RscListbox
     {
-    	idc = 1501;
-    	x = 0.38547 * safezoneW + safezoneX;
-    	y = 0.697431 * safezoneH + safezoneY;
-    	w = 0.215844 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1501;
+        x = 0.38547 * safezoneW + safezoneX;
+        y = 0.697431 * safezoneH + safezoneY;
+        w = 0.215844 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_1(_this)] call FUNC(medVicStatus););
     };
     class GVAR(respawn_button_debug_deployMedVic): RscButton
     {
-    	idc = 1616;
-    	text = "Deploy MedVic"; //--- ToDo: Localize;
-    	x = 0.610125 * safezoneW + safezoneX;
-    	y = 0.697431 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1616;
+        text = "Deploy MedVic"; //--- ToDo: Localize;
+        x = 0.610125 * safezoneW + safezoneX;
+        y = 0.697431 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_1(_this)] call FUNC(toggleMedVic););
     };
 };
