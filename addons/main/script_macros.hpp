@@ -7,6 +7,6 @@
                     scopeCurator = var; \
                     scopeArsenal = var;
 
-#define PRIVATE			0
-#define PROTECTED		1
-#define PUBLIC			2
+#define PRIVATE            0
+#define PROTECTED        1
+#define PUBLIC            2

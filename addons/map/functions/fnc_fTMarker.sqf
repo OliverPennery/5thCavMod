@@ -3,19 +3,19 @@
 @filename: fn_fTMarker.sqf
 
 Author:
-	FieldGeneral
+    FieldGeneral
 
 Description:
-	Creates markers for fireteam members
+    Creates markers for fireteam members
 
 Arguments:
-	1: delay (int)
+    1: delay (int)
 
 Return Value:
-	None
+    None
 
 Example:
-	[1] call CAV_map_fnc_fTMarker;
+    [1] call CAV_map_fnc_fTMarker;
 
  _____________________________________________________________________________*/
 params ["_delay"];
@@ -50,7 +50,7 @@ params ["_delay"];
                 _mkrName = Format ["mkr_%1",_unit];
                 _mkrType = QGVAR(man);
                 if (GVAR(fTMarkers_Type)) then {
-                	_mkrType = [_unit] call FUNC(getUnitType);
+                    _mkrType = [_unit] call FUNC(getUnitType);
                 };
                 _pos = getposATL _unit;
                 _dir = direction _unit;

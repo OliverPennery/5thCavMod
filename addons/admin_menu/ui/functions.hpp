@@ -71,188 +71,188 @@ class GVAR(functions):GVAR(main)
 
     class GVAR(functions_background): IGUIBack
     {
-    	idc = 2200;
-    	x = 0.37666 * safezoneW + safezoneX;
-    	y = 0.283766 * safezoneH + safezoneY;
-    	w = 0.325969 * safezoneW;
-    	h = 0.470074 * safezoneH;
+        idc = 2200;
+        x = 0.37666 * safezoneW + safezoneX;
+        y = 0.283766 * safezoneH + safezoneY;
+        w = 0.325969 * safezoneW;
+        h = 0.470074 * safezoneH;
     };
     class GVAR(functions_frame_border): RscFrame
     {
-    	idc = 1801;
-    	text = "Functions"; //--- ToDo: Localize;
-    	x = 0.37666 * safezoneW + safezoneX;
-    	y = 0.283766 * safezoneH + safezoneY;
-    	w = 0.325969 * safezoneW;
-    	h = 0.470074 * safezoneH;
+        idc = 1801;
+        text = "Functions"; //--- ToDo: Localize;
+        x = 0.37666 * safezoneW + safezoneX;
+        y = 0.283766 * safezoneH + safezoneY;
+        w = 0.325969 * safezoneW;
+        h = 0.470074 * safezoneH;
     };
     class GVAR(functions_listbox_players): RscListbox
     {
-    	idc = 1500;
-    	x = 0.38547 * safezoneW + safezoneX;
-    	y = 0.302569 * safezoneH + safezoneY;
-    	w = 0.149769 * safezoneW;
-    	h = 0.432468 * safezoneH;
+        idc = 1500;
+        x = 0.38547 * safezoneW + safezoneX;
+        y = 0.302569 * safezoneH + safezoneY;
+        w = 0.149769 * safezoneW;
+        h = 0.432468 * safezoneH;
         onLoad = QUOTE(_this call FUNC(playerList););
     };
     class GVAR(functions_button_placeholder1): RscButton
     {
-    	idc = 1611;
-    	text = "Placeholder1"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.302569 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1611;
+        text = "Placeholder1"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.302569 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 1)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder2): RscButton
     {
-    	idc = 1609;
-    	text = "Placeholder2"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.302569 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1609;
+        text = "Placeholder2"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.302569 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 2)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder3): RscButton
     {
-    	idc = 1621;
-    	text = "Placeholder3"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.358978 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1621;
+        text = "Placeholder3"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.358978 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 3)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder4): RscButton
     {
-    	idc = 1610;
-    	text = "Placeholder4"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.358978 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1610;
+        text = "Placeholder4"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.358978 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 4)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder5): RscButton
     {
-    	idc = 1622;
-    	text = "Placeholder5"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.415387 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1622;
+        text = "Placeholder5"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.415387 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 5)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder6): RscButton
     {
-    	idc = 1617;
-    	text = "Placeholder6"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.415387 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1617;
+        text = "Placeholder6"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.415387 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 6)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder7): RscButton
     {
-    	idc = 1620;
-    	text = "Placeholder7"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.471796 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1620;
+        text = "Placeholder7"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.471796 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 7)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder8): RscButton
     {
-    	idc = 1608;
-    	text = "Placeholder8"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.471796 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1608;
+        text = "Placeholder8"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.471796 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 8)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder9): RscButton
     {
-    	idc = 1616;
-    	text = "Placeholder9"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.528204 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1616;
+        text = "Placeholder9"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.528204 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 9)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder10): RscButton
     {
-    	idc = 1623;
-    	text = "Placeholder10"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.528204 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1623;
+        text = "Placeholder10"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.528204 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 10)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder11): RscButton
     {
-    	idc = 1612;
-    	text = "Placeholder11"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.584613 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1612;
+        text = "Placeholder11"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.584613 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 11)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder12): RscButton
     {
-    	idc = 1613;
-    	text = "Placeholder12"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.584613 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1613;
+        text = "Placeholder12"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.584613 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 12)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder13): RscButton
     {
-    	idc = 1618;
-    	text = "Placeholder13"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.641022 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1618;
+        text = "Placeholder13"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.641022 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 13)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder14): RscButton
     {
-    	idc = 1619;
-    	text = "Placeholder14"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.641022 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1619;
+        text = "Placeholder14"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.641022 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 14)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder15): RscButton
     {
-    	idc = 1614;
-    	text = "Placeholder15"; //--- ToDo: Localize;
-    	x = 0.54405 * safezoneW + safezoneX;
-    	y = 0.697431 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1614;
+        text = "Placeholder15"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.697431 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 15)]call FUNC(functionInit););
     };
     class GVAR(functions_button_placeholder16): RscButton
     {
-    	idc = 1615;
-    	text = "Placeholder16"; //--- ToDo: Localize;
-    	x = 0.62334 * safezoneW + safezoneX;
-    	y = 0.697431 * safezoneH + safezoneY;
-    	w = 0.0704798 * safezoneW;
-    	h = 0.0376059 * safezoneH;
+        idc = 1615;
+        text = "Placeholder16"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.697431 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
         onLoad = QUOTE([ARR_2(_this, 16)]call FUNC(functionInit););
     };
 };

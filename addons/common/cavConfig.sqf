@@ -4,36 +4,36 @@
 @filename: config.sqf
 
 Author:
-	Brecon
+    Brecon
 
 Description:
-	Defines variables for freqs and bft
+    Defines variables for freqs and bft
 
 Arguments:
-	None
+    None
 
 Return Value:
-	None
+    None
 
 Example:
-	_handle = execVM "b\config\groupConfig.sqf";
-	waitUntil {isNull _handle};
+    _handle = execVM "b\config\groupConfig.sqf";
+    waitUntil {isNull _handle};
 
  _____________________________________________________________________________*/
 
 // --- Groups
-_hq = "b_hq";			// Command elements
-_ft = "b_inf";			// Fireteams
-_sup = "b_support";		// Support units (MMG,HMG)
-_lau = "b_motor_inf";	// Launchers (MAT, HAT)
-_mor = "b_mortar";		// Mortars
-_eng = "b_maint";		// Engineers
-_ifv = "b_mech_inf";	// IFVs & APCs
-_tnk = "b_armor";		// Tanks
-_rec = "b_recon";		// Recon (ST)
-_hel = "b_air";			// Helicopters
-_pla = "b_plane";		// Planes
-_art = "b_art";			// Artillery
+_hq = "b_hq";            // Command elements
+_ft = "b_inf";            // Fireteams
+_sup = "b_support";        // Support units (MMG,HMG)
+_lau = "b_motor_inf";    // Launchers (MAT, HAT)
+_mor = "b_mortar";        // Mortars
+_eng = "b_maint";        // Engineers
+_ifv = "b_mech_inf";    // IFVs & APCs
+_tnk = "b_armor";        // Tanks
+_rec = "b_recon";        // Recon (ST)
+_hel = "b_air";            // Helicopters
+_pla = "b_plane";        // Planes
+_art = "b_art";            // Artillery
 
 GVAR(BFT_Custom_Colour_Platoon) = QGVAR(ColourPlatoon);
 GVAR(BFT_Custom_Colour_Alpha) = QGVAR(ColourAlpha);

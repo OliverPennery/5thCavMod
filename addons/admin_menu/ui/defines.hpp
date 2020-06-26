@@ -108,37 +108,37 @@ class RscCombo;
 
 class cav_admin_menu_gui_background:IGUIBack
 {
-    colorbackground[] =	{0,0,0,0.6};
+    colorbackground[] =    {0,0,0,0.6};
 };
 
 class cav_admin_menu_gui_frame:IGUIBack
 {
-    colorbackground[] =	{0,0,0,0.6};
+    colorbackground[] =    {0,0,0,0.6};
 };
 
 
 class cav_admin_menu_gui_title:RscText
 {
-	colorBackground[] =
-	{
-		0.988,
-		0.788,
-		0.094,
-		1
-	};
-	style = 2;
+    colorBackground[] =
+    {
+        0.988,
+        0.788,
+        0.094,
+        1
+    };
+    style = 2;
 };
 
 
 class cav_admin_menu_gui_button:RscButton
 {
     colorBackground[] =
-	{
-		0.988,
-		0.788,
-		0.094,
-		1
-	};
+    {
+        0.988,
+        0.788,
+        0.094,
+        1
+    };
 };
 
 
@@ -181,7 +181,7 @@ class _CT_TREE
     // sizeEx = GUI_GRID_CENTER_H; // Text size
     // font = GUI_FONT_NORMAL; // Font from CfgFontFamilies
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)"; // Text size
-	font = "RobotoCondensed"; // Font from CfgFontFamilies
+    font = "RobotoCondensed"; // Font from CfgFontFamilies
     shadow = 1; // Shadow (0 - none, 1 - N/A, 2 - black outline)
     colorText[] = {1,1,1,1}; // Text color
     colorSelectText[] = {1,1,1,1}; // Selected text color (when multiselectEnabled is 0)
@@ -201,27 +201,27 @@ class _CT_TREE
     // Scrollbar configuration
     class ScrollBar
     {
-    	width = 0; // width of ScrollBar
-    	height = 0; // height of ScrollBar
-    	scrollSpeed = 0.01; // scroll speed of ScrollBar
+        width = 0; // width of ScrollBar
+        height = 0; // height of ScrollBar
+        scrollSpeed = 0.01; // scroll speed of ScrollBar
 
-    	arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
-    	arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
-    	border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
-    	thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
+        arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
+        arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
+        border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
+        thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
 
-    	color[] = {1,1,1,1}; // Scrollbar color
+        color[] = {1,1,1,1}; // Scrollbar color
     };
 
     colorDisabled[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
     colorArrow[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
 
     colorPicture[] = {0,0,0,1};
-	colorPictureSelected[] = {0,0,0,1};
-	colorPictureDisabled[] = {1,1,1,0};
-	colorPictureRight[] = {0,0,0,1};
-	colorPictureRightSelected[] = {0,0,0,1};
-	colorPictureRightDisabled[] = {1,1,1,0};
+    colorPictureSelected[] = {0,0,0,1};
+    colorPictureDisabled[] = {1,1,1,0};
+    colorPictureRight[] = {0,0,0,1};
+    colorPictureRightSelected[] = {0,0,0,1};
+    colorPictureRightDisabled[] = {1,1,1,0};
 
     // onCanDestroy = "systemChat str ['onCanDestroy',_this]; true";
     // onDestroy = "systemChat str ['onDestroy',_this]; false";

@@ -26,14 +26,14 @@ _ctrlListBox lbSetCurSel 0;
 private _fnc_onUnload = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
-	  //systemChat "Close Spawn Grenade UI";
+      //systemChat "Close Spawn Grenade UI";
 
     deleteVehicle _logic;
 };
 
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
-	  //systemChat "Spawn Grenade";
+      //systemChat "Spawn Grenade";
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
 

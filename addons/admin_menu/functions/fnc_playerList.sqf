@@ -13,9 +13,9 @@ _handle = [
     lbClear _control;
     _control lbAdd "All";
     {
-    	if (isPlayer _x) then
-    	{
-    		private _index = _control lbAdd (name _x);
+        if (isPlayer _x) then
+        {
+            private _index = _control lbAdd (name _x);
             _control lbSetData [_index, (_x call BIS_fnc_netId)];
             if !(alive _x) then{
                 _control lbSetColor [_index, [1,0,0,1]];
@@ -23,6 +23,6 @@ _handle = [
             if (_player == _x and (lbCurSel _control) == -1) then{
                 _control lbSetCurSel _index;
             };
-    	};
+        };
     } forEach allPlayers - entities "HeadlessClient_F";
 },1,[_control, _parentDisplay, player]] call CBA_fnc_addPerFrameHandler;

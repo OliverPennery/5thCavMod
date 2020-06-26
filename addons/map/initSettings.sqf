@@ -86,7 +86,7 @@
     true,
     {
         params ["_value"];
-		GVAR(BFT_Delay) = _value;
+        GVAR(BFT_Delay) = _value;
     }
 ] call CBA_fnc_addSetting;
 

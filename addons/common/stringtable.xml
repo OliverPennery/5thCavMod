@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CAV">
     <Package name="Common">
-		<Key ID="STR_CAV_Common_Authors">
-			<English>Brecon and FieldGeneral</English>
-		</Key>
+        <Key ID="STR_CAV_Common_Authors">
+            <English>Brecon and FieldGeneral</English>
+        </Key>
         <Key ID="STR_CAV_common_ColourPlatoon">
             <English>Yellow</English>
         </Key>
