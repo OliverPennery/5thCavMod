@@ -13,9 +13,9 @@ _handle = [
     _control lbAdd "Ledger";
     _control lbSetTextRight [0, "Group"];
     {
-    	if (isPlayer _x) then
-    	{
-    		private _index = _control lbAdd (name _x);
+        if (isPlayer _x) then
+        {
+            private _index = _control lbAdd (name _x);
             _control lbSetData [_index, (_x call BIS_fnc_netId)];
 
             _control lbSetTextRight  [_index, groupId group _x];
@@ -25,6 +25,6 @@ _handle = [
             if (_player == _x and (lbCurSel _control) == -1) then{
                 _control lbSetCurSel _index;
             };
-    	};
+        };
     } forEach allPlayers - entities "HeadlessClient_F";
 },1,[_control, _parentDisplay, player]] call CBA_fnc_addPerFrameHandler;

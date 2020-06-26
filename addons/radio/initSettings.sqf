@@ -34,6 +34,6 @@
     true,
     {
         params ["_value"];
-		GVAR(Preset_Side) = ["west","east","independent"] # _value;
+        GVAR(Preset_Side) = ["west","east","independent"] # _value;
     }
 ] call CBA_fnc_addSetting;

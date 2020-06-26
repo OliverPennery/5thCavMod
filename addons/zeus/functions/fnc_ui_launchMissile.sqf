@@ -29,7 +29,7 @@ private _targetNames = [];
 
 private _ctrlListBox2 = (_display displayCtrl 36202);
 {
-	_ctrlListBox2 lbAdd _x;
+    _ctrlListBox2 lbAdd _x;
 } forEach _targetNames;
 _ctrlListBox2 lbSetCurSel 0;
 

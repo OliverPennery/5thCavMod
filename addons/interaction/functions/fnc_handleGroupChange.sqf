@@ -11,7 +11,7 @@ private _groupMembers = (units group _player);
 
 
 if (_group in _groupList) then{
-	(units group _player) join ((allGroups select {side _x == _playerSide and (((groupId _x) splitString " ") joinString "") == _group}) select 0);
+    (units group _player) join ((allGroups select {side _x == _playerSide and (((groupId _x) splitString " ") joinString "") == _group}) select 0);
 }else{
     (group _player) setGroupIdGlobal [_group];
 };

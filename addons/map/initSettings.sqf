@@ -86,7 +86,7 @@
     true,
     {
         params ["_value"];
-		GVAR(BFT_Delay) = _value;
+        GVAR(BFT_Delay) = _value;
     }
 ] call CBA_fnc_addSetting;
 
@@ -153,5 +153,18 @@
     {
         params ["_value"];
         GVAR(fTMarkers_Type) = _value;
+    }
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(fTMarkers_Occlusion),
+    "CHECKBOX",
+    [localize LSTRING(fTMarkers_Occlusion_DisplayName), localize LSTRING(fTMarkers_Occlusion_Description)],
+    [format ["5th Cav %1", localize LSTRING(Module_DisplayName)], localize LSTRING(fTMarkers_Module_DisplayName)],
+    [true],
+    nil,
+    {
+        params ["_value"];
+        GVAR(fTMarkers_Occlusion) = _value;
     }
 ] call CBA_fnc_addSetting;

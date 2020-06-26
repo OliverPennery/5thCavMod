@@ -118,14 +118,14 @@ _edit3 ctrlAddEventHandler ["KeyUp", _fnc_onKeyUp3];
 private _fnc_onUnload = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
-	//systemChat "Close Drop Bomb UI";
+    //systemChat "Close Drop Bomb UI";
 
     deleteVehicle _logic;
 };
 
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
-	//systemChat "Drop Bomb";
+    //systemChat "Drop Bomb";
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
 

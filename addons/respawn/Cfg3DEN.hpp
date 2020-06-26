@@ -88,7 +88,7 @@ class Cfg3DEN
                             data="disabled";
                             value=3;
                         };
-                        onLBSelChanged="				_ctrlCombo = _this select 0;				_cursel = _this select 1;				_respawnType = _ctrlCombo lbvalue _cursel;				missionnamespace setvariable ['cav_respawn_CustomRespawnMode',_respawnType];			";
+                        onLBSelChanged="                _ctrlCombo = _this select 0;                _cursel = _this select 1;                _respawnType = _ctrlCombo lbvalue _cursel;                missionnamespace setvariable ['cav_respawn_CustomRespawnMode',_respawnType];            ";
                     };
                 };
             };

@@ -20,9 +20,9 @@ if (GVAR(CustomRespawnMode) == 1) then{
     publicVariable "CAV_DQ";
 
     addMissionEventHandler ["HandleDisconnect", {
-    	params ["_unit", "_id", "_uid", "_name"];
+        params ["_unit", "_id", "_uid", "_name"];
         (netId _unit) call FUNC(removePlayerQueue);
         /* format["objectID:%1 \nobject:%2", objectFromNetId (netId _unit), _unit] remoteExecCall ["hint", 0]; */
-    	false
+        false
     }];
 };
