@@ -5,7 +5,7 @@ class GVAR(BVR_Soldier_Base): I_Soldier_base_F{
 	editorSubcategory = QGVAR(EdSubcat_BVR_Woodland);
     uniformClass = "U_B_CombatUniform_mcam";
     linkedItems[] = {"V_PlateCarrier3_rgr", "H_HelmetB_light", "NVGoggles", "ItemMap", "ItemCompass", "ItemWatch",  "ItemRadio"};
-}
+};
 
 class GVAR(BVR_Soldier_Rifleman): GVAR(BVR_Soldier_Base){
     SCOPEL(PUBLIC)
@@ -16,4 +16,4 @@ class GVAR(BVR_Soldier_Rifleman): GVAR(BVR_Soldier_Base){
     respawnweapons[] = {"arifle_MX_F","Binocular"};
     magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","HandGrenade",};
     Respawnmagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","HandGrenade",};
-}
+};
