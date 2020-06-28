@@ -20,7 +20,8 @@ if (_activated) then {
         (_this select 0) params ["_area"];
         {
             /* [_x] call ace_medical_treatment_fnc_fullHealLocal; */
-            [_x, _x] call ACE_medical_fnc_treatmentAdvanced_fullHealLocal;
+            [_x] call ace_medical_treatment_fnc_fullHealLocal;
+            _x setDamage 0;
         }forEach (allPlayers inAreaArray _area);
     },1, [[(getPos _logic)] + _area]] call CBA_fnc_addPerFrameHandler;
 };
