@@ -21,7 +21,7 @@ GVAR(aceEH) = ["ace_spectatorSet", {
                         params [["_projectile", objNull, [objNull]],["_unit",objNull,[objNull]]];
                         if (SGVAR(ace,spectator,drawProjectiles) && {!isNull _projectile}) then {
                             if (count GVAR(grenadesToDraw) > MAX_GRENADES) then { GVAR(grenadesToDraw) deleteAt 0; };
-                            GVAR(grenadesToDraw) pushBack [_projectile];
+                            GVAR(grenadesToDraw) pushBack _projectile;
                         };
                     }
                 ] call CBA_fnc_addEventHandler;

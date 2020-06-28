@@ -9,13 +9,9 @@ private _camPos = AGLToASL positionCameraToWorld [0,0,0];
     private _vehicle = vehicle _x;
     private _inVehicle = (_vehicle != _x);
     private "_distanceToCameraSqr";
-    if (_inVehicle) then {
-        _distanceToCameraSqr = _camPos distanceSqr (vehicle _x);
-    } else {
-        _distanceToCameraSqr = _camPos distanceSqr _x;
-    };
+    _distanceToCameraSqr = _camPos distanceSqr _vehicle;
 
-    if (_distanceToCameraSqr <= DISTANCE_ICONS_SQR && { !_inVehicle || { _x == effectiveCommander _vehicle } } && {alive _x || isPlayer _x}) then {
+    if (_distanceToCameraSqr <= DISTANCE_ICONS_SQR && {!_inVehicle || { _x == effectiveCommander _vehicle }} && {alive _x || isPlayer _x}) then {
         private _group = group _x;
         private _isLeader = _x == leader _group;
         private _sideColor = [side _group] call BIS_fnc_sideColor;
@@ -158,11 +154,11 @@ private _camPos = AGLToASL positionCameraToWorld [0,0,0];
         if (_isLeader) then {
             // Draw group icon for effective commander or leader on foot
             _iconsToDraw pushBack [_x, 0, [
-                "a3\ui_f\data\map\markers\nato\o_unknown.paa",
+                ICON_GROUP,
                 _groupColor,
                 [0,0,0],
-                (_sizeByDistance * 2),
-                (_sizeByDistance * 2),
+                _sizeByDistance/2,
+                _sizeByDistance/2,
                 0,
                 "",
                 0,
@@ -184,7 +180,7 @@ private _camPos = AGLToASL positionCameraToWorld [0,0,0];
                 _fontSizeByDistanceGroup,
                 "PuristaMedium",
                 "center"
-            ], _heightByDistance + 0.5];
+            ], _heightByDistance + 2];
 
             // Draw Connecting Line
             _iconsToDraw pushBack [_x, 3, [
