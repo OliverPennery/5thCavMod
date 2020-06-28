@@ -50,6 +50,8 @@ GVAR(aceEH) = ["ace_spectatorSet", {
 
                 [SGVAR(ace,spectator,collectPFH)] call CBA_fnc_removePerFrameHandler;
                 SGVAR(ace,spectator,collectPFH) = [{_this call FUNC(updateIconsToDraw)}, 0.2] call CBA_fnc_addPerFrameHandler;
+
+                SGVAR(ace,spectator,drawProjectiles) = true;
             },
             []
         ] call CBA_fnc_waitUntilAndExecute;
