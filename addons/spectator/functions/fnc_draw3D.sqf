@@ -7,7 +7,10 @@ private _cursorObject = objNull;
 
 // This doesn't work for units underwater due to use of screenToWorld
 // Would be hard to work around due to parallax
-private _camPos = AGLToASL positionCameraToWorld [0,0,0];
+private _camPosAGL = positionCameraToWorld [0,0,0];
+private _camPos = AGLToASL _camPosAGL;
+private _camDir = _camPos vectorFromTo AGLToASL positionCameraToWorld [0,0,1];
+private _camUp = _camPos vectorFromTo AGLToASL positionCameraToWorld [0,1,0];
 private _mousePos = AGLToASL screenToWorld getMousePosition;
 
 // Can only select units within name drawing distance
@@ -26,25 +29,15 @@ if !(SGVAR(ace,spectator,uiMapVisible)) then {
         // Groups and Units
         {
             _x params ["_unit", "_type", "_icon", "_offset"];
-            private _position = getPosASLVisual _unit;
+            private _position = getPosASLVisual vehicle _unit;
             private _positionAGL = ASLToAGL _position;
             private "_positionAGLFinal";
 
             // Text spacing stuff
             private _fov = call FUNC(getFOV);
-            private _relDir = _position vectorDiff _camPos;
-            private _camDir = _camPos vectorFromTo positionCameraToWorld[0,0,1];
-            private _camSideDir = (_camDir) vectorCrossProduct [0,0,1];
-            private _drawUpNormal = vectorNormalized (_camSideDir vectorCrossProduct _relDir);
-            private _drawUp = _drawUpNormal vectorMultiply (0.005 * ((_position distance _camPos) / _fov));
+            private _drawUp = _camUp vectorMultiply (0.005 * ((_position distance _camPos) / _fov));
             private _offsetVector = _drawUp vectorMultiply _offset;
-
-            if (vehicle _unit == _unit) then {
-                _positionAGLFinal = _positionAGL vectorAdd _offsetVector;
-            } else {
-                _positionAGL = ASLToAGL getPosASLVisual vehicle _unit;
-                _positionAGLFinal = _positionAGL vectorAdd _offsetVector;
-            };
+            _positionAGLFinal = _positionAGL vectorAdd _offsetVector;
             // Cursor object is always effectiveCommander so no need to check `in`
             if (_type == 2 && {_unit in _camTargetVeh || _unit == _cursorObject}) then {
                 _icon set [1,[0,0,0,1]];
