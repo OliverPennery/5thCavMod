@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CAV">
+    <Package name="Spectator">
+        <Key ID="STR_CAV_Spectator_Module_DisplayName">
+            <English>Spectator</English>
+        </Key>
+        <Key ID="STR_CAV_Spectator_enableUnitIcons">
+            <English>Enable New Unit/Group Icons</English>
+        </Key>
+        <Key ID="STR_CAV_Spectator_enableUnitIcons_description">
+            <English>Replaces ace unit/group icons with custom ones</English>
+        </Key>
+        <Key ID="STR_CAV_Spectator_trackProjectilesOnOpen">
+            <English>Trace Projectiles Default Setting</English>
+        </Key>
+        <Key ID="STR_CAV_Spectator_trackProjectilesOnOpen_description">
+            <English>Should projectile's be traced by default on spectator open. Toggle by \"P\"</English>
+        </Key>
+    </Package>
+</Project>
