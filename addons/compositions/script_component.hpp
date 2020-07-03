@@ -16,3 +16,4 @@
 #endif
 
 #include "\y\cav\addons\main\script_macros.hpp"
+#include "loadout\nato_apex_woodland_loadout.hpp"
