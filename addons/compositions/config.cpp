@@ -3,7 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = COMPOSITIONS;
-        units[] = {QGVAR(BVR_Soldier_Rifleman)};
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cav_common"};

@@ -1,8 +1,8 @@
 class cfgVehicles
 {
-    class O_Soldier_base_F;
-    class I_Soldier_base_F;
-    class B_Soldier_base_F;
+    class SoldierGB;
+    class SoldierWB;
+    class SoldierEB;
 
-    #include "infantry\soldier_base.hpp"
+    #include "infantry\nato_apex_woodland.hpp"
 };

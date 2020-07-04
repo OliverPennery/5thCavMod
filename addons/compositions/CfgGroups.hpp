@@ -1,14 +1,20 @@
 class CfgGroups{
-    // class East{
-    //     #include "groups\cav_army_infantry_groups.hpp"
-    // };
-    class Indep{
-        class GVAR(BVR_Ind){
-            name = "BVR";
-            #include "groups\bvr_ind.hpp"
+    class East{
+        class cav_e_nato_apex_woodland{
+            name = "5Cav";
+            #include "group\nato_apex_woodland_group.hpp"
         };
     };
-    // class West{
-    //     #include "groups\cav_army_infantry_groups.hpp"
-    // }
+    class Indep{
+        class cav_i_nato_apex_woodland{
+            name = "5Cav";
+            #include "group\nato_apex_woodland_group.hpp"
+        };
+    };
+    class West{
+        class cav_w_nato_apex_woodland{
+            name = "5Cav";
+            #include "group\nato_apex_woodland_group.hpp"
+        };
+    };
 };

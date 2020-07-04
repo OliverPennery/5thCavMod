@@ -1,6 +1,6 @@
 class CfgEditorSubcategories
 {
-    class GVAR(EdSubcat_BVR_Woodland){
-        displayname= "Infantry (Woodland)";
+    class GVAR(edsubcat_nato_apex_woodland){
+        displayname= "Nato Apex Woodland";
     };
 };
