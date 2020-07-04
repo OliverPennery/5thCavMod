@@ -1,15 +1,15 @@
-class GVAR(BVR_Woodland){
+class GVAR(bvr_Woodland){
     name = "Infantry(Woodland)";
 
-    class GVAR(BVR_Woodland_Fireteam){
+    class GVAR(bvr_Woodland_Fireteam){
         name = "Fireteam";
-        faction = QGVAR(BVR_Ind);
+        faction = QGVAR(bvr_Ind);
         side = 2;
         icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 
         class Unit0{
             side = 2;
-            vehicle = QGVAR(BVR_Soldier_Rifleman);
+            vehicle = QGVAR(bvr_Soldier_Rifleman);
             rank = "SERGEANT";
             position[] = {0,0,0};
         };
