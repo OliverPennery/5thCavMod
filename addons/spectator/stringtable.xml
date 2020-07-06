@@ -14,7 +14,13 @@
             <English>Trace Projectiles Default Setting</English>
         </Key>
         <Key ID="STR_CAV_Spectator_trackProjectilesOnOpen_description">
-            <English>Should projectile's be traced by default on spectator open. Toggle by \"P\"</English>
+            <English>Should projectile's be traced by default on spectator open. Toggled by "P"</English>
+        </Key>
+        <Key ID="STR_CAV_Spectator_showSpectatorList">
+            <English>Show Spectator List</English>
+        </Key>
+        <Key ID="STR_CAV_Spectator_showSpectatorList_description">
+            <English>Should a list of spectators be shown on the left bar in the spectator window</English>
         </Key>
     </Package>
 </Project>

@@ -48,9 +48,77 @@
 #define ICON_REVIVE                     "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\ReviveIcon_ca.paa"
 #define ICON_BACKGROUND_UNIT            "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\UnitName_ca.paa"
 #define ICON_CAMERA                     "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\cameraTexture_ca.paa"
+#define ICON_INF                        "a3\ui_f\data\Map\Markers\NATO\b_inf.paa"
 #define CAM_ICON_FREE                   "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\FreeSelected.paa"
 #define CAM_ICON_FREE_SELECTED          "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\Free.paa"
 #define CAM_ICON_FOLLOW                 "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\FollowSelected.paa"
 #define CAM_ICON_FOLLOW_SELECTED        "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\Follow.paa"
 #define CAM_ICON_FPS                    "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\FpsSelected.paa"
 #define CAM_ICON_FPS_SELECTED           "a3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\Fps.paa"
+
+// IDCs
+#define MAIN_DISPLAY ([] call BIS_fnc_displayMission)
+
+#define IDD_SPEC_DISPLAY 60000
+#define SPEC_DISPLAY (findDisplay IDD_SPEC_DISPLAY)
+
+#define IDC_MOUSE 60001
+#define CTRL_MOUSE (SPEC_DISPLAY displayCtrl IDC_MOUSE)
+
+#define IDC_TIME 60002
+#define CTRL_TIME (SPEC_DISPLAY displayCtrl IDC_TIME)
+
+#define IDC_LIST 60003
+#define CTRL_LIST (SPEC_DISPLAY displayCtrl IDC_LIST)
+
+#define IDC_TABS 60004
+#define CTRL_TABS (SPEC_DISPLAY displayCtrl IDC_TABS)
+
+#define IDC_CAM_TYPES 60005
+#define CTRL_CAM_TYPES (SPEC_DISPLAY displayCtrl IDC_CAM_TYPES)
+#define IDC_FREE 60006
+#define IDC_FOLLOW 60007
+#define IDC_FPS 60008
+
+#define IDC_MAP_GROUP 60010
+#define CTRL_MAP_GROUP (SPEC_DISPLAY displayCtrl IDC_MAP_GROUP)
+#define IDC_MAP_TITLE 60011
+#define CTRL_MAP_TITLE (SPEC_DISPLAY displayCtrl IDC_MAP_TITLE)
+#define IDC_MAP_FOOTER 60012
+#define CTRL_MAP_FOOTER (SPEC_DISPLAY displayCtrl IDC_MAP_FOOTER)
+#define IDC_MAP_SPEC_NUM 60013
+#define CTRL_MAP_SPEC_NUM (SPEC_DISPLAY displayCtrl IDC_MAP_SPEC_NUM)
+#define IDC_MAP 60014
+#define CTRL_MAP (SPEC_DISPLAY displayCtrl IDC_MAP)
+
+#define IDC_HELP_BACK 60020
+#define CTRL_HELP_BACK (SPEC_DISPLAY displayCtrl IDC_HELP_BACK)
+#define IDC_HELP 60021
+#define CTRL_HELP (SPEC_DISPLAY displayCtrl IDC_HELP)
+
+#define IDC_WIDGET 60030
+#define CTRL_WIDGET (SPEC_DISPLAY displayCtrl IDC_WIDGET)
+#define IDC_WIDGET_VEHICLE 60031
+#define CTRL_WIDGET_VEHICLE (SPEC_DISPLAY displayCtrl IDC_WIDGET_VEHICLE)
+#define IDC_WIDGET_UNIT 60032
+#define CTRL_WIDGET_UNIT (SPEC_DISPLAY displayCtrl IDC_WIDGET_UNIT)
+#define IDC_WIDGET_NAME 60033
+#define CTRL_WIDGET_NAME (SPEC_DISPLAY displayCtrl IDC_WIDGET_NAME)
+#define IDC_WIDGET_VEHICLE_POS 60034
+#define CTRL_WIDGET_VEHICLE_POS (SPEC_DISPLAY displayCtrl IDC_WIDGET_VEHICLE_POS)
+#define IDC_WIDGET_KILLS 60035
+#define CTRL_WIDGET_KILLS (SPEC_DISPLAY displayCtrl IDC_WIDGET_KILLS)
+#define IDC_WIDGET_LAND 60036
+#define CTRL_WIDGET_LAND (SPEC_DISPLAY displayCtrl IDC_WIDGET_LAND)
+#define IDC_WIDGET_ARMORED 60037
+#define CTRL_WIDGET_ARMORED (SPEC_DISPLAY displayCtrl IDC_WIDGET_ARMORED)
+#define IDC_WIDGET_AIR 60038
+#define CTRL_WIDGET_AIR (SPEC_DISPLAY displayCtrl IDC_WIDGET_AIR)
+#define IDC_WIDGET_DEATHS 60039
+#define CTRL_WIDGET_DEATHS (SPEC_DISPLAY displayCtrl IDC_WIDGET_DEATHS)
+#define IDC_WIDGET_TOTAL 60040
+#define CTRL_WIDGET_TOTAL (SPEC_DISPLAY displayCtrl IDC_WIDGET_TOTAL)
+#define IDC_WIDGET_WEAPON 60041
+#define CTRL_WIDGET_WEAPON (SPEC_DISPLAY displayCtrl IDC_WIDGET_WEAPON)
+#define IDC_WIDGET_THROWABLE 60042
+#define CTRL_WIDGET_THROWABLE (SPEC_DISPLAY displayCtrl IDC_WIDGET_THROWABLE)

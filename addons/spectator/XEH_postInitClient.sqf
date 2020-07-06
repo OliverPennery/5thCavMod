@@ -50,11 +50,18 @@ GVAR(aceEH) = ["ace_spectatorSet", {
                     ] call CBA_fnc_addEventHandler;
 
                     [SGVAR(ace,spectator,collectPFH)] call CBA_fnc_removePerFrameHandler;
-                    SGVAR(ace,spectator,collectPFH) = [{_this call FUNC(updateIconsToDraw)}, 0.2] call CBA_fnc_addPerFrameHandler;
+                    SGVAR(ace,spectator,collectPFH) = [{
+                        _this call FUNC(updateIconsToDraw);
+                    }, 0.2] call CBA_fnc_addPerFrameHandler;
                 };
                 if (GVAR(trackProjectilesOnOpen)) then {
                     SGVAR(ace,spectator,drawProjectiles) = true;
                 };
+                [SGVAR(ace,spectator,uiPFH)] call CBA_fnc_removePerFrameHandler;
+                SGVAR(ace,spectator,uiPFH) = [{
+                    [] call FUNC(updateEntityList);
+                    [] call SFUNC(ace,spectator,ui_updateWidget);
+                }, 5] call CBA_fnc_addPerFrameHandler;
             },
             []
         ] call CBA_fnc_waitUntilAndExecute;
