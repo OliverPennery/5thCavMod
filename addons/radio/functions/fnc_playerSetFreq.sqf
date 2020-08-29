@@ -23,6 +23,7 @@ Example:
 params [["_group",group player],["_update",false]];
 //private _grp = call(compile(str((group player)) select [2]));
 private _grp = [_group] call EFUNC(common,getGroup);
+/* systemChat format["pSF: %1 - %2", _group, _grp]; */
 if (isNil {_grp}) then {
     _grp = CAV_Platoon;
 };
