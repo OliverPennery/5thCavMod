@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cav_main"};
+        requiredAddons[] = {"cav_main", "ace_medical_treatment"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;
@@ -14,3 +14,4 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CAV_Medical_Treatment_Actions.hpp"
