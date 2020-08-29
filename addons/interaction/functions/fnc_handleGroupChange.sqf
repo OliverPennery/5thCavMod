@@ -17,7 +17,7 @@ if (_group in _groupList) then{
     /* systemChat "JOIN GROUP"; */
     private _nGrp = ((allGroups select {side _x == _playerSide and (((groupId _x) splitString " ") joinString "") == _group}) select 0);
     (units group _player) join _nGrp;
-    systemChat str _nGrp;
+    /* systemChat str _nGrp; */
     [_nGrp, true] call EFUNC(radio,playerSetFreq);
 }else{
     if (_flag) then {
@@ -27,7 +27,7 @@ if (_group in _groupList) then{
     };
 
     (group _player) setGroupIdGlobal [_group];
-    systemChat str (group _player);
+    /* systemChat str (group _player); */
     {
         [group _player, true] remoteExecCall [QEFUNC(radio,playerSetFreq), _x];
     }forEach _groupMembers;
