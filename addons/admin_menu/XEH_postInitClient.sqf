@@ -53,3 +53,20 @@ if GVAR(AM_Enable) then{
     params ["_zeus"];
     _zeus addEventHandler ["CuratorObjectPlaced", {[_this select 1] call FUNC(zeusAddObject)}];
 }] call CBA_fnc_addEventHandler;
+
+player addEventHandler ["Killed", {
+	params ["_unit", "_killer", "_instigator", "_useEffects"];
+    /* systemChat format ["%1 - %2 - %3 - %4", _unit, _killer, _instigator, _useEffects]; */
+    if !(isNull _instigator) then {
+        [_unit, _instigator, CBA_missionTime] remoteExecCall [QFUNC(addKillToLog), 2];
+    };
+}];
+
+
+player addEventHandler ["FiredMan", {
+	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
+    if (_weapon == "Throw") then {
+        /* systemChat format ["~%1 - %2 - %3 - %4 - %5 - %6 - %7 - %8", _unit, _weapon, _muzzle, _mode, _ammo, _magazine, _projectile, _gunner]; */
+        [_unit, _magazine, CBA_missionTime] remoteExecCall [QFUNC(addNadeToLog), 2];
+    }
+}];

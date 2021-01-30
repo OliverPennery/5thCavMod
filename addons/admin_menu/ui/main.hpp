@@ -39,7 +39,7 @@ class GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1)
+        GVAR(main_button_logs)
     };
 
     class GVAR(main_background): IGUIBack
@@ -137,14 +137,14 @@ class GVAR(main)
         h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([QUOTE(QGVAR(specPort))] call FUNC(openMenu););
     };
-    class GVAR(main_button_placeholder1): RscButton
+    class GVAR(main_button_logs): RscButton
     {
         idc = 1607;
-        text = "Placeholder1"; //--- ToDo: Localize;
+        text = "Logs"; //--- ToDo: Localize;
         x = 0.306181 * safezoneW + safezoneX;
         y = 0.697431 * safezoneH + safezoneY;
         w = 0.0528598 * safezoneW;
         h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE([QUOTE(QGVAR(test))] call FUNC(openMenu););
+        onButtonClick = QUOTE([QUOTE(QGVAR(logs))] call FUNC(openMenu););
     };
 };

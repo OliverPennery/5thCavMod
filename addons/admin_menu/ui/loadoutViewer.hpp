@@ -38,7 +38,7 @@ class GVAR(loadoutViewer):GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1),
+        GVAR(main_button_logs),
         GVAR(loadoutViewer_frame_players),
         GVAR(loadoutViewer_list_players),
         GVAR(loadoutViewer_frame_loadouts),

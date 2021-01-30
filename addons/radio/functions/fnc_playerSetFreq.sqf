@@ -22,34 +22,42 @@ Example:
 
 params [["_group",group player],["_update",false]];
 //private _grp = call(compile(str((group player)) select [2]));
+private _suc = false;
 private _grp = [_group] call EFUNC(common,getGroup);
+/* systemChat format["pSF: %1 - %2", _group, _grp]; */
 if (isNil {_grp}) then {
     _grp = CAV_Platoon;
 };
 if (isClass (configFile >> "CfgPatches" >> "task_force_radio_items")) then{
     if (call TFAR_fnc_haveSWRadio) then{
-        for "_i" from 0 to (count(_grp select 3)-1) do{
-            [(call TFAR_fnc_activeSwRadio), (_i + 1), ((_grp select 3) select _i)] call TFAR_fnc_SetChannelFrequency;
-        };
+        private _radio = call TFAR_fnc_activeSwRadio;
+        private _settings = _radio call TFAR_fnc_getSwSettings;
+        _settings set [0, (_grp select 3)];
+        {(_settings select 2) set [_forEachIndex, _x]} forEach (CAV_FREQS select 0);
+        [_radio, _settings] call TFAR_fnc_setSwSettings;
     };
-
-    [(call TFAR_fnc_activeSwRadio), (_grp select 4)] call TFAR_fnc_setSwChannel;
 
     if (call TFAR_fnc_haveLRRadio) then{
-        for "_i" from 0 to (count(_grp select 5)-1) do{
-            [(call TFAR_fnc_activeLrRadio), (_i + 1), ((_grp select 5)select _i)] call TFAR_fnc_SetChannelFrequency;
-        };
-
-        [(call TFAR_fnc_activeLrRadio) select 0, (call TFAR_fnc_activeLrRadio) select 1, (_grp select 6)] call TFAR_fnc_setLrChannel;
+        private _radio = call TFAR_fnc_activeLrRadio;
+        private _settings = _radio call TFAR_fnc_getLrSettings;
+        _settings set [0, (_grp select 4)];
+        {(_settings select 2) set [_forEachIndex, _x]} forEach (CAV_FREQS select 1);
+        [_radio, _settings] call TFAR_fnc_setLrSettings;
     };
-
-    if (player == leader player) then {
-        [(call TFAR_fnc_activeSwRadio), 0] call TFAR_fnc_setAdditionalSwChannel;
-    };
+    _suc = true;
 };
 
-if (_update) exitwith {
+if (_update && _suc) exitwith {
     (["Radio Frequencies Updated to ",_grp select 1] joinString "") remoteExec ["systemChat", player];
 };
 
-"Radio Frequencies set!" remoteExec ["systemChat", player];
+if (_suc) then{
+    "Radio Frequencies set!" remoteExec ["systemChat", player];
+}else{
+    if (_update)then{
+        "Radio Frequencies Fail to set!!" remoteExec ["systemChat", player];
+        "Radio Frequencies Fail to set!!" remoteExec ["hint", player];
+    }else{
+        [_group, true] call FUNC(playerSetFreq);
+    };
+};
