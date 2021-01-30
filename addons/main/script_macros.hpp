@@ -2,6 +2,7 @@
 
 
 #define SETMPVAR(var1,var2) missionNamespace SETPVAR_SYS(var1,var2)
+#define SFUNC(var1,var2) var1 remoteExecCall [FUNC(var2), 2]
 
 #define SCOPEL(var) scope = var; \
                     scopeCurator = var; \
