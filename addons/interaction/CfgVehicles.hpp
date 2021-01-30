@@ -356,171 +356,40 @@ class CfgVehicles {
                         displayName = "Delta";
                         condition = "true";
                         exceptions[] = {};
-                        statement = "";
+                        statement = QUOTE([ARR_2(_player, 'Delta')] call DFUNC(handleGroupChange));
                         icon = "";
-
-                        class CAV_DeltaHQ{
-                            displayName = "Delta HQ";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'DeltaHQ')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Delta1{
-                            displayName = "Delta 1";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Delta1')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Delta2{
-                            displayName = "Delta 2";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Delta2')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_DeltaV{
-                            displayName = "Delta V";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'DeltaV')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
                     };
 
                     class CAV_Charlie{
                         displayName = "Charlie";
                         condition = "true";
                         exceptions[] = {};
-                        statement = "";
+                        statement = QUOTE([ARR_2(_player, 'Charlie')] call DFUNC(handleGroupChange));
                         icon = "";
-
-                        class CAV_CharlieHQ{
-                            displayName = "Charlie HQ";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'CharlieHQ')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Charlie1{
-                            displayName = "Charlie 1";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Charlie1')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Charlie2{
-                            displayName = "Charlie 2";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Charlie2')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_CharlieV{
-                            displayName = "Charlie V";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'CharlieV')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
                     };
 
                     class CAV_BRAVO{
                         displayName = "Bravo";
                         condition = "true";
                         exceptions[] = {};
-                        statement = "";
+                        statement = QUOTE([ARR_2(_player, 'Bravo')] call DFUNC(handleGroupChange));
                         icon = "";
-
-                        class CAV_BravoHQ{
-                            displayName = "Bravo HQ";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'BravoHQ')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Bravo1{
-                            displayName = "Bravo 1";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Bravo1')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Bravo2{
-                            displayName = "Bravo 2";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Bravo2')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_BravoV{
-                            displayName = "Bravo V";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'BravoV')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
                     };
 
                     class CAV_Alpha{
                         displayName = "Alpha";
                         condition = "true";
                         exceptions[] = {};
-                        statement = "";
+                        statement = QUOTE([ARR_2(_player, 'Alpha')] call DFUNC(handleGroupChange));
                         icon = "";
-
-                        class CAV_AlphaHQ{
-                            displayName = "Alpha HQ";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'AlphaHQ')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Alpha1{
-                            displayName = "Alpha 1";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Alpha1')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_Alpha2{
-                            displayName = "Alpha 2";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Alpha2')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_AlphaV{
-                            displayName = "Alpha V";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'AlphaV')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
                     };
 
                     class CAV_Platoon{
                         displayName = "Platoon";
                         condition = "true";
                         exceptions[] = {};
-                        statement = "";
+                        statement = QUOTE([ARR_2(_player, 'Platoon')] call DFUNC(handleGroupChange));
                         icon = "";
-
-                        class CAV_PlatoonI{
-                            displayName = "Platoon";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'Platoon')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
-                        class CAV_PlatoonV{
-                            displayName = "Platoon Vehicle";
-                            condition = "true";
-                            exceptions[] = {};
-                            statement = QUOTE([ARR_2(_player, 'PlatoonV')] call DFUNC(handleGroupChange));
-                            icon = "";
-                        };
                     };
                 };
             };

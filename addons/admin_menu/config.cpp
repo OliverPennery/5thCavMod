@@ -26,5 +26,6 @@ class CfgPatches {
 #include "ui\respawn.hpp"
 #include "ui\specPort.hpp"
 #include "ui\loadoutViewer.hpp"
+#include "ui\logs.hpp"
 
 #include "ui\aceSpectator.hpp"

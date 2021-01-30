@@ -52,7 +52,7 @@ class GVAR(commands):GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1),
+        GVAR(main_button_logs),
         GVAR(commands_frame_player),
         GVAR(commands_listbox_player_players),
         GVAR(commands_button_player_kick),

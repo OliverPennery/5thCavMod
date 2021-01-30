@@ -52,7 +52,7 @@ class GVAR(specPort):GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1),
+        GVAR(main_button_logs),
         GVAR(specPort_listbox_players),
         GVAR(specPort_frame_biSpectator),
         GVAR(specPort_button_biSpectator_internal),

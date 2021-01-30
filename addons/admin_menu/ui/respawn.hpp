@@ -43,7 +43,7 @@ class GVAR(respawn):GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1),
+        GVAR(main_button_logs),
         GVAR(respawn_frame_selectedPlayers),
         GVAR(respawn_listbox_players),
         GVAR(respawn_button_addTicket),
