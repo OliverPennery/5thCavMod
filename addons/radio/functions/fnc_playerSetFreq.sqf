@@ -31,23 +31,17 @@ if (isClass (configFile >> "CfgPatches" >> "task_force_radio_items")) then{
     if (call TFAR_fnc_haveSWRadio) then{
         private _radio = call TFAR_fnc_activeSwRadio;
         private _settings = _radio call TFAR_fnc_getSwSettings;
-        _settings set [0, (_grp select 4)];
-        {(_settings select 2) set [_forEachIndex, _x]} forEach (_grp select 3);
+        _settings set [0, (_grp select 3)];
+        {(_settings select 2) set [_forEachIndex, _x]} forEach (CAV_FREQS select 0);
         [_radio, _settings] call TFAR_fnc_setSwSettings;
     };
-
-    [(call TFAR_fnc_activeSwRadio), (_grp select 4)] call TFAR_fnc_setSwChannel;
 
     if (call TFAR_fnc_haveLRRadio) then{
         private _radio = call TFAR_fnc_activeLrRadio;
         private _settings = _radio call TFAR_fnc_getLrSettings;
-        _settings set [0, (_grp select 6)];
-        {(_settings select 2) set [_forEachIndex, _x]} forEach (_grp select 5);
+        _settings set [0, (_grp select 4)];
+        {(_settings select 2) set [_forEachIndex, _x]} forEach (CAV_FREQS select 1);
         [_radio, _settings] call TFAR_fnc_setLrSettings;
-    };
-
-    if (player == leader player) then {
-        [(call TFAR_fnc_activeSwRadio), 0] call TFAR_fnc_setAdditionalSwChannel;
     };
 };
 
