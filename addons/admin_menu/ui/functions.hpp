@@ -49,7 +49,7 @@ class GVAR(functions):GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1),
+        GVAR(main_button_logs),
         GVAR(functions_listbox_players),
         GVAR(functions_button_placeholder1),
         GVAR(functions_button_placeholder2),

@@ -49,7 +49,7 @@ class GVAR(debug):GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1),
+        GVAR(main_button_logs),
         GVAR(debug_list_players),
         GVAR(debug_button_invisibility),
         GVAR(debug_button_targeting),
@@ -60,13 +60,13 @@ class GVAR(debug):GVAR(main)
         GVAR(debug_button_medic),
         GVAR(debug_button_engineer),
         GVAR(debug_button_toggleZeus),
-        GVAR(debug_button_placeholder2),
+        GVAR(debug_button_resetZeus),
+        GVAR(debug_button_togglePlayersMap),
+        GVAR(debug_button_toggleAiMap),
         GVAR(debug_button_healPlayer),
         GVAR(debug_button_repairVehicle),
         GVAR(debug_button_aceArsenal),
-        GVAR(debug_button_biArsenal),
-        GVAR(debug_button_resetZeus),
-        GVAR(debug_button_placeholder4)
+        GVAR(debug_button_biArsenal)
     };
 
     class GVAR(debug_background): IGUIBack
@@ -185,74 +185,77 @@ class GVAR(debug):GVAR(main)
         h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(toggleZeus););
     };
-    class GVAR(debug_button_placeholder2): RscButton
+    class GVAR(debug_button_resetZeus): RscButton
     {
         idc = 1605;
-        text = "Placeholder 2"; //--- ToDo: Localize;
+        text = "Reset Zeus"; //--- ToDo: Localize;
         x = 0.62334 * safezoneW + safezoneX;
         y = 0.528204 * safezoneH + safezoneY;
         w = 0.0704798 * safezoneW;
         h = 0.0376059 * safezoneH;
+        onButtonClick = QUOTE(call FUNC(zeusReset);[ARR_2('Zeus Reset', 2)] call FUNC(clientLog);[ARR_3(format [ARR_2('%1 Reset Zeus', name player)], 2, true)] call FUNC(log););
+    };
+    class GVAR(debug_button_togglePlayersMap): RscButton
+    {
+        idc = 1613;
+        text = "Toggle Players Map"; //--- ToDo: Localize;
+        x = 0.54405 * safezoneW + safezoneX;
+        y = 0.584613 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
+        onButtonClick = QUOTE(_this call FUNC(togglePlayersMap););
+    };
+    class GVAR(debug_button_toggleAiMap): RscButton
+    {
+        idc = 1612;
+        text = "Toggle AI Map"; //--- ToDo: Localize;
+        x = 0.62334 * safezoneW + safezoneX;
+        y = 0.584613 * safezoneH + safezoneY;
+        w = 0.0704798 * safezoneW;
+        h = 0.0376059 * safezoneH;
+        onButtonClick = QUOTE(_this call FUNC(toggleAiMap););
     };
     class GVAR(debug_button_healPlayer): RscButton
     {
-        idc = 1613;
+        idc = 1615;
         text = "Heal Player"; //--- ToDo: Localize;
         x = 0.54405 * safezoneW + safezoneX;
-        y = 0.584613 * safezoneH + safezoneY;
+        y = 0.641022 * safezoneH + safezoneY;
         w = 0.0704798 * safezoneW;
         h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(healPlayer););
     };
     class GVAR(debug_button_repairVehicle): RscButton
     {
-        idc = 1612;
+        idc = 1614;
         text = "Repair Vehicle"; //--- ToDo: Localize;
         x = 0.62334 * safezoneW + safezoneX;
-        y = 0.584613 * safezoneH + safezoneY;
+        y = 0.641022 * safezoneH + safezoneY;
         w = 0.0704798 * safezoneW;
         h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(repairVehicle););
     };
     class GVAR(debug_button_aceArsenal): RscButton
     {
-        idc = 1615;
+        idc = 1606;
         text = "Open Ace Arsenal"; //--- ToDo: Localize;
         x = 0.54405 * safezoneW + safezoneX;
-        y = 0.641022 * safezoneH + safezoneY;
+        y = 0.697431 * safezoneH + safezoneY;
         w = 0.0704798 * safezoneW;
         h = 0.0376059 * safezoneH;
         onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(openAceArsenal););
-    };
-    class GVAR(debug_button_biArsenal): RscButton
-    {
-        idc = 1614;
-        text = "Open BI Arsenal"; //--- ToDo: Localize;
-        x = 0.62334 * safezoneW + safezoneX;
-        y = 0.641022 * safezoneH + safezoneY;
-        w = 0.0704798 * safezoneW;
-        h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(openBiArsenal););
-    };
-    class GVAR(debug_button_resetZeus): RscButton
-    {
-        idc = 1606;
-        text = "Reset Zeus"; //--- ToDo: Localize;
-        x = 0.54405 * safezoneW + safezoneX;
-        y = 0.697431 * safezoneH + safezoneY;
-        w = 0.0704798 * safezoneW;
-        h = 0.0376059 * safezoneH;
-        onButtonClick = QUOTE(call FUNC(zeusReset);[ARR_2('Zeus Reset', 2)] call FUNC(clientLog);[ARR_3(format [ARR_2('%1 Reset Zeus', name player)], 2, true)] call FUNC(log););
+        // onButtonClick = QUOTE(call FUNC(zeusReset);[ARR_2('Zeus Reset', 2)] call FUNC(clientLog);[ARR_3(format [ARR_2('%1 Reset Zeus', name player)], 2, true)] call FUNC(log););
         //onButtonClick = QUOTE([] remoteExecCall [ARR_2(QQFUNC(zeusReset), 2)];);
         //onButtonClick = QUOTE([ARR_2('Zeus Reset', 2)] call FUNC(clientLog);[ARR_3(format ['%1 Reset Zeus', name player, name (_id call BIS_fnc_objectFromNetId)], 2, true)] call FUNC(log); remoteExecCall [QFUNC(resetZeus), 2]););
     };
-    class GVAR(debug_button_placeholder4): RscButton
+    class GVAR(debug_button_biArsenal): RscButton
     {
         idc = 1607;
-        text = "Placeholder 4"; //--- ToDo: Localize;
+        text = "Open BI Arsenal"; //--- ToDo: Localize;
         x = 0.62334 * safezoneW + safezoneX;
         y = 0.697431 * safezoneH + safezoneY;
         w = 0.0704798 * safezoneW;
         h = 0.0376059 * safezoneH;
+        onButtonClick = QUOTE([ARR_2(_this, 1500)] call FUNC(openBiArsenal););
     };
 };

@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/Brecon1/5thCavMod/releases">
-        <img src="https://img.shields.io/badge/Version-0.9.3-blue.svg?style=flat-square" alt="5th Cav Mod Version">
+        <img src="https://img.shields.io/badge/Version-0.9.6-blue.svg?style=flat-square" alt="5th Cav Mod Version">
     </a>
     <a href="https://github.com/Brecon1/5thCavMod/issues">
         <img src="https://img.shields.io/github/issues-raw/Brecon1/5thCavMod.svg?style=flat-square&label=Issues" alt="5th Cav Mod Issues">
@@ -20,10 +20,10 @@
 <p align="center">
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a> And <a href="https://github.com/acemod/ACE3/releases">ACE 3</a>.</strong><br/>
      <a href="https://discord.gg/bXUTSsf"><img src="https://lh3.googleusercontent.com/3U-416d-r3wZX0J_CCRhvJqLYIrSY1siSvYNdSc7SEX5J7KHuGTlZJtUwRe3h32rP-Xk7hZv=w128-h128-e365"></a><br/>
-        Come Join Us, 5th Cavalry Discord 
+        Come Join Us, 5th Cavalry Discord
     </sup>
 </p>
-    
+
 Framework used by the 5th Cavalry during our missions. This mod can be used outside the 5th Cavalry however, as it is made to suit our very specific needs, there may be incompatible with other mods not used by the 5th Cav.
 **WE WILL NOT ADD FEATURES OR FIX ISSUES THAT WOULD NOT BE USED/NEEDED WITHIN THE 5TH CAV**
 
@@ -47,7 +47,7 @@ Framework used by the 5th Cavalry during our missions. This mod can be used outs
 
 <a href="https://www.bohemia.net/community/licenses/arma-public-license-nd">
     <img src="https://lh3.googleusercontent.com/LXqJgV4SkDCJx5JEb2ivWzbPasqfWA9Z98Y2E-8xey_f6jPDFKRtsyQnTVPCNJDCYNEP5g=s170">                                                                                                                         </a></br>
-                                                                                                                              
+
 - **Attribution** - You must attribute the material in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the material).
 - **Noncommercial** - You may not use this material for any commercial purposes.
 - **Arma Only** - You may not convert or adapt this material to be used in other games than Arma.
