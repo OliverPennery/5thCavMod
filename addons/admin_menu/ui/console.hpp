@@ -44,7 +44,7 @@ class GVAR(console):GVAR(main)
         GVAR(main_button_loadout),
         GVAR(main_button_respawn),
         GVAR(main_button_specPort),
-        GVAR(main_button_placeholder1),
+        GVAR(main_button_logs),
         GVAR(console_edit_entry),
         GVAR(console_text_output),
         GVAR(console_button_global),
