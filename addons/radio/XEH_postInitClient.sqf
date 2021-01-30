@@ -12,9 +12,8 @@ if GVAR(Player_Preset_Enable) then{
 
 ["cav_radio_init", "OnRadiosReceived",
 {
-    [group player] call FUNC(playerSetFreq);
-    // This doesnt work for some fucking reason...
-    // ["cav_radio_init", "OnRadiosReceived", player] call TFAR_fnc_removeEventHandler;
-    player setVariable ["TFAR_event_OnRadiosReceived",[]]
-
+    private _unit = (_this select 0);
+    if !(isNull _unit) then{
+        [group _unit] call FUNC(playerSetFreq);
+    };
 }, player] call TFAR_fnc_addEventHandler;
