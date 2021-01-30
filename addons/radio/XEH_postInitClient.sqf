@@ -17,3 +17,4 @@ if GVAR(Player_Preset_Enable) then{
         [group _unit] call FUNC(playerSetFreq);
     };
 }, player] call TFAR_fnc_addEventHandler;
+/* [group player] call FUNC(playerSetFreq); */
