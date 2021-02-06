@@ -4,6 +4,9 @@
 // Exit on Headless as well
 if (!hasInterface) exitWith {};
 
+/* diag_log "A_M PI Cient";
+systemChat "A_M PI Cient"; */
+
 player setVariable [QGVAR(respawnTime), 99999, true];
 
 [{

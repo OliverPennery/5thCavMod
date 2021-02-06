@@ -10,3 +10,11 @@ PREP_RECOMPILE_END;
 #include "initSettings.sqf"
 
 ADDON = true;
+
+/* diag_log "preInit"; */
+
+TKLOG = [];
+
+NADELOG = [];
+
+SAFESTARTLOG = [];
