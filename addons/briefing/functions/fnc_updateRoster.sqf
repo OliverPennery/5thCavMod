@@ -18,8 +18,8 @@ _grps = _grps select {
     //systemChat str(_grp);
     if (!isNil {_grp}) then
     {
-        _sWFreq = ((_grp select 3) select (_grp select 4));
-        _lRFreq = ((_grp select 5) select (_grp select 6));
+        _sWFreq = ((CAV_FREQS select 0) select (_grp select 3));
+        _lRFreq = ((CAV_FREQS select 1) select (_grp select 4));
     } else {
         _sWFreq = "##";
         _lRFreq = "##";
