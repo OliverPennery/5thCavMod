@@ -14,4 +14,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgReplacementItems.hpp"
+#include "CfgWeapons.hpp"
 #include "CAV_Medical_Treatment_Actions.hpp"
