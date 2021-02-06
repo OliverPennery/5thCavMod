@@ -28,6 +28,8 @@ private _grp = [_group] call EFUNC(common,getGroup);
 if (isNil {_grp}) then {
     _grp = CAV_Platoon;
 };
+/* systemChat "radio XEH 3";
+diag_log "radio XEH 3"; */
 if (isClass (configFile >> "CfgPatches" >> "task_force_radio_items")) then{
     if (call TFAR_fnc_haveSWRadio) then{
         private _radio = call TFAR_fnc_activeSwRadio;
