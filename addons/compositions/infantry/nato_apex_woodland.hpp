@@ -1,7 +1,7 @@
 class cav_soldier_nato_apex_woodland_base: SoldierGB{
     SCOPEL(PROTECTED)
     side = 1;
-    faction = cav_nato_apex_woodland;
+    faction = cav_brecons;
     editorSubcategory = QGVAR(edsubcat_nato_apex_woodland);
 };
 
